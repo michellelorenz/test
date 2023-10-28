@@ -24,7 +24,10 @@ In welchem Kontext soll das System später genutzt werden? Welche Rahmenbedingun
 Zusätzlich kurze Einleitung für fachfremde Personen
 
 == Interessensgruppen (Stakeholders)
-Welche realen und juristischen Personen(-gruppen) haben Einfluss auf die Anforderungen im Projekt?
+    * Gäste
+    * Mitglieder
+    * Ehrenamtliche
+    * IT-Abteilung
 
 == Systemgrenze und Top-Level-Architektur
 
@@ -32,7 +35,19 @@ Welche realen und juristischen Personen(-gruppen) haben Einfluss auf die Anforde
 Das Kontextdiagramm zeigt das geplante Software-System in seiner Umgebung. Zur Umgebung gehören alle Nutzergruppen des Systems und Nachbarsysteme. Die Grafik kann auch informell gehalten sein. Überlegen Sie sich dann geeignete Symbole. Die Grafik kann beispielsweise mit Visio erstellt werden. Wenn nötig, erläutern Sie diese Grafik.
 
 === Top-Level-Architektur
-Dokumentieren Sie ihre Top-Level-Architektur mit Hilfe eines Komponentendiagramm.
+Die Top-Level-Architektur bietet eine Übersicht über die Hauptkomponenten und deren Interaktionen.
+
+=== Komponenten:
+    * Öffentliche Webseite
+    * Mitglieder- und Person-Management
+    * Online-Shop
+    * System zur Verfolgung ehrenamtlicher Arbeit
+    * System zur Ausleihe von Ausrüstung
+    * Benutzerführung und Sicherheitskonformität
+
+=== Interaktionen:
+[[interaction_diagram]]
+image::./interaktionen.svg[interaction diagram, 100%, 100%, pdfwidth=100%, title="Interaktionen Diagram", align=center]
 
 == Anwendungsfälle
 
