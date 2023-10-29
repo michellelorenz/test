@@ -6,8 +6,11 @@
 [cols="1, 1, 1, 1, 4"]
 |===
 |Version | Status      | Bearbeitungsdatum   | Autoren(en) |  Vermerk
-|0.1     | In Arbeit   | 10.10.2021          | Autor       | Initiale Version
+|0.1     | In Arbeit   | 29.10.2023          | Autor       | Initiale Version
 |===
+
+:project_name: Kletterverein
+:company_name: Der Dresdner Kletterverein
 
 == Inhaltsverzeichnis
 Dieses Dokument benötigt ein Inhaltsverzeichnis. Es existieren mehrere Einbindungsmöglichkeiten.
@@ -23,16 +26,66 @@ Insbesondere ergänzen, welche Ziele mit dem Abschluss des Projektes erreicht we
 In welchem Kontext soll das System später genutzt werden? Welche Rahmenbedingungen gelten?
 Zusätzlich kurze Einleitung für fachfremde Personen
 
-== Interessensgruppen (Stakeholders)
-    * Gäste
-    * Mitglieder
-    * Ehrenamtliche
-    * IT-Abteilung
+[[Stakeholders]]
+== Stakeholders
+Hier ist jede Gruppe oder Einzelperson (real oder juristisch) aufgeführt, die/der Einfluss auf die Anforderungen des Systems hat.
+In der folgenden Tabelle sind diese Stakeholder aufgeführt und ihnen ist eine Priorität zugewiesen (falls Anforderungen kollidieren sollten, erleichtert dies die Entscheidungsfindung).
+und ihre übergeordneten Ziele werden beschrieben.
+
+Die zugewiesenen Prioritäten reichen von 1 (niedrigste Priorität) bis 5 (höchste Priorität).
+
+[options="header", cols="2, ^1, 4, 4"]
+|===
+|Name
+|Priorität (1..5)
+|Beschreibung
+|Ziele
+
+|{company_name}
+|5
+|Der Hauptkunde dieses Projekts.
+a|
+- Digitale Transformation
+- Effizienz und Zeitersparnis
+- Einbindung eines jüngeren Publikums
+- Zugang zu Informationen für Mitglieder und Gäste
+- Merchandising-Verkauf
+
+|Mitglieder
+|4
+|Hauptbenutzer der Anwendung. Nutzung der Website zur Optimierung der Mitgliedschaft im Kletterverein.
+a|
+- Teilnahme an Training und Veranstaltungen
+- Einfache Kommunikation
+- Zugriff auf den Shop
+- Sicherheit und Datenschutz
+
+|Administrators
+|2
+|Eine weitere wichtige Gruppe von Stakeholdern in diesem Projekt. Benutzer, die den Verein verwalten.
+a|
+- Effizienz in der Vereinsverwaltung
+- Zeiteinsparungen bei Routineaufgaben
+- Klar strukturierte Ehrenamtliche Arbeit
+- Zeiterfassung und Abrechnung
+
+|Developers
+|3
+|Personen, die entweder die Anwendung implementieren oder später für die Wartung verantwortlich sind.
+a|
+- Leicht erweiterbare Anwendung
+- Geringer Wartungsaufwand
+- Gute Debugging-Mechanismen
+
+|===
 
 == Systemgrenze und Top-Level-Architektur
 
 === Kontextdiagramm
 Das Kontextdiagramm zeigt das geplante Software-System in seiner Umgebung. Zur Umgebung gehören alle Nutzergruppen des Systems und Nachbarsysteme. Die Grafik kann auch informell gehalten sein. Überlegen Sie sich dann geeignete Symbole. Die Grafik kann beispielsweise mit Visio erstellt werden. Wenn nötig, erläutern Sie diese Grafik.
+
+[[kontext_diagram]]
+image::./models/kontextdia.svg[kontext diagram, 100%, 100%, pdfwidth=100%, title="Kontext Diagram", align=center]
 
 === Top-Level-Architektur
 Die Top-Level-Architektur bietet eine Übersicht über die Hauptkomponenten und deren Interaktionen.
@@ -47,7 +100,7 @@ Die Top-Level-Architektur bietet eine Übersicht über die Hauptkomponenten und 
 
 === Interaktionen:
 [[interaction_diagram]]
-image::./interaktionen.svg[interaction diagram, 100%, 100%, pdfwidth=100%, title="Interaktionen Diagram", align=center]
+image::./models/interaktionen.svg[interaction diagram, 100%, 100%, pdfwidth=100%, title="Interaktionen Diagram", align=center]
 
 == Anwendungsfälle
 
