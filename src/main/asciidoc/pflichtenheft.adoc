@@ -59,18 +59,26 @@ Insbesondere ergänzen, welche Ziele mit dem Abschluss des Projektes erreicht we
 - DAV-Identifikationsschema für die Mitgliederregistrierung und -verwaltung verwenden
 
 ==Interessensgruppen
+
 1. Endbenutzer:
+
 • Gäste
 • Mitglieder: Registrierung, den Zugriff auf Vereinsnachrichten und den Kauf von Produkten
 • Mitarbeiter: administrative Aufgaben
 • Ehrenamtliche: Erfassungssystem für ehrenamtliche Arbeit, Ausleihsystem 
-• Trainer: Verwaltung von Klettergruppen und die Erfassung von Trainingsstunden         
+• Trainer: Verwaltung von Klettergruppen und die Erfassung von Trainingsstunden 
+
 2. Geschäftsführung des Klettervereins: Auftragsgeber, haben Einfluss auf Budget, Zeitplan und Hauptfunktionalitäten
+
 3. Shop-Verwalter: Sie haben spezifische Anforderungen an das Shop-System, z.B. Produktverwaltung, Bestandsführung und Verkaufsstatistiken
+
 4. Externe Partner:
+
 • DAV (Deutscher Alpenverein)
 • Lieferanten: Für den Shop könnten Lieferanten spezifische Anforderungen an das Bestell- und Lagerverwaltungssystem haben
+
 5. Finanziers oder Investoren:wenn das Projekt extrene Finanzierung erhält, können gewisse Anforderungen noch hinzu kommen
+
 6. Öffentlichkeit und Medien
 
 
