@@ -25,6 +25,7 @@ Insbesondere ergänzen, welche Ziele mit dem Abschluss des Projektes erreicht we
 == Produktnutzung
 [In welchem Kontext soll das System später genutzt werden? Welche Rahmenbedingungen gelten? Zusätzlich kurze Einleitung für fachfremde Personen]
 (1)Zielgruppe
+
 - Gäste, die sich über den Verein informieren möchten oder Mitglied werden möchten
 - Mitglieder des Klettervereins
 - Mitarbeiter, die administrative Aufgaben übernehmen
@@ -35,12 +36,14 @@ Insbesondere ergänzen, welche Ziele mit dem Abschluss des Projektes erreicht we
 --> jede Altersgruppe, jeder soll sich angesprochen fühlen
 
 (2) Betriebsbedingungen:
+
 - zugänglich auf Desktop-Computern und mobilen Geräten
 - System sollte in der Lage sein eine große Anzahl von Nutzern gleichzeitig zu unterstützen
 - sollte in der Lage sein regelmäßige Updates und Wartungsarbeiten durchzuführen
 - unterschiedliche Zugriffsrechte für die jeweilige Position im Unternehmen
 
 (3)Verwendungsarten:
+
 - Gäste nutzen das System, um sich über den Verein zu informieren, Produkte aus dem Shop zu kaufen, registrieren als Mitglied
 - Mitglieder nutzen das System, um sich einzuloggen, ihre Daten zu verwalten, Produkte zu kaufen und sich über Vereinsnachrichten zu informieren
 - Mitarbeiter nutzen das System, um Mitglieder zu verwalten, Nachrichten zu posten und ehrenamtliche Arbeit zu erfassen und auszuwerten
@@ -49,10 +52,27 @@ Insbesondere ergänzen, welche Ziele mit dem Abschluss des Projektes erreicht we
 - Trainer nutzen das System, um Klettergruppen zu verwalten und Trainingsstunden zu erfassen
 - Shop-Verwalter nutzen das System, um Produkte im Shop zu verwalten
 
-(4) Einsatzbeschränkungen
+(4) Einsatzbeschränkungen:
+
 - das System sollte nur von autorisierten Nutzern verwendet werden können
 - den Datenschutzbestimmungen entsprechen und personenbezogene Daten sicher speichern
 - DAV-Identifikationsschema für die Mitgliederregistrierung und -verwaltung verwenden
+
+==Interessensgruppen
+1. Endbenutzer:
+• Gäste
+• Mitglieder: Registrierung, den Zugriff auf Vereinsnachrichten und den Kauf von Produkten
+• Mitarbeiter: administrative Aufgaben
+• Ehrenamtliche: Erfassungssystem für ehrenamtliche Arbeit, Ausleihsystem 
+• Trainer: Verwaltung von Klettergruppen und die Erfassung von Trainingsstunden         
+2. Geschäftsführung des Klettervereins: Auftragsgeber, haben Einfluss auf Budget, Zeitplan und Hauptfunktionalitäten
+3. Shop-Verwalter: Sie haben spezifische Anforderungen an das Shop-System, z.B. Produktverwaltung, Bestandsführung und Verkaufsstatistiken
+4. Externe Partner:
+• DAV (Deutscher Alpenverein)
+• Lieferanten: Für den Shop könnten Lieferanten spezifische Anforderungen an das Bestell- und Lagerverwaltungssystem haben
+5. Finanziers oder Investoren:wenn das Projekt extrene Finanzierung erhält, können gewisse Anforderungen noch hinzu kommen
+6. Öffentlichkeit und Medien
+
 
 [[Stakeholders]]
 == Stakeholders
