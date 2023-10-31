@@ -174,11 +174,6 @@ image::./models/interaktionen.svg[interaction diagram, 100%, 100%, pdfwidth=100%
 
 == Anwendungsfälle
 
-=== Akteure
-
-Akteure sind die Benutzer des Software-Systems oder Nachbarsysteme, welche darauf zugreifen. Dokumentieren Sie die Akteure in einer Tabelle. Diese Tabelle gibt einen Überblick über die Akteure und beschreibt sie kurz. Die Tabelle hat also mindestens zwei Spalten (Akteur Name und Kommentar).
-Weitere relevante Spalten können bei Bedarf ergänzt werden.
-
 [cols="2*", options="header"]
 |===
 | Name            | Beschreibung
@@ -203,7 +198,7 @@ Anwendungsfall-Diagramm, das alle Anwendungsfälle und alle Akteure darstellt
 |ID                         |**<<UC001>>**
 |Name                       |Anmelden/Abmelden
 |Beschreibung               |Ein Benutzer soll sich im System anmelden können, um weitere Funktionen zu nutzen. Dieser Prozess soll durch Abmeldung umkehrbar sein.
-|Akteure                    |Mitglied, Mitarbeiter, Trainer, Ehrenamtliche, Geschäftsführung, Teamersteller, Verwalter
+|Akteure                    |Mitglied
 |Auslöser                   |Benutzer wählt "Anmelden" in der Navigationsleiste
 |Vorbedingung(en)          a|
 - Anmeldung: Benutzer ist noch nicht authentifiziert.
@@ -243,7 +238,7 @@ Anwendungsfall-Diagramm, das alle Anwendungsfälle und alle Akteure darstellt
 |ID                         |**<<UC003>>**
 |Name                       |Katalog anzeigen
 |Beschreibung               |Jeder Besucher des Shops soll auf den Katalog zugreifen können, der alle angebotenen Produkte anzeigt.
-|Akteure                    |Gast, Mitglied
+|Akteure                    |Mitglied
 |Auslöser                   |Benutzer klickt auf das Navigationselement "Katalog"
 |Vorbedingung(en)          a|
 - Keine.
@@ -260,7 +255,7 @@ Anwendungsfall-Diagramm, das alle Anwendungsfälle und alle Akteure darstellt
 |ID                         |**<<UC004>>**
 |Name                       |Produktdetails anzeigen
 |Beschreibung               |Ein Benutzer soll die Details eines Produkts auf einer extra Seite einsehen können.
-|Akteure                    |Gast, Mitglied
+|Akteure                    |Mitglied
 |Auslöser                   |Benutzer klickt auf einen im Katalog angezeigten Eintrag
 |Vorbedingung(en)          a|
 - Benutzer betrachtet den Katalog.
@@ -330,10 +325,10 @@ Anwendungsfall-Diagramm, das alle Anwendungsfälle und alle Akteure darstellt
 [[UC008]]
 |===
 |ID                         |**<<UC008>>**
-|Name                       |Kundenliste anzeigen
+|Name                       |Mitgliederliste anzeigen
 |Beschreibung               |Ein Mitarbeiter oder Mitglied der Geschäftsführung sollte in der Lage sein, die gesamte Liste der Kunden der Anwendung einzusehen.
-|Akteure                    |Mitarbeiter, Geschäftsführung
-|Auslöser                   |Benutzer wählt "Kunden" in der Navigationsleiste
+|Akteure                    |Geschäftsführung
+|Auslöser                   |Benutzer wählt "Mitglieder" in der Navigationsleiste
 |Vorbedingung(en)          a|
 - Benutzer ist authentifiziert und hat die Rolle "Mitarbeiter" oder "Geschäftsführung".
 |Hauptschritte             a|
@@ -347,29 +342,32 @@ Anwendungsfall-Diagramm, das alle Anwendungsfälle und alle Akteure darstellt
 [[UC009]]
 |===
 |ID                         |**<<UC009>>**
-|Name                       |Bestellungen anzeigen
-|Beschreibung               |Ein Mitarbeiter oder Mitglied der Geschäftsführung sollte in der Lage sein, eine Liste der abgeschlossenen Bestellungen einzusehen.
-|Akteure                    |Mitarbeiter, Geschäftsführung
-|Auslöser                   |Benutzer wählt "Bestellungen" in der Navigationsleiste
+|Name                       |Arbeitszeit erfassen
+|Beschreibung               |Mitarbeiter und Ehrenamtliche sollten in der Lage sein, ihre Arbeitszeit in der Anwendung separat zu erfassen.
+|Akteure                    |Mitarbeiter, Ehrenamtliche
+|Auslöser                   |Ein Benutzer möchte seine Arbeitszeit erfassen.
 |Vorbedingung(en)          a|
-- Benutzer ist authentifiziert und hat die Rolle "Mitarbeiter" oder "Geschäftsführung".
+- Der Benutzer ist authentifiziert und angemeldet.
 |Hauptschritte             a|
-1. Benutzer wählt "Bestellungen" in der Navigationsleiste.
-2. Die komplette Liste aller abgeschlossenen Bestellungen wird angezeigt.
+1. Der Benutzer, sei es ein Mitarbeiter oder ein Ehrenamtlicher, wählt die Option "Arbeitszeit erfassen" in der Anwendung aus.
+2. Die Anwendung öffnet ein Formular zur Erfassung der Arbeitszeit.
+3. Der Benutzer gibt das Datum, die Arbeitszeit (Anfangs- und Endzeit) und gegebenenfalls Bemerkungen ein.
+4. Der Benutzer klickt auf "Speichern" oder "Absenden", um die erfasste Arbeitszeit zu bestätigen.
 |Erweiterungen              |-
-|Funktionale Anforderungen  | <<F0070>>
+|Funktionale Anforderungen  | <<F0070>> (für Mitarbeiter), <<F0071>> (für Ehrenamtliche), <<F0072>> (allgemeine Erfassung)
 |===
+
 
 [cols="1h,3"]
 [[UC010]]
 |===
 |ID                         |**<<UC010>>**
 |Name                       |Lagerbestand anzeigen
-|Beschreibung               |Ein Mitarbeiter oder Mitglied der Geschäftsführung sollte in der Lage sein, das Inventar einschließlich des aktuellen Lagerbestands einzusehen.
-|Akteure                    |Mitarbeiter, Geschäftsführung
+|Beschreibung               |Ein Mitglied der Geschäftsführung sollte in der Lage sein, das Inventar einschließlich des aktuellen Lagerbestands einzusehen.
+|Akteure                    |Geschäftsführung
 |Auslöser                   |Benutzer wählt "Lager" in der Navigationsleiste
 |Vorbedingung(en)          a|
-- Benutzer ist authentifiziert und hat die Rolle "Mitarbeiter" oder "Geschäftsführung".
+- Benutzer ist authentifiziert und hat die Rolle "Geschäftsführung".
 |Hauptschritte             a|
 1. Benutzer wählt "Lager" in der Navigationsleiste.
 2. Die komplette Liste aller Artikel des Inventars und der aktuelle Lagerbestand wird angezeigt.
@@ -383,13 +381,13 @@ Anwendungsfall-Diagramm, das alle Anwendungsfälle und alle Akteure darstellt
 |ID                         |**<<UC011>>**
 |Name                       |Nachrichten anzeigen
 |Beschreibung               |Mitglieder können aktuelle Nachrichten und Informationen über den Verein einsehen.
-|Akteure                    |Mitglied
-|Auslöser                   |Mitglied besucht die Webseite
+|Akteure                    |Mitglied, Gast
+|Auslöser                   |Mitglied oder Gast besucht die Webseite
 |Vorbedingung(en)          a|
 - Keine.
 |Hauptschritte             a|
-1. Mitglied besucht die Webseite.
-2. Mitglied sieht die aktuellen Nachrichten und Informationen.
+1. Mitglied/Gast besucht die Webseite.
+2. Mitglied/Gast sieht die aktuellen Nachrichten und Informationen.
 |Erweiterungen              |-
 |Funktionale Anforderungen  | <<F0090>>
 |===
@@ -399,14 +397,14 @@ Anwendungsfall-Diagramm, das alle Anwendungsfälle und alle Akteure darstellt
 |===
 |ID                         |**<<UC012>>**
 |Name                       |Trackingsystem anzeigen
-|Beschreibung               |Trainer können Trainingsstunden und Anwesenheit im Trackingsystem eintragen.
-|Akteure                    |Trainer
-|Auslöser                   |Trainer wählt "Trackingsystem" im System
+|Beschreibung               |Ehrenamtliche und Mitarbeiter können Trainingsstunden und Anwesenheit im Trackingsystem eintragen.
+|Akteure                    |Ehrenamtliche, Mitarbeiter
+|Auslöser                   |Benutzer wählt "Trackingsystem" im System
 |Vorbedingung(en)          a|
-- Trainer ist authentifiziert.
+- Benutzer ist authentifiziert.
 |Hauptschritte             a|
-1. Trainer wählt "Trackingsystem" im System.
-2. Trainer trägt Datum, Ort, Anfangs- und Endzeit sowie die Anwesenheit der Teilnehmer ein.
+1. Benutzer wählt "Trackingsystem" im System.
+2. Benutzer trägt Datum, Ort, Anfangs- und Endzeit sowie die Anwesenheit der Teilnehmer ein.
 |Erweiterungen              |-
 |Funktionale Anforderungen  | <<F0100>>
 |===
@@ -415,15 +413,16 @@ Anwendungsfall-Diagramm, das alle Anwendungsfälle und alle Akteure darstellt
 [[UC013]]
 |===
 |ID                         |**<<UC013>>**
-|Name                       |Trainingsgruppen anzeigen und erstellen
-|Beschreibung               |Trainer oder Teamersteller können Trainingsgruppen einsehen, erstellen und verwalten.
-|Akteure                    |Trainer, Teamersteller
-|Auslöser                   |Benutzer wählt "Trainingsgruppen" im System
+|Name                       |Trainingsgruppen erstellen
+|Beschreibung               |Teamersteller können Trainingsgruppen erstellen.
+|Akteure                    |Teamersteller
+|Auslöser                   |Benutzer wählt "Trainingsgruppen erstellen" im System
 |Vorbedingung(en)          a|
-- Benutzer ist authentifiziert und hat die Rolle "Trainer" oder "Teamersteller".
+- Benutzer ist authentifiziert und hat die Rolle "Teamersteller".
 |Hauptschritte             a|
-1. Benutzer wählt "Trainingsgruppen" im System.
-2. Benutzer kann Trainingsgruppen einsehen, erstellen und verwalten.
+1. Benutzer wählt "Trainingsgruppen erstellen" im System.
+2. Benutzer gibt die notwendigen Informationen für die neue Trainingsgruppe ein.
+3. Benutzer bestätigt die Erstellung der Trainingsgruppe.
 |Erweiterungen              |-
 |Funktionale Anforderungen  | <<F0110>>
 |===
@@ -450,17 +449,147 @@ Anwendungsfall-Diagramm, das alle Anwendungsfälle und alle Akteure darstellt
 |===
 |ID                         |**<<UC015>>**
 |Name                       |Gruppenmitglieder hinzufügen
-|Beschreibung               |Trainer oder Teamersteller können Mitglieder zu einer Trainingsgruppe hinzufügen.
-|Akteure                    |Trainer, Teamersteller
+|Beschreibung               |Trainer können Mitglieder zu einer Trainingsgruppe hinzufügen.
+|Akteure                    |Trainer
 |Auslöser                   |Benutzer wählt die entsprechende Trainingsgruppe im System
 |Vorbedingung(en)          a|
-- Benutzer ist authentifiziert und hat die Rolle "Trainer" oder "Teamersteller".
+- Benutzer ist authentifiziert und hat die Rolle "Trainer".
 |Hauptschritte             a|
 1. Benutzer wählt die entsprechende Trainingsgruppe im System.
 2. Benutzer fügt das neue Mitglied zur Gruppe hinzu.
 |Erweiterungen              |-
 |Funktionale Anforderungen  | <<F0121>>
 |===
+
+[cols="1h,3"]
+[[UC016]]
+|===
+|ID                         |**<<UC016>>**
+|Name                       |Nachrichten erstellen
+|Beschreibung               |Benutzer sollte in der Lage sein, eine neue Nachricht in der Anwendung zu erstellen und an andere Benutzer zu senden.
+|Akteure                    |Geschäftsführung
+|Auslöser                   |Benutzer möchte eine neue Nachricht erstellen
+|Vorbedingung(en)          a|
+- Benutzer ist authentifiziert und angemeldet.
+|Hauptschritte             a|
+1. Benutzer wählt die Option "Neue Nachricht erstellen" in der Anwendung aus.
+2. Die Anwendung öffnet ein Nachrichtenformular.
+3. Benutzer gibt den Empfänger, den Betreff und den Nachrichtentext ein.
+4. Benutzer klickt auf "Nachricht senden".
+5. Die Nachricht wird an den ausgewählten Empfänger gesendet und im Nachrichtenverlauf des Absenders gespeichert.
+|Erweiterungen              |-
+|Funktionale Anforderungen  | <<F0120>>, <<F0121>>
+|===
+
+[cols="1h,3"]
+[[UC017]]
+|===
+|ID                         |**<<UC017>>**
+|Name                       |Abrechnen
+|Beschreibung               |Die Geschäftsführung sollte in der Lage sein, Abrechnungen für Mitarbeiter und Ehrenamtliche in der Anwendung durchzuführen.
+|Akteure                    |Geschäftsführung
+|Auslöser                   |Geschäftsführung möchte eine Abrechnung durchführen.
+|Vorbedingung(en)          a|
+- Die Geschäftsführung ist authentifiziert und angemeldet.
+|Hauptschritte             a|
+1. Die Geschäftsführung wählt die Option "Abrechnen" in der Anwendung aus.
+2. Die Anwendung öffnet ein Abrechnungsformular.
+3. Die Geschäftsführung wählt die zu abrechnenden Mitarbeiter oder Ehrenamtlichen aus und gibt die Abrechnungsdetails ein.
+4. Die Geschäftsführung klickt auf "Abrechnung durchführen".
+5. Die Abrechnung wird in den Konten der ausgewählten Mitarbeiter oder Ehrenamtlichen vermerkt, und die Buchhaltungsdaten werden aktualisiert.
+|Erweiterungen              |-
+|Funktionale Anforderungen  | <<F0080>>, <<F0081>>
+|===
+
+[cols="1h,3"]
+[[UC018]]
+|===
+|ID                         |**<<UC018>>**
+|Name                       |Produkte ausleihen/zurückgeben
+|Beschreibung               |Ehrenamtliche sollten in der Lage sein, Produkte für Veranstaltungen oder andere Zwecke auszuleihen und sie nach Gebrauch zurückzugeben.
+|Akteure                    |Ehrenamtliche
+|Auslöser                   |Ehrenamtlicher möchte ein Produkt ausleihen oder ein zuvor ausgeliehenes Produkt zurückgeben.
+|Vorbedingung(en)          a|
+- Ehrenamtlicher ist authentifiziert.
+- Das gewünschte Produkt ist verfügbar (für den Ausleihvorgang).
+|Hauptschritte             a|
+1. Ehrenamtlicher wählt die Option "Produkte ausleihen" im System.
+2. Ehrenamtlicher sucht und wählt das gewünschte Produkt aus.
+3. Ehrenamtlicher bestätigt den Ausleihvorgang.
+4. Bei Rückgabe wählt der Ehrenamtliche die Option "Produkte zurückgeben".
+5. Ehrenamtlicher wählt das zurückzugebende Produkt aus und bestätigt die Rückgabe.
+|Erweiterungen              |-
+|Funktionale Anforderungen  | <<F0160>> (für Ausleihen), <<F0161>> (für Zurückgeben)
+|===
+
+[cols="1h,3"]
+[[UC019]]
+|===
+|ID                         |**<<UC019>>**
+|Name                       |Ausleihe einsehen
+|Beschreibung               |Die Geschäftsführung sollte in der Lage sein, alle ausgeliehenen Produkte, die dazugehörigen Zeiträume und die verantwortlichen Ehrenamtlichen einzusehen.
+|Akteure                    |Geschäftsführung
+|Auslöser                   |Geschäftsführung möchte einen Überblick über alle ausgeliehenen Produkte erhalten.
+|Vorbedingung(en)          a|
+- Geschäftsführung ist authentifiziert.
+|Hauptschritte             a|
+1. Geschäftsführung wählt die Option "Ausleihe einsehen" im System.
+2. Das System zeigt eine Liste aller ausgeliehenen Produkte, die dazugehörigen Zeiträume und die verantwortlichen Ehrenamtlichen.
+|Erweiterungen              |-
+|Funktionale Anforderungen  | <<F0162>>
+|===
+
+[cols="1h,3"]
+[[UC020]]
+|===
+|ID                         |**<<UC020>>**
+|Name                       |Bestellung einsehen
+|Beschreibung               |Die Geschäftsführung sollte in der Lage sein, alle getätigten Bestellungen, die dazugehörigen Produkte, Mengen und Kundeninformationen einzusehen.
+|Akteure                    |Geschäftsführung
+|Auslöser                   |Geschäftsführung möchte einen Überblick über alle getätigten Bestellungen erhalten.
+|Vorbedingung(en)          a|
+- Geschäftsführung ist authentifiziert.
+|Hauptschritte             a|
+1. Geschäftsführung wählt die Option "Bestellung einsehen" im System.
+2. Das System zeigt eine Liste aller getätigten Bestellungen, die dazugehörigen Produkte, Mengen und Kundeninformationen.
+|Erweiterungen              |-
+|Funktionale Anforderungen  | <<F0163>>
+|===
+
+[cols="1h,3"]
+[[UC021]]
+|===
+|ID                         |**<<UC021>>**
+|Name                       |Mitglieder hinzufügen/entfernen
+|Beschreibung               |Ein Verwalter sollte in der Lage sein, Mitglieder zum System hinzuzufügen oder bestehende Mitglieder aus dem System zu entfernen.
+|Akteure                    |Verwalter
+|Auslöser                   |Verwalter möchte ein Mitglied hinzufügen oder entfernen.
+|Vorbedingung(en)          a|
+- Verwalter ist authentifiziert.
+|Hauptschritte             a|
+1. Verwalter wählt die Option "Mitglieder verwalten" im System.
+2. Verwalter kann entweder ein neues Mitglied hinzufügen, indem er die notwendigen Informationen eingibt, oder ein bestehendes Mitglied auswählen und es entfernen.
+|Erweiterungen              |-
+|Funktionale Anforderungen  | <<F0164>>
+|===
+
+[cols="1h,3"]
+[[UC022]]
+|===
+|ID                         |**<<UC022>>**
+|Name                       |Trainingsgruppe einsehen
+|Beschreibung               |Ein Teilnehmer sollte in der Lage sein, die Details einer Trainingsgruppe, der er angehört, einzusehen.
+|Akteure                    |Teilnehmer
+|Auslöser                   |Teilnehmer möchte Details seiner Trainingsgruppe sehen.
+|Vorbedingung(en)          a|
+- Teilnehmer ist authentifiziert und gehört mindestens einer Trainingsgruppe an.
+|Hauptschritte             a|
+1. Teilnehmer wählt die Option "Meine Trainingsgruppen" im System.
+2. Das System zeigt die Details der Trainingsgruppe, einschließlich Trainer, Ort, Zeit und andere Mitglieder.
+|Erweiterungen              |-
+|Funktionale Anforderungen  | <<F0165>>
+|===
+
 
 == Funktionale Anforderungen
 
@@ -560,6 +689,44 @@ Das System muss in der Lage sein, Bestellungen zu archivieren, indem es ihren St
 |Kundenliste anzeigen
 a|
 Das System muss der Geschäftsführung die Möglichkeit bieten, eine Liste aller im System registrierten Kunden anzuzeigen.
+
+|[[F0160]]<<F0160>>
+|v1.0
+|Produkte ausleihen
+a|
+Das System muss Ehrenamtlichen die Möglichkeit bieten, verfügbare Produkte für einen bestimmten Zeitraum auszuleihen.
+
+|[[F0161]]<<F0161>>
+|v1.0
+|Produkte zurückgeben
+a|
+Das System muss Ehrenamtlichen die Möglichkeit bieten, zuvor ausgeliehene Produkte zurückzugeben und den Rückgabestatus im System zu aktualisieren.
+
+|[[F0162]]<<F0162>>
+|v1.0
+|Ausleihe einsehen
+a|
+Das System muss der Geschäftsführung die Möglichkeit bieten, alle Details zu ausgeliehenen Produkten, einschließlich der verantwortlichen Ehrenamtlichen und der Ausleih- und Rückgabedaten, einzusehen.
+
+|[[F0162]]<<F0162>>
+|v1.0
+|Ausleihe einsehen
+a|
+Das System muss der Geschäftsführung die Möglichkeit bieten, alle Details zu ausgeliehenen Produkten, einschließlich der verantwortlichen Ehrenamtlichen und der Ausleih- und Rückgabedaten, einzusehen.
+
+|[[F0164]]<<F0164>>
+|v1.0
+|Mitglieder hinzufügen/entfernen
+a|
+Das System muss dem Verwalter die Möglichkeit bieten, Mitglieder zum System hinzuzufügen, indem er die notwendigen Informationen eingibt, oder bestehende Mitglieder aus dem System zu entfernen.
+
+|[[F0165]]<<F0165>>
+|v1.0
+|Trainingsgruppe einsehen
+a|
+Das System muss dem Teilnehmer die Möglichkeit bieten, die Details der Trainingsgruppe, der er angehört, einzusehen, einschließlich Trainer, Ort, Zeit und andere Mitglieder.
+
+
 |===
 
 === Muss-Kriterien
