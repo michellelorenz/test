@@ -197,231 +197,370 @@ Anwendungsfall-Diagramm, das alle Anwendungsfälle und alle Akteure darstellt
 
 == Anwendungsfallbeschreibungen
 
-=== UC001: Anmelden/Abmelden
-
-*Beschreibung:* Ein Benutzer soll sich im System anmelden können, um weitere Funktionen zu nutzen. Dieser Prozess soll durch Abmeldung umkehrbar sein.
-
-*Akteure:* Mitglied, Mitarbeiter, Trainer, Ehrenamtliche, Geschäftsführung, Teamersteller, Verwalter
-
-*Vorbedingung:* 
+[cols="1h,3"]
+[[UC001]]
+|===
+|ID                         |**<<UC001>>**
+|Name                       |Anmelden/Abmelden
+|Beschreibung               |Ein Benutzer soll sich im System anmelden können, um weitere Funktionen zu nutzen. Dieser Prozess soll durch Abmeldung umkehrbar sein.
+|Akteure                    |Mitglied, Mitarbeiter, Trainer, Ehrenamtliche, Geschäftsführung, Teamersteller, Verwalter
+|Auslöser                   |Benutzer wählt "Anmelden" in der Navigationsleiste
+|Vorbedingung(en)          a|
 - Anmeldung: Benutzer ist noch nicht authentifiziert.
 - Abmeldung: Benutzer ist authentifiziert.
+|Hauptschritte             a|
+1. Benutzer wählt "Anmelden" in der Navigationsleiste.
+2. Benutzer gibt seine Anmeldedaten ein.
+3. Benutzer klickt auf "Anmelden"-Button.
+4. Benutzer wählt "Abmelden" in der Navigationsleiste.
+5. Benutzer wird abgemeldet und zur Startseite weitergeleitet.
+|Erweiterungen              |-
+|Funktionale Anforderungen  | <<F0010>>
+|===
 
-*Hauptschritte:*
-. Benutzer wählt "Anmelden" in der Navigationsleiste.
-. Benutzer gibt seine Anmeldedaten ein.
-. Benutzer klickt auf "Anmelden"-Button.
-. Benutzer wählt "Abmelden" in der Navigationsleiste.
-. Benutzer wird abgemeldet und zur Startseite weitergeleitet.
+[cols="1h,3"]
+[[UC002]]
+|===
+|ID                         |**<<UC002>>**
+|Name                       |Registrieren
+|Beschreibung               |Ein nicht authentifizierter Benutzer soll ein Konto für sich selbst erstellen können.
+|Akteure                    |Gast
+|Auslöser                   |Benutzer wählt "Registrieren" in der Navigationsleiste
+|Vorbedingung(en)          a|
+- Benutzer ist nicht authentifiziert.
+|Hauptschritte             a|
+1. Benutzer wählt "Registrieren" in der Navigationsleiste.
+2. Benutzer gibt gewünschten Benutzernamen, Passwort und andere notwendige Informationen ein.
+3. System überprüft die Einzigartigkeit des Benutzernamens.
+4. Bei Einzigartigkeit wird ein Konto mit den angegebenen Daten erstellt.
+|Erweiterungen              |-
+|Funktionale Anforderungen  | <<F0020>>
+|===
 
-*Funktionale Anforderungen:* [F001]
+[cols="1h,3"]
+[[UC003]]
+|===
+|ID                         |**<<UC003>>**
+|Name                       |Katalog anzeigen
+|Beschreibung               |Jeder Besucher des Shops soll auf den Katalog zugreifen können, der alle angebotenen Produkte anzeigt.
+|Akteure                    |Gast, Mitglied
+|Auslöser                   |Benutzer klickt auf das Navigationselement "Katalog"
+|Vorbedingung(en)          a|
+- Keine.
+|Hauptschritte             a|
+1. Benutzer klickt auf das Navigationselement "Katalog".
+2. Benutzer sieht alle Produkte der ausgewählten Kategorie.
+|Erweiterungen              |-
+|Funktionale Anforderungen  | <<F0030>>
+|===
 
-=== UC002: Registrieren
+[cols="1h,3"]
+[[UC004]]
+|===
+|ID                         |**<<UC004>>**
+|Name                       |Produktdetails anzeigen
+|Beschreibung               |Ein Benutzer soll die Details eines Produkts auf einer extra Seite einsehen können.
+|Akteure                    |Gast, Mitglied
+|Auslöser                   |Benutzer klickt auf einen im Katalog angezeigten Eintrag
+|Vorbedingung(en)          a|
+- Benutzer betrachtet den Katalog.
+|Hauptschritte             a|
+1. Benutzer klickt auf einen im Katalog angezeigten Eintrag.
+2. Benutzer sieht die Details des ausgewählten Produkts.
+|Erweiterungen              |-
+|Funktionale Anforderungen  | <<F0040>>
+|===
 
-*Beschreibung:* Ein nicht authentifizierter Benutzer soll ein Konto für sich selbst erstellen können.
-
-*Akteure:* Gast
-
-*Vorbedingung:* Benutzer ist nicht authentifiziert.
-
-*Hauptschritte:*
-. Benutzer wählt "Registrieren" in der Navigationsleiste.
-. Benutzer gibt gewünschten Benutzernamen, Passwort und andere notwendige Informationen ein.
-. System überprüft die Einzigartigkeit des Benutzernamens.
-. Bei Einzigartigkeit wird ein Konto mit den angegebenen Daten erstellt.
-
-*Funktionale Anforderungen:* [F002]
-
-=== UC003: Katalog anzeigen
-
-*Beschreibung:* Jeder Besucher des Shops soll auf den Katalog zugreifen können, der alle angebotenen Produkte anzeigt.
-
-*Akteure:* Gast, Mitglied
-
-*Vorbedingung:* Keine.
-
-*Hauptschritte:*
-. Benutzer klickt auf das Navigationselement "Katalog".
-. Benutzer sieht alle Produkte der ausgewählten Kategorie.
-
-*Funktionale Anforderungen:* [F003]
-
-=== UC004: Produktdetails anzeigen
-
-*Beschreibung:* Ein Benutzer soll die Details eines Produkts auf einer extra Seite einsehen können.
-
-*Akteure:* Gast, Mitglied
-
-*Vorbedingung:* Benutzer betrachtet den Katalog.
-
-*Hauptschritte:*
-. Benutzer klickt auf einen im Katalog angezeigten Eintrag.
-. Benutzer sieht die Details des ausgewählten Produkts.
-
-*Funktionale Anforderungen:* [F004]
-
-=== UC005: Produkt zum Warenkorb hinzufügen
-
-*Beschreibung:* Ein registrierter Benutzer soll ein Produkt in gewünschter Menge seinem Warenkorb hinzufügen können.
-
-*Akteure:* Mitglied
-
-*Vorbedingung:* 
+[cols="1h,3"]
+[[UC005]]
+|===
+|ID                         |**<<UC005>>**
+|Name                       |Produkt zum Warenkorb hinzufügen
+|Beschreibung               |Ein registrierter Benutzer soll ein Produkt in gewünschter Menge seinem Warenkorb hinzufügen können.
+|Akteure                    |Mitglied
+|Auslöser                   |Benutzer betrachtet die Produktdetailseite
+|Vorbedingung(en)          a|
 - Benutzer ist authentifiziert.
-- Benutzer betrachtet die Produktdetailseite.
+|Hauptschritte             a|
+1. Benutzer gibt die gewünschte Menge für das ausgewählte Produkt ein.
+2. Benutzer klickt auf "Zum Warenkorb hinzufügen".
+3. Produkt wird mit der ausgewählten Menge seinem Warenkorb hinzugefügt.
+|Erweiterungen              |-
+|Funktionale Anforderungen  | <<F0050>>
+|===
 
-*Hauptschritte:*
-. Benutzer gibt die gewünschte Menge für das ausgewählte Produkt ein.
-. Benutzer klickt auf "Zum Warenkorb hinzufügen".
-. Produkt wird mit der ausgewählten Menge seinem Warenkorb hinzugefügt.
+[cols="1h,3"]
+[[UC006]]
+|===
+|ID                         |**<<UC006>>**
+|Name                       |Warenkorb anzeigen
+|Beschreibung               |Ein registrierter Benutzer soll den Inhalt seines Warenkorbs und den Gesamtpreis seiner Auswahl einsehen können.
+|Akteure                    |Mitglied
+|Auslöser                   |Benutzer klickt auf "Warenkorb" in der Navigationsleiste
+|Vorbedingung(en)          a|
+- Benutzer ist authentifiziert.
+|Hauptschritte             a|
+1. Benutzer klickt auf "Warenkorb" in der Navigationsleiste.
+2. Benutzer sieht den Inhalt seines Warenkorbs und den Gesamtpreis.
+|Erweiterungen              |-
+|Funktionale Anforderungen  | <<F0051>>
+|===
 
-*Funktionale Anforderungen:* [F005]
-
-=== UC006: Warenkorb anzeigen
-
-*Beschreibung:* Ein registrierter Benutzer soll den Inhalt seines Warenkorbs und den Gesamtpreis seiner Auswahl einsehen können.
-
-*Akteure:* Mitglied
-
-*Vorbedingung:* Benutzer ist authentifiziert.
-
-*Hauptschritte:*
-. Benutzer klickt auf "Warenkorb" in der Navigationsleiste.
-. Benutzer sieht den Inhalt seines Warenkorbs und den Gesamtpreis.
-
-*Funktionale Anforderungen:* [F006]
-
-=== UC007: Produkte im Warenkorb kaufen
-
-*Beschreibung:* Ein Mitglied soll den Inhalt seines Warenkorbs kaufen können.
-
-*Akteure:* Mitglied
-
-*Vorbedingung:* 
+[cols="1h,3"]
+[[UC007]]
+|===
+|ID                         |**<<UC007>>**
+|Name                       |Produkte im Warenkorb kaufen
+|Beschreibung               |Ein Mitglied soll den Inhalt seines Warenkorbs kaufen können.
+|Akteure                    |Mitglied
+|Auslöser                   |Mitglied klickt auf "Kaufen"
+|Vorbedingung(en)          a|
 - Mitglied ist authentifiziert und hat Produkte im Warenkorb.
+|Hauptschritte             a|
+1. Mitglied klickt auf "Kaufen".
+2. Bestellung wird gegen Lagerbestand geprüft.
+3. Bestellung wird automatisch bezahlt.
+4. Produkte werden in der gewählten Menge aus dem Lager entfernt.
+5. Bestellung wird archiviert.
+|Erweiterungen              |-
+|Funktionale Anforderungen  | <<F0052>>
+|===
 
-*Hauptschritte:*
-. Mitglied klickt auf "Kaufen".
-. Bestellung wird gegen Lagerbestand geprüft.
-. Bestellung wird automatisch bezahlt.
-. Produkte werden in der gewählten Menge aus dem Lager entfernt.
-. Bestellung wird archiviert.
+[cols="1h,3"]
+[[UC008]]
+|===
+|ID                         |**<<UC008>>**
+|Name                       |Kundenliste anzeigen
+|Beschreibung               |Ein Mitarbeiter oder Mitglied der Geschäftsführung sollte in der Lage sein, die gesamte Liste der Kunden der Anwendung einzusehen.
+|Akteure                    |Mitarbeiter, Geschäftsführung
+|Auslöser                   |Benutzer wählt "Kunden" in der Navigationsleiste
+|Vorbedingung(en)          a|
+- Benutzer ist authentifiziert und hat die Rolle "Mitarbeiter" oder "Geschäftsführung".
+|Hauptschritte             a|
+1. Benutzer wählt "Kunden" in der Navigationsleiste.
+2. Die komplette Liste aller registrierten Benutzer mit der Rolle "Kunde" wird angezeigt.
+|Erweiterungen              |-
+|Funktionale Anforderungen  | <<F0060>>
+|===
 
-*Funktionale Anforderungen:* [F007]
+[cols="1h,3"]
+[[UC009]]
+|===
+|ID                         |**<<UC009>>**
+|Name                       |Bestellungen anzeigen
+|Beschreibung               |Ein Mitarbeiter oder Mitglied der Geschäftsführung sollte in der Lage sein, eine Liste der abgeschlossenen Bestellungen einzusehen.
+|Akteure                    |Mitarbeiter, Geschäftsführung
+|Auslöser                   |Benutzer wählt "Bestellungen" in der Navigationsleiste
+|Vorbedingung(en)          a|
+- Benutzer ist authentifiziert und hat die Rolle "Mitarbeiter" oder "Geschäftsführung".
+|Hauptschritte             a|
+1. Benutzer wählt "Bestellungen" in der Navigationsleiste.
+2. Die komplette Liste aller abgeschlossenen Bestellungen wird angezeigt.
+|Erweiterungen              |-
+|Funktionale Anforderungen  | <<F0070>>
+|===
 
-=== UC008: Kundenliste anzeigen
+[cols="1h,3"]
+[[UC010]]
+|===
+|ID                         |**<<UC010>>**
+|Name                       |Lagerbestand anzeigen
+|Beschreibung               |Ein Mitarbeiter oder Mitglied der Geschäftsführung sollte in der Lage sein, das Inventar einschließlich des aktuellen Lagerbestands einzusehen.
+|Akteure                    |Mitarbeiter, Geschäftsführung
+|Auslöser                   |Benutzer wählt "Lager" in der Navigationsleiste
+|Vorbedingung(en)          a|
+- Benutzer ist authentifiziert und hat die Rolle "Mitarbeiter" oder "Geschäftsführung".
+|Hauptschritte             a|
+1. Benutzer wählt "Lager" in der Navigationsleiste.
+2. Die komplette Liste aller Artikel des Inventars und der aktuelle Lagerbestand wird angezeigt.
+|Erweiterungen              |-
+|Funktionale Anforderungen  | <<F0080>>
+|===
 
-*Beschreibung:* Ein Mitarbeiter oder Mitglied der Geschäftsführung sollte in der Lage sein, die gesamte Liste der Kunden der Anwendung einzusehen.
+[cols="1h,3"]
+[[UC011]]
+|===
+|ID                         |**<<UC011>>**
+|Name                       |Nachrichten anzeigen
+|Beschreibung               |Mitglieder können aktuelle Nachrichten und Informationen über den Verein einsehen.
+|Akteure                    |Mitglied
+|Auslöser                   |Mitglied besucht die Webseite
+|Vorbedingung(en)          a|
+- Keine.
+|Hauptschritte             a|
+1. Mitglied besucht die Webseite.
+2. Mitglied sieht die aktuellen Nachrichten und Informationen.
+|Erweiterungen              |-
+|Funktionale Anforderungen  | <<F0090>>
+|===
 
-*Akteure:* Mitarbeiter, Geschäftsführung
+[cols="1h,3"]
+[[UC012]]
+|===
+|ID                         |**<<UC012>>**
+|Name                       |Trackingsystem anzeigen
+|Beschreibung               |Trainer können Trainingsstunden und Anwesenheit im Trackingsystem eintragen.
+|Akteure                    |Trainer
+|Auslöser                   |Trainer wählt "Trackingsystem" im System
+|Vorbedingung(en)          a|
+- Trainer ist authentifiziert.
+|Hauptschritte             a|
+1. Trainer wählt "Trackingsystem" im System.
+2. Trainer trägt Datum, Ort, Anfangs- und Endzeit sowie die Anwesenheit der Teilnehmer ein.
+|Erweiterungen              |-
+|Funktionale Anforderungen  | <<F0100>>
+|===
 
-*Vorbedingung:* Benutzer ist authentifiziert und hat die Rolle "Mitarbeiter" oder "Geschäftsführung".
+[cols="1h,3"]
+[[UC013]]
+|===
+|ID                         |**<<UC013>>**
+|Name                       |Trainingsgruppen anzeigen und erstellen
+|Beschreibung               |Trainer oder Teamersteller können Trainingsgruppen einsehen, erstellen und verwalten.
+|Akteure                    |Trainer, Teamersteller
+|Auslöser                   |Benutzer wählt "Trainingsgruppen" im System
+|Vorbedingung(en)          a|
+- Benutzer ist authentifiziert und hat die Rolle "Trainer" oder "Teamersteller".
+|Hauptschritte             a|
+1. Benutzer wählt "Trainingsgruppen" im System.
+2. Benutzer kann Trainingsgruppen einsehen, erstellen und verwalten.
+|Erweiterungen              |-
+|Funktionale Anforderungen  | <<F0110>>
+|===
 
-*Hauptschritte:*
-. Benutzer wählt "Kunden" in der Navigationsleiste.
-. Die komplette Liste aller registrierten Benutzer mit der Rolle "Kunde" wird angezeigt.
+[cols="1h,3"]
+[[UC014]]
+|===
+|ID                         |**<<UC014>>**
+|Name                       |Mitglieder inaktiv setzen
+|Beschreibung               |Trainer können Mitglieder in einer Trainingsgruppe als inaktiv setzen.
+|Akteure                    |Trainer
+|Auslöser                   |Trainer wählt die entsprechende Trainingsgruppe im System
+|Vorbedingung(en)          a|
+- Trainer ist authentifiziert.
+|Hauptschritte             a|
+1. Trainer wählt die entsprechende Trainingsgruppe im System.
+2. Trainer setzt das betreffende Mitglied als inaktiv.
+|Erweiterungen              |-
+|Funktionale Anforderungen  | <<F0120>>
+|===
 
-*Funktionale Anforderungen:* [F008]
-
-=== UC009: Bestellungen anzeigen
-
-*Beschreibung:* Ein Mitarbeiter oder Mitglied der Geschäftsführung sollte in der Lage sein, eine Liste der abgeschlossenen Bestellungen einzusehen.
-
-*Akteure:* Mitarbeiter, Geschäftsführung
-
-*Vorbedingung:* Benutzer ist authentifiziert und hat die Rolle "Mitarbeiter" oder "Geschäftsführung".
-
-*Hauptschritte:*
-. Benutzer wählt "Bestellungen" in der Navigationsleiste.
-. Die komplette Liste aller abgeschlossenen Bestellungen wird angezeigt.
-
-*Funktionale Anforderungen:* [F009]
-
-=== UC010: Lagerbestand anzeigen
-
-*Beschreibung:* Ein Mitarbeiter oder Mitglied der Geschäftsführung sollte in der Lage sein, das Inventar einschließlich des aktuellen Lagerbestands einzusehen.
-
-*Akteure:* Mitarbeiter, Geschäftsführung
-
-*Vorbedingung:* Benutzer ist authentifiziert und hat die Rolle "Mitarbeiter" oder "Geschäftsführung".
-
-*Hauptschritte:*
-. Benutzer wählt "Lager" in der Navigationsleiste.
-. Die komplette Liste aller Artikel des Inventars und der aktuelle Lagerbestand wird angezeigt.
-
-*Funktionale Anforderungen:* [F010]
-
-=== UC011: Nachrichten anzeigen
-
-*Beschreibung:* Mitglieder können aktuelle Nachrichten und Informationen über den Verein einsehen.
-
-*Akteure:* Mitglied
-
-*Vorbedingung:* Keine.
-
-*Hauptschritte:*
-. Mitglied besucht die Webseite.
-. Mitglied sieht die aktuellen Nachrichten und Informationen.
-
-*Funktionale Anforderungen:* [F011]
-
-=== UC012: Trackingsystem anzeigen
-
-*Beschreibung:* Trainer können Trainingsstunden und Anwesenheit im Trackingsystem eintragen.
-
-*Akteure:* Trainer
-
-*Vorbedingung:* Trainer ist authentifiziert.
-
-*Hauptschritte:*
-. Trainer wählt "Trackingsystem" im System.
-. Trainer trägt Datum, Ort, Anfangs- und Endzeit sowie die Anwesenheit der Teilnehmer ein.
-
-*Funktionale Anforderungen:* [F012]
-
-=== UC013: Trainingsgruppen anzeigen und erstellen
-
-*Beschreibung:* Trainer oder Teamersteller können Trainingsgruppen einsehen, erstellen und verwalten.
-
-*Akteure:* Trainer, Teamersteller
-
-*Vorbedingung:* Benutzer ist authentifiziert und hat die Rolle "Trainer" oder "Teamersteller".
-
-*Hauptschritte:*
-. Benutzer wählt "Trainingsgruppen" im System.
-. Benutzer kann Trainingsgruppen einsehen, erstellen und verwalten.
-
-*Funktionale Anforderungen:* [F013]
-
-=== UC014: Mitglieder inaktiv setzen
-
-*Beschreibung:* Trainer können Mitglieder in einer Trainingsgruppe als inaktiv setzen.
-
-*Akteure:* Trainer
-
-*Vorbedingung:* Trainer ist authentifiziert.
-
-*Hauptschritte:*
-. Trainer wählt die entsprechende Trainingsgruppe im System.
-. Trainer setzt das betreffende Mitglied als inaktiv.
-
-*Funktionale Anforderungen:* [F014]
-
-=== UC015: Gruppenmitglieder hinzufügen
-
-*Beschreibung:* Trainer oder Teamersteller können Mitglieder zu einer Trainingsgruppe hinzufügen.
-
-*Akteure:* Trainer, Teamersteller
-
-*Vorbedingung:* Benutzer ist authentifiziert und hat die Rolle "Trainer" oder "Teamersteller".
-
-*Hauptschritte:*
-. Benutzer wählt die entsprechende Trainingsgruppe im System.
-. Benutzer fügt das neue Mitglied zur Gruppe hinzu.
-
-*Funktionale Anforderungen:* [F015]
+[cols="1h,3"]
+[[UC015]]
+|===
+|ID                         |**<<UC015>>**
+|Name                       |Gruppenmitglieder hinzufügen
+|Beschreibung               |Trainer oder Teamersteller können Mitglieder zu einer Trainingsgruppe hinzufügen.
+|Akteure                    |Trainer, Teamersteller
+|Auslöser                   |Benutzer wählt die entsprechende Trainingsgruppe im System
+|Vorbedingung(en)          a|
+- Benutzer ist authentifiziert und hat die Rolle "Trainer" oder "Teamersteller".
+|Hauptschritte             a|
+1. Benutzer wählt die entsprechende Trainingsgruppe im System.
+2. Benutzer fügt das neue Mitglied zur Gruppe hinzu.
+|Erweiterungen              |-
+|Funktionale Anforderungen  | <<F0121>>
+|===
 
 == Funktionale Anforderungen
+
+[options="header", cols="2h, 1, 3, 12"]
+|===
+|ID
+|Version
+|Name
+|Beschreibung
+
+|[[F0010]]<<F0010>>
+|v1.0
+|Authentifizierung
+a|
+Das System muss die Möglichkeit bieten, Benutzer zu authentifizieren. Authentifizierte Benutzer können auf bestimmte Teile des Systems zugreifen, die für nicht authentifizierte Benutzer gesperrt sind. Die Authentifizierung erfolgt durch Bereitstellung von Benutzername und Passwort.
+
+|[[F0020]]<<F0020>>
+|v1.0
+|Registrierung
+a|
+Das System muss nicht authentifizierten Benutzern die Möglichkeit bieten, sich zu registrieren. Die Registrierung erfolgt über das Navigationselement "Registrieren" und erfordert die Angabe eines eindeutigen Benutzernamens, eines Passworts und einer Lieferadresse.
+
+|[[F0030]]<<F0030>>
+|v1.0
+|Katalog anzeigen
+a|
+Das System muss jedem Besucher des Shops die Möglichkeit bieten, auf den Katalog zuzugreifen, der alle angebotenen Produkte anzeigt.
+
+|[[F0040]]<<F0040>>
+|v1.0
+|Produktsuche
+a|
+Das System muss Benutzern die Möglichkeit bieten, nach Produkten im Katalog zu suchen. Die Suche kann nach verschiedenen Kriterien wie Titel, Genre usw. durchgeführt werden.
+
+|[[F0050]]<<F0050>>
+|v1.0
+|Produktdetails anzeigen
+a|
+Das System muss Benutzern die Möglichkeit bieten, die Details eines Produkts anzuzeigen, einschließlich Titel, Preis, Genre, Bestand, Coverbild und abgegebene Kommentare.
+
+|[[F0060]]<<F0060>>
+|v1.0
+|Kommentar abgeben
+a|
+Das System muss Benutzern die Möglichkeit bieten, Kommentare zu einem Produkt abzugeben. Ein Kommentar besteht aus einer textuellen Meinung zur Disc und einer numerischen Bewertung.
+
+|[[F0070]]<<F0070>>
+|v1.0
+|Warenkorb
+a|
+Das System muss registrierten und authentifizierten Benutzern einen Warenkorb bereitstellen, in dem sie ausgewählte Produkte temporär speichern können.
+
+|[[F0080]]<<F0080>>
+|v1.0
+|Produkt zum Warenkorb hinzufügen
+a|
+Das System muss registrierten und authentifizierten Benutzern die Möglichkeit bieten, ein Produkt in ihrem Warenkorb in der gewünschten Menge hinzuzufügen.
+
+|[[F0090]]<<F0090>>
+|v1.0
+|Warenkorb anzeigen
+a|
+Das System muss authentifizierten Benutzern die Möglichkeit bieten, auf ihren Warenkorb zuzugreifen und die enthaltenen Produkte, Mengen und den Gesamtpreis anzuzeigen.
+
+|[[F0100]]<<F0100>>
+|v1.0
+|Produkte im Warenkorb kaufen
+a|
+Das System muss authentifizierten Benutzern die Möglichkeit bieten, den Inhalt ihres Warenkorbs zu kaufen. Dies beinhaltet die Validierung der Bestellung und die Erstellung einer Bestellung, wenn der Bestand ausreichend ist.
+
+|[[F0110]]<<F0110>>
+|v1.0
+|Bestand validieren
+a|
+Das System muss in der Lage sein, zu überprüfen, ob der aktuelle Bestand eines Produkts mindestens einer gewünschten Menge entspricht.
+
+|[[F0120]]<<F0120>>
+|v1.0
+|Bestellungen speichern
+a|
+Das System muss in der Lage sein, Bestellungen dauerhaft zu speichern.
+
+|[[F0130]]<<F0130>>
+|v1.0
+|Bestellung bezahlen
+a|
+Das System muss Benutzern die Möglichkeit bieten, eine offene Bestellung mit verschiedenen Zahlungsmethoden zu bezahlen.
+
+|[[F0140]]<<F0140>>
+|v1.0
+|Bestellung archivieren
+a|
+Das System muss in der Lage sein, Bestellungen zu archivieren, indem es ihren Status auf "Abgeschlossen" setzt.
+
+|[[F0150]]<<F0150>>
+|v1.0
+|Kundenliste anzeigen
+a|
+Das System muss der Geschäftsführung die Möglichkeit bieten, eine Liste aller im System registrierten Kunden anzuzeigen.
+|===
 
 === Muss-Kriterien
 Was das zu erstellende Programm auf alle Fälle leisten muss.
