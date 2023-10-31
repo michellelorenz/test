@@ -803,8 +803,30 @@ Dieser Abschnitt stellt eine Vereinigung von Glossar und der Beschreibung von Kl
 // See http://asciidoctor.org/docs/user-manual/#tables
 [options="header"]
 |===
-|Klasse/Enumeration |Beschreibung |
-|…                  |…            |
+|Klasse/Enumeration |Beschreibung 
+|Kletterverein      |Central class of the system representing the Kletterverein itself
+|User               |General representation of a real person
+|Registered User    |Genereal representation of a real person, which has a representation in the system. This representation is only created if a user registers with the system, and only used if he or she authenticates
+|Mitglied           |General representation of a registered person who got accepted by an employed person
+|Mitarbeiter        |General representation of an employed person
+|Ehrenamtliche      |General representation of an voluntary employed person
+|auszahlungEhrenamtliche|handles the pay for the Ehrenamtliche and Mitarbeiter
+|Trainingsgruppe    |A place where all Mitlgieder can join a group to train and Employees could create more groups and manage them
+|Catalog            |Catalog is the supply the shop has to offer
+|Gegenstand         |A Gegenstand is a certain Item in the Catalog and Inventory
+|Inventory          |The Inventory are all Items the Kletterverein has. The Entitled Employees can also add and delete Items from there
+|InventoryItem      |An InventoryItem is an Item which is in an order of an Mitglied
+|Image              |A Image is a digital picture that visually represent an Item
+|Item               |An Item has a certain Gegenstand and a quantity, so the Cart know how many the Mitglied would like to buy
+|Cart               |A Cart is a temporary storage for Items a customer intends to buy. If a Mitglied decides to buy his selected Items, an order is created.
+|Order              |An Order is used to represent what a customer of the shop intedns to buy from the shop. An Order can have varying status to symbolize the current step at which the order is processed
+|ausleiheDoku       |is an applikation to manage a Database or just a table.
+|ROLE               |Role represents the rights a certain Mitarbeiter/Mitglied has. //Insert Roles here
+|STATUS             |This status represents the current processing step of the order it belongs to. +
+_OPEN_: The Order has been created by the system, but not yet processed. +
+_PAID_: The customer has paid his order, the disc quantity still has to be reduced in the inventory to finalize the order. +
+_COMPLETE_: The order was been paid and shipped to the customer. +
+_CANCELLED_: Fallback to allow to mark failed orders or other problems.
 |===
 
 == Akzeptanztestfälle
