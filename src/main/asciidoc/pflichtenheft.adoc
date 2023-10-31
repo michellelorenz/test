@@ -730,21 +730,24 @@ Das System muss dem Teilnehmer die Möglichkeit bieten, die Details der Training
 |===
 
 === Muss-Kriterien
-Was das zu erstellende Programm auf alle Fälle leisten muss.
+*Webseite für Gäste und Mitglieder*: Die Webseite muss Informationen über den Verein, seine Entstehungsgeschichte und aktuelle Entwicklungen anzeigen.
+*Nachrichtensystem*: Das System muss aktuelle Nachrichten, insbesondere über Brand- und Brutschutz, für Gäste und Mitglieder anzeigen.
+*Person- und Mitgliederverwaltung*: Das System muss die Verwaltung von Personen und Mitgliedern ermöglichen, einschließlich Hinzufügen, Bearbeiten und Löschen.
+*Mitgliederregistrierung*: Mitglieder müssen sich online registrieren können, wobei eine Mitgliedsnummer erforderlich ist. Nach der Registrierung muss ein Mitglied von einer berechtigten Person freigeschaltet werden.
+*Shop für Mitglieder*: Ein Shop, der nur für Mitglieder zugänglich ist, muss vorhanden sein, in dem der Verein Artikel wie T-Shirts, Pullover, Jacken und Kletterequipment verkauft.
+*Bezahlung*: Mitglieder müssen sowohl online als auch bar vor Ort bezahlen können.
+*Ehrenamtliche Arbeitserfassung*: Das System muss die Arbeit von Ehrenamtlichen erfassen und auswerten können.
+*Trainingsgruppenverwaltung*: Das System muss die Verwaltung von Trainingsgruppen ermöglichen, einschließlich Hinzufügen von Trainern und Teilnehmern.
+*Trackingsystem für Trainingsstunden*: Trainer müssen Trainingsstunden, einschließlich Datum, Ort, Anfangs- und Endzeit und Anwesenheit, erfassen können.
+*Verleih für Ehrenamtliche*: Das System muss einen Verleihprozess für Ehrenamtliche unterstützen, einschließlich einer Historie von ausgeliehenen Artikeln.
 
 === Kann-Kriterien
-Anforderungen die das Programm leisten können soll, aber für den korrekten Betrieb entbehrlich sind.
+*Text-to-Speech-Funktion*: Das System könnte eine Text-zu-Sprache-Funktion haben, um Textinhalte für Benutzer vorzulesen.
 
-== Nicht-Funktionale Anforderungen
+=== Nicht-Funktionale Anforderungen
+*Sicherheitsvorschriften*: Das System muss staatliche Sicherheitsvorschriften erfüllen, einschließlich der Passwortstärke und der Speicherung von Passwörtern in Form eines Hashes.
+*Benutzerfreundlichkeit*: Das System muss benutzerfreundlich sein, mit Hilfestellungen und Hinweisen zu den Eingaben, insbesondere da die Altersspanne der Benutzer groß ist.
 
-=== Qualitätsziele
-
-Dokumentieren Sie in einer Tabelle die Qualitätsziele, welche das System erreichen soll, sowie deren Priorität.
-
-=== Konkrete Nicht-Funktionale Anforderungen
-
-Beschreiben Sie Nicht-Funktionale Anforderungen, welche dazu dienen, die zuvor definierten Qualitätsziele zu erreichen.
-Achten Sie darauf, dass deren Erfüllung (mindestens theoretisch) messbar sein muss.
 
 == GUI Prototyp
 
