@@ -16,7 +16,9 @@
 Dieses Dokument benötigt ein Inhaltsverzeichnis. Es existieren mehrere Einbindungsmöglichkeiten.
 
 == Zusammenfassung
-Eine kurze Beschreibung des Dokuments. Wenige Absätze.
+Dieses Dokument stellt das Pflichtenheft des Projekts Klettervereinswebsite dar. Es soll einen Überblick über das zu erstellende Softwareprodukt geben und dient als Grundlage für die Kommunikation zwischen den Projektbeteiligten, hauptsächlich dem Kunden und dem Entwicklungsteam. Dieses Dokument soll als Grundlage für einen Vertrag zwischen Auftraggeber und Auftragnehmer dienen. Auftraggeber und Auftragnehmer und sollte daher validiert und auf Konsistenz geprüft werden. Das Pflichtenheft beschreibt, was das gewünschte System zu erfüllen hat und teilweise, wie der Auftragnehmer die Lösung zu implementieren gedenkt.
+
+Im Allgemeinen sollte das Pflichtenheft korrekt, vollständig und konsistent sein. Da sie am Ende des Projekts verwendet wird, um zu überprüfen, ob die definierte Software geliefert wurde oder nicht, sollte dieses Ziel überprüfbar sein. Es wird während des gesamten Projekts verwendet und konsultiert, weshalb der Inhalt in allen erstellten Artefakten nachvollziehbar sein sollte. In Verbindung mit dem oben Gesagten ist es wünschenswert, dass es einfach zu ändern und weiterzuentwickeln ist, auch wenn die Änderungen auf ein Minimum beschränkt werden sollten, nachdem sich die Beteiligten einmal auf den Inhalt geeinigt haben. Da sich jedoch die Anforderungen und Umstände während eines Projekts ständig ändern, sind Anpassungen zu erwarten und müssen dokumentiert werden.
 
 == Aufgabenstellung und Zielsetzung
 Text aus Aufgabenstellung kopieren und ggfs. präzisieren.
