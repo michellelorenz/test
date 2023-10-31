@@ -821,7 +821,8 @@ Dieser Abschnitt stellt eine Vereinigung von Glossar und der Beschreibung von Kl
 |Cart               |A Cart is a temporary storage for Items a customer intends to buy. If a Mitglied decides to buy his selected Items, an order is created.
 |Order              |An Order is used to represent what a customer of the shop intedns to buy from the shop. An Order can have varying status to symbolize the current step at which the order is processed
 |ausleiheDoku       |is an applikation to manage a Database or just a table.
-|ROLE               |Role represents the rights a certain Mitarbeiter/Mitglied has. //Insert Roles here
+|ROLE               |Role represents the rights a certain Mitarbeiter/Mitglied has.+ 
+_Insert Roles here_
 |STATUS             |This status represents the current processing step of the order it belongs to. +
 _OPEN_: The Order has been created by the system, but not yet processed. +
 _PAID_: The customer has paid his order, the disc quantity still has to be reduced in the inventory to finalize the order. +
