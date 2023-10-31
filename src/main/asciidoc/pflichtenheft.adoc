@@ -190,7 +190,7 @@ Weitere relevante Spalten können bei Bedarf ergänzt werden.
 | Geschäftsführung| Personen, die die höchsten Entscheidungsbefugnisse im Verein haben und strategische Entscheidungen treffen.
 | Teamersteller   | Ein Mitglied oder Mitarbeiter, der berechtigt ist, neue Teams oder Gruppen im System zu erstellen.
 | Verwalter       | Ein Mitglied oder Mitarbeiter, der berechtigt ist, Systemdaten und -einstellungen zu verwalten.
-
+|===
 
 === Überblick Anwendungsfalldiagramm
 Anwendungsfall-Diagramm, das alle Anwendungsfälle und alle Akteure darstellt
