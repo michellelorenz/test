@@ -179,22 +179,247 @@ image::./models/interaktionen.svg[interaction diagram, 100%, 100%, pdfwidth=100%
 Akteure sind die Benutzer des Software-Systems oder Nachbarsysteme, welche darauf zugreifen. Dokumentieren Sie die Akteure in einer Tabelle. Diese Tabelle gibt einen Überblick über die Akteure und beschreibt sie kurz. Die Tabelle hat also mindestens zwei Spalten (Akteur Name und Kommentar).
 Weitere relevante Spalten können bei Bedarf ergänzt werden.
 
-// See http://asciidoctor.org/docs/user-manual/#tables
-[options="header"]
-[cols="1,4"]
+[cols="2*", options="header"]
 |===
-|Name |Beschreibung
-|...  |...
-|===
+| Name            | Beschreibung
+| Gast            | Jemand, der die Webseite besucht, ohne sich anzumelden.
+| Mitglied        | Ein registrierter Benutzer des Vereins, der Mitgliedschaftsrechte besitzt.
+| Mitarbeiter     | Ein Angestellter des Vereins, der administrative Aufgaben durchführt.
+| Trainer         | Ein Mitglied, das Trainingsgruppen leitet und Trainingsdaten im System erfasst.
+| Ehrenamtliche   | Mitglieder, die freiwillige Dienste für den Verein leisten.
+| Geschäftsführung| Personen, die die höchsten Entscheidungsbefugnisse im Verein haben und strategische Entscheidungen treffen.
+| Teamersteller   | Ein Mitglied oder Mitarbeiter, der berechtigt ist, neue Teams oder Gruppen im System zu erstellen.
+| Verwalter       | Ein Mitglied oder Mitarbeiter, der berechtigt ist, Systemdaten und -einstellungen zu verwalten.
+
 
 === Überblick Anwendungsfalldiagramm
 Anwendungsfall-Diagramm, das alle Anwendungsfälle und alle Akteure darstellt
 
-=== Anwendungsfallbeschreibungen
-Dieser Unterabschnitt beschreibt die Anwendungsfälle. In dieser Beschreibung müssen noch nicht alle Sonderfälle und Varianten berücksichtigt werden. Schwerpunkt ist es, die wichtigsten Anwendungsfälle des Systems zu finden. Wichtig sind solche Anwendungsfälle, die für den Auftraggeber, den Nutzer den größten Nutzen bringen.
-Für komplexere Anwendungsfälle ein UML-Sequenzdiagramm ergänzen.
-Einfache Anwendungsfälle mit einem Absatz beschreiben.
-Die typischen Anwendungsfälle (Anlegen, Ändern, Löschen) können zu einem einzigen zusammengefasst werden.
+== Anwendungsfallbeschreibungen
+
+=== UC001: Anmelden/Abmelden
+
+*Beschreibung:* Ein Benutzer soll sich im System anmelden können, um weitere Funktionen zu nutzen. Dieser Prozess soll durch Abmeldung umkehrbar sein.
+
+*Akteure:* Mitglied, Mitarbeiter, Trainer, Ehrenamtliche, Geschäftsführung, Teamersteller, Verwalter
+
+*Vorbedingung:* 
+- Anmeldung: Benutzer ist noch nicht authentifiziert.
+- Abmeldung: Benutzer ist authentifiziert.
+
+*Hauptschritte:*
+. Benutzer wählt "Anmelden" in der Navigationsleiste.
+. Benutzer gibt seine Anmeldedaten ein.
+. Benutzer klickt auf "Anmelden"-Button.
+. Benutzer wählt "Abmelden" in der Navigationsleiste.
+. Benutzer wird abgemeldet und zur Startseite weitergeleitet.
+
+*Funktionale Anforderungen:* [F001]
+
+=== UC002: Registrieren
+
+*Beschreibung:* Ein nicht authentifizierter Benutzer soll ein Konto für sich selbst erstellen können.
+
+*Akteure:* Gast
+
+*Vorbedingung:* Benutzer ist nicht authentifiziert.
+
+*Hauptschritte:*
+. Benutzer wählt "Registrieren" in der Navigationsleiste.
+. Benutzer gibt gewünschten Benutzernamen, Passwort und andere notwendige Informationen ein.
+. System überprüft die Einzigartigkeit des Benutzernamens.
+. Bei Einzigartigkeit wird ein Konto mit den angegebenen Daten erstellt.
+
+*Funktionale Anforderungen:* [F002]
+
+=== UC003: Katalog anzeigen
+
+*Beschreibung:* Jeder Besucher des Shops soll auf den Katalog zugreifen können, der alle angebotenen Produkte anzeigt.
+
+*Akteure:* Gast, Mitglied
+
+*Vorbedingung:* Keine.
+
+*Hauptschritte:*
+. Benutzer klickt auf das Navigationselement "Katalog".
+. Benutzer sieht alle Produkte der ausgewählten Kategorie.
+
+*Funktionale Anforderungen:* [F003]
+
+=== UC004: Produktdetails anzeigen
+
+*Beschreibung:* Ein Benutzer soll die Details eines Produkts auf einer extra Seite einsehen können.
+
+*Akteure:* Gast, Mitglied
+
+*Vorbedingung:* Benutzer betrachtet den Katalog.
+
+*Hauptschritte:*
+. Benutzer klickt auf einen im Katalog angezeigten Eintrag.
+. Benutzer sieht die Details des ausgewählten Produkts.
+
+*Funktionale Anforderungen:* [F004]
+
+=== UC005: Produkt zum Warenkorb hinzufügen
+
+*Beschreibung:* Ein registrierter Benutzer soll ein Produkt in gewünschter Menge seinem Warenkorb hinzufügen können.
+
+*Akteure:* Mitglied
+
+*Vorbedingung:* 
+- Benutzer ist authentifiziert.
+- Benutzer betrachtet die Produktdetailseite.
+
+*Hauptschritte:*
+. Benutzer gibt die gewünschte Menge für das ausgewählte Produkt ein.
+. Benutzer klickt auf "Zum Warenkorb hinzufügen".
+. Produkt wird mit der ausgewählten Menge seinem Warenkorb hinzugefügt.
+
+*Funktionale Anforderungen:* [F005]
+
+=== UC006: Warenkorb anzeigen
+
+*Beschreibung:* Ein registrierter Benutzer soll den Inhalt seines Warenkorbs und den Gesamtpreis seiner Auswahl einsehen können.
+
+*Akteure:* Mitglied
+
+*Vorbedingung:* Benutzer ist authentifiziert.
+
+*Hauptschritte:*
+. Benutzer klickt auf "Warenkorb" in der Navigationsleiste.
+. Benutzer sieht den Inhalt seines Warenkorbs und den Gesamtpreis.
+
+*Funktionale Anforderungen:* [F006]
+
+=== UC007: Produkte im Warenkorb kaufen
+
+*Beschreibung:* Ein Mitglied soll den Inhalt seines Warenkorbs kaufen können.
+
+*Akteure:* Mitglied
+
+*Vorbedingung:* 
+- Mitglied ist authentifiziert und hat Produkte im Warenkorb.
+
+*Hauptschritte:*
+. Mitglied klickt auf "Kaufen".
+. Bestellung wird gegen Lagerbestand geprüft.
+. Bestellung wird automatisch bezahlt.
+. Produkte werden in der gewählten Menge aus dem Lager entfernt.
+. Bestellung wird archiviert.
+
+*Funktionale Anforderungen:* [F007]
+
+=== UC008: Kundenliste anzeigen
+
+*Beschreibung:* Ein Mitarbeiter oder Mitglied der Geschäftsführung sollte in der Lage sein, die gesamte Liste der Kunden der Anwendung einzusehen.
+
+*Akteure:* Mitarbeiter, Geschäftsführung
+
+*Vorbedingung:* Benutzer ist authentifiziert und hat die Rolle "Mitarbeiter" oder "Geschäftsführung".
+
+*Hauptschritte:*
+. Benutzer wählt "Kunden" in der Navigationsleiste.
+. Die komplette Liste aller registrierten Benutzer mit der Rolle "Kunde" wird angezeigt.
+
+*Funktionale Anforderungen:* [F008]
+
+=== UC009: Bestellungen anzeigen
+
+*Beschreibung:* Ein Mitarbeiter oder Mitglied der Geschäftsführung sollte in der Lage sein, eine Liste der abgeschlossenen Bestellungen einzusehen.
+
+*Akteure:* Mitarbeiter, Geschäftsführung
+
+*Vorbedingung:* Benutzer ist authentifiziert und hat die Rolle "Mitarbeiter" oder "Geschäftsführung".
+
+*Hauptschritte:*
+. Benutzer wählt "Bestellungen" in der Navigationsleiste.
+. Die komplette Liste aller abgeschlossenen Bestellungen wird angezeigt.
+
+*Funktionale Anforderungen:* [F009]
+
+=== UC010: Lagerbestand anzeigen
+
+*Beschreibung:* Ein Mitarbeiter oder Mitglied der Geschäftsführung sollte in der Lage sein, das Inventar einschließlich des aktuellen Lagerbestands einzusehen.
+
+*Akteure:* Mitarbeiter, Geschäftsführung
+
+*Vorbedingung:* Benutzer ist authentifiziert und hat die Rolle "Mitarbeiter" oder "Geschäftsführung".
+
+*Hauptschritte:*
+. Benutzer wählt "Lager" in der Navigationsleiste.
+. Die komplette Liste aller Artikel des Inventars und der aktuelle Lagerbestand wird angezeigt.
+
+*Funktionale Anforderungen:* [F010]
+
+=== UC011: Nachrichten anzeigen
+
+*Beschreibung:* Mitglieder können aktuelle Nachrichten und Informationen über den Verein einsehen.
+
+*Akteure:* Mitglied
+
+*Vorbedingung:* Keine.
+
+*Hauptschritte:*
+. Mitglied besucht die Webseite.
+. Mitglied sieht die aktuellen Nachrichten und Informationen.
+
+*Funktionale Anforderungen:* [F011]
+
+=== UC012: Trackingsystem anzeigen
+
+*Beschreibung:* Trainer können Trainingsstunden und Anwesenheit im Trackingsystem eintragen.
+
+*Akteure:* Trainer
+
+*Vorbedingung:* Trainer ist authentifiziert.
+
+*Hauptschritte:*
+. Trainer wählt "Trackingsystem" im System.
+. Trainer trägt Datum, Ort, Anfangs- und Endzeit sowie die Anwesenheit der Teilnehmer ein.
+
+*Funktionale Anforderungen:* [F012]
+
+=== UC013: Trainingsgruppen anzeigen und erstellen
+
+*Beschreibung:* Trainer oder Teamersteller können Trainingsgruppen einsehen, erstellen und verwalten.
+
+*Akteure:* Trainer, Teamersteller
+
+*Vorbedingung:* Benutzer ist authentifiziert und hat die Rolle "Trainer" oder "Teamersteller".
+
+*Hauptschritte:*
+. Benutzer wählt "Trainingsgruppen" im System.
+. Benutzer kann Trainingsgruppen einsehen, erstellen und verwalten.
+
+*Funktionale Anforderungen:* [F013]
+
+=== UC014: Mitglieder inaktiv setzen
+
+*Beschreibung:* Trainer können Mitglieder in einer Trainingsgruppe als inaktiv setzen.
+
+*Akteure:* Trainer
+
+*Vorbedingung:* Trainer ist authentifiziert.
+
+*Hauptschritte:*
+. Trainer wählt die entsprechende Trainingsgruppe im System.
+. Trainer setzt das betreffende Mitglied als inaktiv.
+
+*Funktionale Anforderungen:* [F014]
+
+=== UC015: Gruppenmitglieder hinzufügen
+
+*Beschreibung:* Trainer oder Teamersteller können Mitglieder zu einer Trainingsgruppe hinzufügen.
+
+*Akteure:* Trainer, Teamersteller
+
+*Vorbedingung:* Benutzer ist authentifiziert und hat die Rolle "Trainer" oder "Teamersteller".
+
+*Hauptschritte:*
+. Benutzer wählt die entsprechende Trainingsgruppe im System.
+. Benutzer fügt das neue Mitglied zur Gruppe hinzu.
+
+*Funktionale Anforderungen:* [F015]
 
 == Funktionale Anforderungen
 
