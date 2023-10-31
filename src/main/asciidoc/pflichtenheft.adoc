@@ -729,25 +729,42 @@ Das System muss dem Teilnehmer die Möglichkeit bieten, die Details der Training
 
 |===
 
-=== Muss-Kriterien
-*Webseite für Gäste und Mitglieder*: Die Webseite muss Informationen über den Verein, seine Entstehungsgeschichte und aktuelle Entwicklungen anzeigen.
-*Nachrichtensystem*: Das System muss aktuelle Nachrichten, insbesondere über Brand- und Brutschutz, für Gäste und Mitglieder anzeigen.
-*Person- und Mitgliederverwaltung*: Das System muss die Verwaltung von Personen und Mitgliedern ermöglichen, einschließlich Hinzufügen, Bearbeiten und Löschen.
-*Mitgliederregistrierung*: Mitglieder müssen sich online registrieren können, wobei eine Mitgliedsnummer erforderlich ist. Nach der Registrierung muss ein Mitglied von einer berechtigten Person freigeschaltet werden.
-*Shop für Mitglieder*: Ein Shop, der nur für Mitglieder zugänglich ist, muss vorhanden sein, in dem der Verein Artikel wie T-Shirts, Pullover, Jacken und Kletterequipment verkauft.
-*Bezahlung*: Mitglieder müssen sowohl online als auch bar vor Ort bezahlen können.
-*Ehrenamtliche Arbeitserfassung*: Das System muss die Arbeit von Ehrenamtlichen erfassen und auswerten können.
-*Trainingsgruppenverwaltung*: Das System muss die Verwaltung von Trainingsgruppen ermöglichen, einschließlich Hinzufügen von Trainern und Teilnehmern.
-*Trackingsystem für Trainingsstunden*: Trainer müssen Trainingsstunden, einschließlich Datum, Ort, Anfangs- und Endzeit und Anwesenheit, erfassen können.
-*Verleih für Ehrenamtliche*: Das System muss einen Verleihprozess für Ehrenamtliche unterstützen, einschließlich einer Historie von ausgeliehenen Artikeln.
+== Muss-Kriterien
 
-=== Kann-Kriterien
-*Text-to-Speech-Funktion*: Das System könnte eine Text-zu-Sprache-Funktion haben, um Textinhalte für Benutzer vorzulesen.
+=== Webseite
+* Informationen über den Verein, seine Entstehungsgeschichte und aktuelle Entwicklungen.
+* Nachrichtensystem für aktuelle Nachrichten, insbesondere über Brand- und Brutschutz.
 
-=== Nicht-Funktionale Anforderungen
-*Sicherheitsvorschriften*: Das System muss staatliche Sicherheitsvorschriften erfüllen, einschließlich der Passwortstärke und der Speicherung von Passwörtern in Form eines Hashes.
-*Benutzerfreundlichkeit*: Das System muss benutzerfreundlich sein, mit Hilfestellungen und Hinweisen zu den Eingaben, insbesondere da die Altersspanne der Benutzer groß ist.
+=== Person- und Mitgliederverwaltung
+* Verwaltung von Personen und Mitgliedern (Hinzufügen, Bearbeiten, Löschen).
+* Online-Registrierung für Mitglieder mit Mitgliedsnummer.
+* Freischaltung von Mitgliedern durch berechtigte Personen.
 
+=== Shop
+* Exklusiver Zugang für Mitglieder.
+* Verkauf von Vereinsartikeln wie T-Shirts, Pullover, Jacken und Kletterequipment.
+* Unterstützung von Online- und Barzahlung.
+
+=== Ehrenamtliche Arbeitserfassung
+* Erfassung und Auswertung der Arbeit von Ehrenamtlichen.
+* Verwaltung von Trainingsgruppen (Hinzufügen von Trainern und Teilnehmern).
+* Trackingsystem für Trainingsstunden (Datum, Ort, Anfangs- und Endzeit, Anwesenheit).
+
+=== Verleih für Ehrenamtliche
+* Verleihprozess mit Historie von ausgeliehenen Artikeln.
+
+== Kann-Kriterien
+* Text-to-Speech-Funktion für das Vorlesen von Textinhalten.
+
+== Nicht-Funktionale Anforderungen
+
+=== Sicherheitsvorschriften
+* Einhaltung staatlicher Sicherheitsvorschriften.
+* Passwortstärke und Speicherung von Passwörtern in Form eines Hashes.
+
+=== Benutzerfreundlichkeit
+* Hilfestellungen und Hinweise zu den Eingaben.
+* Benutzerfreundliches Design für eine breite Altersspanne von Benutzern.
 
 == GUI Prototyp
 
