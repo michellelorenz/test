@@ -831,19 +831,19 @@ Das System muss dem Verwalter die Möglichkeit bieten, Mitglieder zum System hin
 a|
 Das System muss dem Teilnehmer die Möglichkeit bieten, die Details der Trainingsgruppe, der er angehört, einzusehen, einschließlich Trainer, Ort, Zeit und andere Mitglieder.
 
-|[[F0171]]<<F0171>>
+|[[F0170]]<<F0170>>
 |v1.0
 |Registrierungsbestätigung
 a|
 Das System muss dem Verwalter die Möglichkeit bieten, die Registrierung eines neuen Mitglieds zu bestätigen. Bei Bestätigung wird dem Mitglied eine Mitgliedsnummer zugewiesen.
 
-|[[F0172]]<<F0172>>
+|[[F0171]]<<F0171>>
 |v1.0
 |Registrierung anlegen
 a|
 Das System muss dem Verwalter die Möglichkeit bieten, ein neues Mitglied im System zu registrieren. Die Registrierung erfordert die Eingabe der notwendigen Informationen des Mitglieds.
 
-|[[F0173]]<<F0173>>
+|[[F0172]]<<F0172>>
 |v1.0
 |Mitgliedsnummer zuweisen
 a|
@@ -852,73 +852,6 @@ Das System muss in der Lage sein, einem bestätigten Mitglied automatisch eine e
 0>>
 |===
 
-[cols="1h,3"]
-[[UC024]]
-|===
-|ID |<<UC024>>
-|Name |Produkt löschen
-|Beschreibung |Ein Verwalter sollte in der Lage sein, ein bestehendes Produkt aus dem System zu entfernen.
-|Akteure |Verwalter
-|Auslöser |Verwalter möchte ein Produkt löschen.
-|Vorbedingung(en) a|
-
-Verwalter ist authentifiziert.
-Das Produkt existiert im System.
-|Hauptschritte a|
-Verwalter wählt das Produkt aus, das er löschen möchte.
-Verwalter wählt die Option "Produkt löschen".
-Das System fragt zur Bestätigung, ob das Produkt wirklich gelöscht werden soll.
-Verwalter bestätigt das Löschen des Produkts.
-|Erweiterungen |-
-|Funktionale Anforderungen | <<F0171>>
-|===
-[cols="1h,3"]
-[[UC025]]
-|===
-|ID |<<UC025>>
-|Name |Produkt bearbeiten
-|Beschreibung |Ein Verwalter sollte in der Lage sein, die Informationen eines bestehenden Produkts im System zu bearbeiten.
-|Akteure |Verwalter
-|Auslöser |Verwalter möchte die Informationen eines Produkts bearbeiten.
-|Vorbedingung(en) a|
-
-Verwalter ist authentifiziert.
-Das Produkt existiert im System.
-|Hauptschritte a|
-Verwalter wählt das Produkt aus, das er bearbeiten möchte.
-Verwalter wählt die Option "Produkt bearbeiten".
-Verwalter ändert die gewünschten Produktinformationen.
-Verwalter bestätigt die Änderungen.
-|Erweiterungen |-
-|Funktionale Anforderungen | <<F0172>>
-|===
-
-[options="header", cols="2h, 1, 3, 12"]
-|===
-|ID
-|Version
-|Name
-|Beschreibung
-
-|[[F0170]]<<F0170>>
-|v1.0
-|Produkt anlegen
-a|
-Das System muss dem Verwalter die Möglichkeit bieten, ein neues Produkt zum System hinzuzufügen, indem er die notwendigen Produktinformationen eingibt.
-
-|[[F0171]]<<F0171>>
-|v1.0
-|Produkt löschen
-a|
-Das System muss dem Verwalter die Möglichkeit bieten, ein bestehendes Produkt aus dem System zu entfernen. Dabei sollte eine Bestätigungsabfrage erfolgen, um versehentliche Löschungen zu vermeiden.
-
-|[[F0172]]<<F0172>>
-|v1.0
-|Produkt bearbeiten
-a|
-Das System muss dem Verwalter die Möglichkeit bieten, die Informationen eines bestehenden Produkts im System zu bearbeiten. Dabei sollten alle relevanten Produktinformationen bearbeitet werden können.
-
-|===
 
 == Muss-Kriterien
 
