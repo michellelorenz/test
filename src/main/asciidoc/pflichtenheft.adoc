@@ -833,6 +833,416 @@ _CANCELLED_: Fallback to allow to mark failed orders or other problems.
 == Akzeptanztestfälle
 Mithilfe von Akzeptanztests wird geprüft, ob die Software die funktionalen Erwartungen und Anforderungen im Gebrauch erfüllt. Diese sollen und können aus den Anwendungsfallbeschreibungen und den UML-Sequenzdiagrammen abgeleitet werden. D.h., pro (komplexen) Anwendungsfall gibt es typischerweise mindestens ein Sequenzdiagramm (welches ein Szenarium beschreibt). Für jedes Szenarium sollte es einen Akzeptanztestfall geben. Listen Sie alle Akzeptanztestfälle in tabellarischer Form auf.
 Jeder Testfall soll mit einer ID versehen werde, um später zwischen den Dokumenten (z.B. im Test-Plan) referenzieren zu können.
+ID			
+
+:Pre: Vorbedingung(en)
+:Event: Ereignis
+:Result: Erwartetes Ergebnis
+
+
+[cols="1h, 4"]
+|===
+|ID            |<<>>
+|Anwendungsfall|<<>>
+|{Pre}        a|
+|{Event}      a|
+|{Result}     a|
+|===
+
+
+
+[cols="1h, 4"]
+|===
+|ID            |<<AT0011>>
+|Anwendungsfall|<<UC001>>
+|{Pre}        a|Es existiert mindestens ein registrierter Benutzer.
+|{Event}      a|Ein nicht authentifizierter Benutzer klickt auf "Anmelden" in der Navigationsleiste, gibt die Anmeldedaten eines existierenden Nutzers ein und klickt auf den "Anmelden"-Button.
+|{Result}     a|Der Nutzer ist nach dem Anmelden authentifiziert und wird auf die Startseite weitergeleitet.
+|===
+
+[cols="1h, 4"]
+|===
+|ID            |<<AT0012>>
+|Anwendungsfall|<<UC001>>
+|{Pre}        a|Der Benutzer ist authentifiziert.
+|{Event}      a|Der authentifizierter Benutzer klickt auf "Abmelden" in der Navigationsleiste.	
+|{Result}     a|Der Benutzer ist nach dem Abmelden nicht mehr authentifiziert und wird auf die Startseite weitergeleitet.
+|===
+	
+[cols="1h, 4"]
+|===
+|ID            |<<AT0021>>
+|Anwendungsfall|<<UC002>>
+|{Pre}        a|
+Der Benutzer ist nicht authentifiiziert.
+Es existiert kein Benutzer mit dem gewünschten Benutzernamen.
+|{Event}      a|Der Benutzer klickt auf "Registrieren" in der Navigationsleiste, gibt dann seine gewünschten Anmeldedaten an (Benutzname, Passwort, sonstige Informationen).
+|{Result}     a|Es wird ein Benutzkonto erstellt. Der Benutzer sieht einen Text, dass die Erstellung erfolgreich war.
+|===
+
+[cols="1h, 4"]
+|===
+|ID            |<<AT0022>>
+|Anwendungsfall|<<UC002>>
+|{Pre}        a|
+Der Benutzer ist nicht authentifiiziert.
+Es existiert bereits Benutzer mit dem gewünschten Benutzernamen.
+|{Event}      a|Der Benutzer klickt auf "Registrieren" in der Navigationsleiste, gibt dann seine gewünschten Anmeldedaten an (Benutzname, Passwort, sonstige Informationen), der Benutzername existiert bereits.
+|{Result}     a|Es wird kein Benutzerkonto erstellt. Der Benutzer sieht einen Text, der ihn darüber informiert.
+|===
+
+[cols="1h, 4"]
+|===
+|ID            |<<AT0030>>
+|Anwendungsfall|<<UC003>>
+|{Pre}        a|Ein Benutzer benutzt das System.
+|{Event}      a|Der Benutzer klickt auf "Shop" in der Navigationsleiste.
+|{Result}     a|Der Benutzer wird auf die Shop Seite weitergeleitet und sieht alle Produkte der ausgewählten Kategorie.
+|===
+
+[cols="1h, 4"]
+|===
+|ID            |<<AT0040>>
+|Anwendungsfall|<<UC004>>
+|{Pre}        a|Ein Benutzer benutzt die Shopseite
+|{Event}      a|Der Benutzer klickt auf einen im Shop angezeigten Eintrag.
+|{Result}     a|Der Benutzer wird auf die Detailseite des Produktes weitergeleitet sieht die Details des ausgewählten Produkts.
+|===
+
+[cols="1h, 4"]
+|===
+|ID            |<<AT0050>>
+|Anwendungsfall|<<UC005>>
+|{Pre}        a|
+Der Benutzer ist authentifiziert.
+Der Benutzer benenutz die Detailseite eines Produktes.
+|{Event}      a|Der Benutzer gibt die gewünschte Anzahl an Produkten an und klickt auf "Zum Warenkorb hinzufügen"
+|{Result}     a|Das Produkt wird in der gewünschten Menge dem Warenkorb hinzugefügt.
+|===
+
+[cols="1h, 4"]
+|===
+|ID            |<<AT0061>>
+|Anwendungsfall|<<UC006>>
+|{Pre}        a|
+Der Benutzer ist authentifiziert.
+Der Benutzer hat ein Produkt im Warenkorb.
+|{Event}      a|Der Benutzer klickt auf "Warenkorb".
+|{Result}     a|Der Benutzer wird auf den Warenkorb weitergeleitet und sieht den Inhalt seines Warenkorbs und den Gesamtpreis.
+|===
+
+[cols="1h, 4"]
+|===
+|ID            |<<AT0062>>
+|Anwendungsfall|<<UC006>>
+|{Pre}        a|
+Der Benutzer ist authentifiziert.
+Der Benutzer hat kein Produkt im Warenkorb.
+|{Event}      a|Der Benutzer klickt auf "Warenkorb".
+|{Result}     a|Der Benutzer wird auf den Warenkorb weitergeleitet und sieht, dass der Warenkorb leer ist.
+|===
+
+[cols="1h, 4"]
+|===
+|ID            |<<AT0071>>
+|Anwendungsfall|<<UC007>>
+|{Pre}        a|
+Der Benutzer ist authentifiziert.
+Der Benutzer hat Produkte im Warenkorb.
+Die Produkte im warenkorb übersteigen nicht den Lagerbestand.
+Der Benutzer benutzt die Warenkorbseite.
+|{Event}      a|Der Benutzer klickt auf "Kaufen".
+|{Result}     a|
+Die Bestellung wird gegen Lagerbestand geprüft. 
+Die Bestellung wird automatisch bezahlt. 
+Die Produkte werden in der gewählten Menge aus dem Lager entfernt. 
+Die Bestellung wird archiviert.
+|===
+
+[cols="1h, 4"]
+|===
+|ID            |<<AT0072>>
+|Anwendungsfall|<<UC007>>
+|{Pre}        a|
+Der Benutzer ist authentifiziert.
+Der Benutzer hat Produkte im Warenkorb.
+Die Menge der Produkte übersteigt den Lagerbestand.
+Der Benutzer benutzt die Warenkorbseite.
+|{Event}      a|Der Benutzer klickt auf "Kaufen".
+|{Result}     a|
+Die Bestellung wird gegen Lagerbestand geprüft.
+Der Benutzer sieht die Information, dass die Bestellung nicht möglich ist, weil seine Bestellung den Lagerbestand übersteigt.
+|===
+
+[cols="1h, 4"]
+|===
+|ID            |<<AT0080>>
+|Anwendungsfall|<<UC008>>
+|{Pre}        a|
+Der Benutzer ist authentifiziert.
+Der Benutzer hat die Rolle "Mitarbeiter" oder "Geschäftsführung".
+|{Event}      a|Der Benutzer klickt auf "Kunden" in der Navigationsleiste.
+|{Result}     a|Der Benutzer wird auf die Kundenseite weitergeleitet und die komplette Liste aller Kunden wird angezeigt.
+|===
+
+[cols="1h, 4"]
+|===
+|ID            |<<AT0091>>
+|Anwendungsfall|<<UC009>>
+|{Pre}        a|
+Der Benutzer ist authentifiziert.
+Der Benutzer hat die Rolle "Mitarbeiter" oder "Ehrenamtlicher".
+|{Event}      a|Der Benutzer klickt auf "Arbeitszeit erfassen".
+|{Result}     a|Der Benutzer wird auf die Seite des Formulars zur Arbeitszeiterfassung weitergeleitet.
+|===
+
+[cols="1h, 4"]
+|===
+|ID            |<<AT0092>>
+|Anwendungsfall|<<UC009>>
+|{Pre}        a|
+Der Benutzer ist authentifiziert.
+Der Benutzer hat die Rolle "Mitarbeiter" oder "Ehrenamtlicher".
+Der Benutzer benutzt die Seite "Arbeitszeit Erfassen".
+|{Event}      a|
+Der Benutzer gibt das Datum, die Arbeitszeit (Anfangs- und Endzeit) und eventuelle Kommentare ein.
+Der Benutzer klickt auf "Speichern" oder "Absenden", um die erfasste Arbeitszeit zu bestätigen.
+|{Result}     a|
+Die Arbeitszeit wird erfasst.
+Der Benutzer wird zur Startseite weitergeleitet.
+|===	 	
+
+[cols="1h, 4"]
+|===
+|ID            |<<AT0100>>
+|Anwendungsfall|<<UC010>>
+|{Pre}        a|
+Der Benutzer ist authentifiziert.
+Der Benutzer hat die Rolle "Geschäfsführung".
+|{Event}      a|Der Benutzer klickt auf "Lager" in der Navigationsleiste.
+|{Result}     a|Der Benutzer wird auf die Lagerseite weitergeleitet und die komplette Liste aller Artikel des Inventars und der aktuelle Lagerbestand werden angezeigt.
+|===
+
+[cols="1h, 4"]
+|===
+|ID            |<<AT0110>>
+|Anwendungsfall|<<UC011>>
+|{Pre}        a|Der Benutzer benutzt die Startseite.
+|{Event}      a|Der Benutzer benutzt die Startseite.
+|{Result}     a|Die aktuellen Nachrichten und Informationen werden angezeigt.
+|===
+
+[cols="1h, 4"]
+|===
+|ID            |<<AT0120>>
+|Anwendungsfall|<<UC012>>
+|{Pre}        a|
+Der Benutzer ist authentifiziert.
+Der Benutzer hat die Rollea "Ehrenamtlicher" oder "Mitarbeiter".
+Der Benutzer benutz im die Trackingsystemseite.
+|{Event}      a|Der Benutzer trägt Datum, Ort, Anfangs- und Endzeit sowie die Anwesenheit der Teilnehmer ein.
+|{Result}     a|Die Eingabe wird gespeichert.
+|===
+
+[cols="1h, 4"]
+|===
+|ID            |<<AT0130>>
+|Anwendungsfall|<<UC013>>
+|{Pre}        a|
+Der Benutzer ist authentifiziert.
+Der Benutzer hat die Rolle "Teamersteller". 
+Der Benutzer benutzt die "Trainingsgruppen erstellen" Seite.
+|{Event}      a|Der Benutzer gibt die notwendigen Informationen für die neue Trainingsgruppe ein und bestätigt die Erstellung der Trainingsgruppe.
+|{Result}     a|Die Trainingsgruppe wird erstellt.
+|===
+
+[cols="1h, 4"]
+|===
+|ID            |<<AT0140>>
+|Anwendungsfall|<<UC014>>
+|{Pre}        a|
+Der Benutzer ist authentifiziert.
+Der Benutzer hat die Rolle "Trainer".
+|{Event}      a|Der Benutzer wählt die entsprechende Trainingsgruppe im System und setzt das betreffende Mitglied als inaktiv.
+|{Result}     a|Das Mitglied wird auf inaktiv gesetzt.
+|===
+
+[cols="1h, 4"]
+|===
+|ID            |<<AT0150>>
+|Anwendungsfall|<<UC015>>
+|{Pre}        a|
+Der Benutzer ist authentifiziert.
+Der Benutzer hat die Rolle "Trainer".
+|{Event}      a|Der Benutzer wählt die entsprechende Trainingsgruppe im System und fügt das neue Mitglied zur Gruppe hinzu.
+|{Result}     a|Das Mitglied wird der Trainingsgruppe hinzugefügt.
+|===
+
+[cols="1h, 4"]
+|===
+|ID            |<<AT0161>>
+|Anwendungsfall|<<UC016>>
+|{Pre}        a|
+Der Benutzer ist authentifiziert.
+Der Benutzer hat die Rolle "Geschäftsführung".
+|{Event}      a|Der Benutzer wählt die Option "Neue Nachricht erstellen" in der Anwendung aus.
+|{Result}     a|Die Anwendung öffnet ein Nachrichtenformular.
+|===
+
+[cols="1h, 4"]
+|===
+|ID            |<<AT0162>>
+|Anwendungsfall|<<UC016>>
+|{Pre}        a|
+Der Benutzer ist authentifiziert.
+Der Benutzer hat die Rolle "Geschäftsführung".
+Der Benutzer nutzt das Nachrichtenformular
+|{Event}      a|Der Benutzer gibt den Empfänger, den Betreff und den Nachrichtentext ein und klickt auf "Nachricht senden".
+|{Result}     a|Die Nachricht wird an den ausgewählten Empfänger gesendet und im Nachrichtenverlauf des Absenders gespeichert.
+|===
+
+[cols="1h, 4"]
+|===
+|ID            |<<AT0171>>
+|Anwendungsfall|<<UC017>>
+|{Pre}        a|
+Der Benutzer ist authentifiziert.
+Der Benutzer hat die Rolle "Geschäftsführung".
+|{Event}      a|Der Benutzer wählt die Option "Abrechnen" aus.
+|{Result}     a|Die Anwendung öffnet ein Abrechnungsformular. 
+|===
+
+[cols="1h, 4"]
+|===
+|ID            |<<AT0172>>
+|Anwendungsfall|<<UC017>>
+|{Pre}        a|
+Der Benutzer ist authentifiziert,
+Der Benutzer hat die Rolle "Geschäftsführung“. 
+Der Benutzer benutzt das Abrechnungsformular.
+|{Event}      a|Der Benutzer wählt die abzurechnenden Mitarbeiter oder Ehrenamtlichen aus, gibt die Abrechnungsdetails ein und klickt auf "Abrechnung durchführen".
+|{Result}     a|Die Abrechnung wird in den Konten der ausgewählten Mitarbeiter oder Ehrenamtlichen vermerkt und die Buchhaltungsdaten werden aktualisiert.
+|===
+
+[cols="1h, 4"]
+|===
+|ID            |<<AT0181>>
+|Anwendungsfall|<<UC018>>
+|{Pre}        a|
+Der Benutzer ist authentifiziert.
+Der Benutzer hat die Rolle "Ehrenamtlicher".
+|{Event}      a|Der Benutzer wählt die Option "Produkte ausleihen" aus.
+|{Result}     a|Der Benutzer wird auf die Produkte ausleihen Seite weitergeleitet und sieht eine Liste mit allen Produkten.
+|===
+
+[cols="1h, 4"]
+|===
+|ID            |<<AT0182>>
+|Anwendungsfall|<<UC018>>
+|{Pre}        a|
+Der Benutzer ist authentifiziert.
+Der Benutzer hat die Rolle "Ehrenamtlicher"
+Der Benutzer benutzt die Seite Produkt ausleihen.
+Das gewünschte Produkt ist verfügbar.
+|{Event}      a|Der Benutzer sucht und wählt das gewünschte Produkt aus und bestätigt den Ausleihvorgang.
+|{Result}     a|Das Produkt wird wird als ausgeliehen markiert
+|===
+
+[cols="1h, 4"]
+|===
+|ID            |<<AT0183>>
+|Anwendungsfall|<<UC018>>
+|{Pre}        a|
+Der Benutzer ist authentifiziert.
+Der Benutzer hat die Rolle "Ehrenamtlicher".
+Der Benutzer benutzt die Seite Produkt ausleihen.  
+Das gewünschte Produkt ist nicht verfügbar.
+|{Event}      a|
+Der Benutzer sucht und wählt das gewünschte Produkt aus und bestätigt den Ausleihvorgang.
+|{Result}     a|Das Produkt wird nicht ausgeliehen und der Benutzer sieht die Information, dass das Produkt nicht verfügbar ist.
+|===
+
+[cols="1h, 4"]
+|===
+|ID            |<<AT0184>>
+|Anwendungsfall|<<UC018>>
+|{Pre}        a|
+Der Benutzer ist authentifiziert. 
+Der Benutzer hat die Rolle "Ehrenamtlicher".
+Der Benutzer hat ein Produkt ausgeliehen.	
+|{Event}      a|Der Benutzer sucht und wählt das gewünschte Produkt aus und bestätigt die Rückgabe.	
+|{Result}     a|Das Produkt ist zurückgegeben und wieder verfügbar.
+|===
+
+[cols="1h, 4"]
+|===
+|ID            |<<AT0190>>
+|Anwendungsfall|<<UC019>>
+|{Pre}        a|
+Der Benutzer ist authentifiziert.
+Der Benutzer hat die Rolle Geschäftsführung.
+|{Event}      a|Der Benutzer wählt die Option "Ausleihe einsehen".
+|{Result}     a|Der Benutzer wird auf die Seite Ausleihe einsehen  weitergeleitet und das System zeigt eine Liste aller ausgeliehenen Produkte, die dazugehörigen Zeiträume und die verantwortlichen Ehrenamtlichen.
+|===
+			
+[cols="1h, 4"]
+|===
+|ID            |<<AT0200>>
+|Anwendungsfall|<<UC020>>
+|{Pre}        a|
+Der Benutzer ist authentifiziert. 
+Der Benutzer hat die Rolle "Geschäftsführung".
+|{Event}      a|Der Benutzer wählt die Option "Bestellung einsehen".
+|{Result}     a|Der Benutzer wird auf die Seite "Bestellung einsehen" weitergeleitet und eine Liste aller getätigten Bestellungen, die dazugehörigen Produkte, Mengen und Kundeninformationen wird angezeigt.
+|===
+
+[cols="1h, 4"]
+|===
+|ID            |<<AT0211>>
+|Anwendungsfall|<<UC021>>
+|{Pre}        a|
+Der Benutzer ist authentifiziert.
+Der Benutzer hat die Rolle Verwalter.
+|{Event}      a|Der Benutzer wählt die Option "Mitglieder verwalten".
+|{Result}     a|Der Benutzer wird auf die Mitglieder verwalten Seite weitergeleitet.
+|===
+
+[cols="1h, 4"]
+|===
+|ID            |<<AT0212>>
+|Anwendungsfall|<<UC021>>
+|{Pre}        a|
+Der Benutzer ist authentifiziert.
+Der Benutzer hat die Rolle "Verwalter".
+Der Benutzer benutzt die "Mitglieder verwalten" Seite.
+|{Event}      a|Der Benutzer gibt die notwendigen Informationen für ein neues Mitglied an und klickt auf hinzufügen.
+|{Result}     a|Ein neues Mitgleid wird hinzugefügt.
+|===
+
+[cols="1h, 4"]
+|===
+|ID            |<<AT0213>>
+|Anwendungsfall|<<UC021>>
+|{Pre}        a|
+Der Benutzer ist authentifiziert.
+Der Benutzer hat die Rolle "Verwalter".
+Der Benutzer benutzt die "Mitglieder verwalten" Seite. 
+Es existiert ein Mitglied.
+|{Event}      a|Der Benutzer wählt ein bestehendes Mitglied aus und klickt auf entfernen.	
+|{Result}     a|Das ausgewählte Mitglied wird gelöscht.
+|===
+
+[cols="1h, 4"]
+|===
+|ID            |<<AT0220>>
+|Anwendungsfall|<<UC022>>
+|{Pre}        a|
+Der Benutzer ist authentifiziert. 
+Der Benutzer hat die Rolle "Teilnehmer".
+|{Event}      a|Der Benutzer wählt die Option „Meine Trainingsgruppen".
+|{Result}     a|Der Benutzer wird auf die Seite meine Trainingsgruppe weitergeleitet und die Details der Trainingsgruppe, einschließlich Trainer, Ort, Zeit und andere Mitglieder werden angezeigt.
+|===
+
 
 == Glossar
 Sämtliche Begriffe, die innerhalb des Projektes verwendet werden und deren gemeinsames Verständnis aller beteiligten Stakeholder essentiell ist, sollten hier aufgeführt werden.
