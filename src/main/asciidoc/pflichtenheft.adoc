@@ -169,7 +169,6 @@ image::./models/design/Top-Level.png[top-level diagram, 100%, 100%, pdfwidth=100
     * Online-Shop
     * System zur Verfolgung ehrenamtlicher Arbeit
     * System zur Ausleihe von Ausrüstung
-    * Benutzerführung und Sicherheitskonformität
 
 === Interaktionen:
 [[interaction_diagram]]
