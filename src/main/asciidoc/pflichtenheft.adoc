@@ -862,8 +862,6 @@ Das System muss dem Verwalter die Möglichkeit bieten, die Informationen eines b
 
 |===
 
-|===
-
 == Muss-Kriterien
 
 === Webseite
