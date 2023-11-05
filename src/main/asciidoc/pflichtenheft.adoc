@@ -646,13 +646,55 @@ image::./models/UseCase.png[use-case diagram, 100%, 100%, pdfwidth=100%, title="
 Verwalter ist authentifiziert.
 Das Produkt existiert im System.
 |Hauptschritte a|
-Verwalter wählt das Produkt aus, das er bearbeiten möchte.
-Verwalter wählt die Option "Produkt bearbeiten".
-Verwalter ändert die gewünschten Produktinformationen.
-Verwalter bestätigt die Änderungen.
+1. Verwalter wählt das Produkt aus, das er bearbeiten möchte.
+2. Verwalter wählt die Option "Produkt bearbeiten".
+3. Verwalter ändert die gewünschten Produktinformationen.
+4- Verwalter bestätigt die Änderungen.
 |Erweiterungen |-
 |Funktionale Anforderungen | <<F0172>>
 |===
+
+[cols="1h,3"]
+[[UC026]]
+|===
+|ID                         |**<<UC026>>**
+|Name                       |Registrierung anlegen
+|Akteur                     |Verwalter
+|Vorbedingungen             |Der Verwalter ist im System angemeldet.
+|Nachbedingungen            |Ein neues Mitglied ist im System registriert, aber noch nicht bestätigt.
+|Hauptszenario              |
+1. Der Verwalter navigiert zur Registrierungsseite.
+2. Der Verwalter gibt die notwendigen Informationen des neuen Mitglieds ein.
+3. Das System legt ein neues Mitglied an und setzt den Status auf "Wartend".
+4. Das System informiert den Verwalter, dass die Registrierung erfolgreich angelegt wurde.
+|Alternativszenario         |-
+|Ausnahmeszenario           |
+1. Die eingegebenen Informationen sind unvollständig oder ungültig.
+2. Das System informiert den Verwalter über den Fehler.
+|Betroffene funktionale Anforderungen |<<F0171>> Registrierungsbestätigung durch Verwalter
+|===
+
+[cols="1h,3"]
+[[UC027]]
+|===
+|ID                         |**<<UC027>>**
+|Name                       |Registrierung bestätigen
+|Akteur                     |Verwalter
+|Vorbedingungen             |Der Verwalter ist im System angemeldet und es gibt mindestens ein Mitglied mit dem Status "Wartend".
+|Nachbedingungen            |Das Mitglied ist bestätigt und hat eine Mitgliedsnummer erhalten.
+|Hauptszenario              |
+1. Der Verwalter navigiert zur Liste der wartenden Mitglieder.
+2. Der Verwalter wählt ein Mitglied aus der Liste aus.
+3. Der Verwalter bestätigt die Registrierung des Mitglieds.
+4. Das System weist dem Mitglied eine Mitgliedsnummer zu und setzt den Status auf "Aktiv".
+5. Das System informiert den Verwalter, dass die Registrierung erfolgreich bestätigt wurde.
+|Alternativszenario         |-
+|Ausnahmeszenario           |
+1. Das System kann keine Mitgliedsnummer zuweisen.
+2. Das System informiert den Verwalter über den Fehler.
+|Betroffene funktionale Anforderungen |<<F0171>> Registrierungsbestätigung durch Verwalter
+|===
+
 
 == Funktionale Anforderungen
 
@@ -789,6 +831,23 @@ Das System muss dem Verwalter die Möglichkeit bieten, Mitglieder zum System hin
 a|
 Das System muss dem Teilnehmer die Möglichkeit bieten, die Details der Trainingsgruppe, der er angehört, einzusehen, einschließlich Trainer, Ort, Zeit und andere Mitglieder.
 
+|[[F0171]]<<F0171>>
+|v1.0
+|Registrierungsbestätigung
+a|
+Das System muss dem Verwalter die Möglichkeit bieten, die Registrierung eines neuen Mitglieds zu bestätigen. Bei Bestätigung wird dem Mitglied eine Mitgliedsnummer zugewiesen.
+
+|[[F0172]]<<F0172>>
+|v1.0
+|Registrierung anlegen
+a|
+Das System muss dem Verwalter die Möglichkeit bieten, ein neues Mitglied im System zu registrieren. Die Registrierung erfordert die Eingabe der notwendigen Informationen des Mitglieds.
+
+|[[F0173]]<<F0173>>
+|v1.0
+|Mitgliedsnummer zuweisen
+a|
+Das System muss in der Lage sein, einem bestätigten Mitglied automatisch eine eindeutige Mitgliedsnummer zuzuweisen.
 
 0>>
 |===
@@ -833,7 +892,6 @@ Verwalter bestätigt die Änderungen.
 |Erweiterungen |-
 |Funktionale Anforderungen | <<F0172>>
 |===
-== Funktionale Anforderungen (Fortsetzung)
 
 [options="header", cols="2h, 1, 3, 12"]
 |===
