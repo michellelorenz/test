@@ -1360,6 +1360,77 @@ Der Benutzer hat die Rolle "Teilnehmer".
 |{Result}     a|Der Benutzer wird auf die Seite meine Trainingsgruppe weitergeleitet und die Details der Trainingsgruppe, einschließlich Trainer, Ort, Zeit und andere Mitglieder werden angezeigt.
 |===
 
+[cols="1h, 4"]
+|===
+|ID            |<<AT0230>>
+|Anwendungsfall|<<UC023>>
+|{Pre}        a|
+Der Benutzer ist authentifiziert.
+Der Benutzer hat die Rolle "Verwalter".
+|{Event}      a|Der Benutzer wählt die Option "Registrierung anlegen".
+|{Result}     a|Der Benutzer wird auf die Seite "Registrierung anlegen" weitergeleitet, auf der er die notwendigen Informationen für ein neues Mitglied eingeben kann.
+|===
+
+[cols="1h, 4"]
+|===
+|ID            |<<AT0231>>
+|Anwendungsfall|<<UC023>>
+|{Pre}        a|
+Der Benutzer ist authentifiziert.
+Der Benutzer hat die Rolle "Verwalter".
+Der Benutzer benutzt die "Registrierung anlegen" Seite.
+|{Event}      a|Der Benutzer gibt die notwendigen Informationen für ein neues Mitglied an und klickt auf "Registrieren".
+|{Result}     a|Ein neues Mitglied wird im System registriert und wartet auf Bestätigung.
+|===
+
+[cols="1h, 4"]
+|===
+|ID            |<<AT0240>>
+|Anwendungsfall|<<UC024>>
+|{Pre}        a|
+Der Benutzer ist authentifiziert.
+Der Benutzer hat die Rolle "Verwalter".
+Es gibt mindestens ein Mitglied, das auf Bestätigung wartet.
+|{Event}      a|Der Benutzer wählt die Option "Registrierung bestätigen".
+|{Result}     a|Der Benutzer wird auf die Seite "Registrierung bestätigen" weitergeleitet, auf der er die ausstehenden Mitgliedsregistrierungen sehen kann.
+|===
+
+[cols="1h, 4"]
+|===
+|ID            |<<AT0241>>
+|Anwendungsfall|<<UC024>>
+|{Pre}        a|
+Der Benutzer ist authentifiziert.
+Der Benutzer hat die Rolle "Verwalter".
+Der Benutzer benutzt die "Registrierung bestätigen" Seite.
+|{Event}      a|Der Benutzer wählt ein Mitglied aus, das auf Bestätigung wartet, und klickt auf "Bestätigen".
+|{Result}     a|Das ausgewählte Mitglied wird bestätigt, erhält eine Mitgliedsnummer und ist nun ein vollständiges Mitglied im System.
+|===
+
+[cols="1h, 4"]
+|===
+|ID            |<<AT0250>>
+|Anwendungsfall|<<UC025>>
+|{Pre}        a|
+Der Benutzer ist authentifiziert.
+Der Benutzer hat die Rolle "Verwalter".
+|{Event}      a|Der Benutzer wählt die Option "Mitgliedsnummer zuweisen".
+|{Result}     a|Der Benutzer wird auf die Seite "Mitgliedsnummer zuweisen" weitergeleitet, auf der er einem bestätigten Mitglied eine Mitgliedsnummer zuweisen kann.
+|===
+
+[cols="1h, 4"]
+|===
+|ID            |<<AT0251>>
+|Anwendungsfall|<<UC025>>
+|{Pre}        a|
+Der Benutzer ist authentifiziert.
+Der Benutzer hat die Rolle "Verwalter".
+Der Benutzer benutzt die "Mitgliedsnummer zuweisen" Seite.
+|{Event}      a|Der Benutzer wählt ein bestätigtes Mitglied aus und klickt auf "Nummer zuweisen".
+|{Result}     a|Das ausgewählte Mitglied erhält eine eindeutige Mitgliedsnummer.
+|===
+
+
 
 == Glossar
 Sämtliche Begriffe, die innerhalb des Projektes verwendet werden und deren gemeinsames Verständnis aller beteiligten Stakeholder essentiell ist, sollten hier aufgeführt werden.
