@@ -72,7 +72,7 @@ Damit sich die Nutzer gut in der online Anwendung zurechtfinden, soll es Hilfest
 - den Datenschutzbestimmungen entsprechen und personenbezogene Daten sicher speichern
 - DAV-Identifikationsschema für die Mitgliederregistrierung und -verwaltung verwenden
 
-==Interessensgruppen
+== Interessensgruppen
 
 1. Endbenutzer:
 
@@ -194,7 +194,7 @@ Anwendungsfall-Diagramm, das alle Anwendungsfälle und alle Akteure darstellt
 
 
 [[use-case_diagram]]
-image::./models/UseCase.png[use-case diagram, 100%, 100%, pdfwidth=100%, title="Use-Case Diagramm", align=center]
+image::./models/Use-Case.png[use-case diagram, 100%, 100%, pdfwidth=100%, title="Use-Case Diagramm", align=center]
 
 == Anwendungsfallbeschreibungen
 
