@@ -45,9 +45,9 @@ In der ersten Spalte sind die Qualitätsanforderungen aufgeführt, während in d
 [options="header", cols="3h, ^1, ^1, ^1, ^1, ^1"]
 |===
 |Qualitätsanforderung | 1 | 2 | 3 | 4 | 5
-|Erhaltbarkeit | | x| |
-|Nutzbarkeit | | | x | |
-|Sicherheit | | | x |
+|Erhaltbarkeit        |   |   | x |   |
+|Nutzbarkeit          |   |   |   | x |
+|Sicherheit           |   |   | x |   |
 |===
 
 == Randbedingungen
