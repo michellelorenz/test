@@ -851,30 +851,75 @@ Das System muss in der Lage sein, einem bestätigten Mitglied automatisch eine e
 
 == Muss-Kriterien
 
-=== Webseite
-* Informationen über den Verein, seine Entstehungsgeschichte und aktuelle Entwicklungen.
-* Nachrichtensystem für aktuelle Nachrichten, insbesondere über Brand- und Brutschutz.
+=== Neuigkeiten
+* Gast und Mitglied werden Nachrichten angezeigt
+* Verwaltung der öffentlichen Kommunikation kann Nachrichten erstellen
+* Verwaltung der öffentlichen Kommunikation kann Nachrichten löschen
+* Verwaltung der öffentlichen Kommunikation kann Nachrichten bearbeiten
 
-=== Person- und Mitgliederverwaltung
-* Verwaltung von Personen und Mitgliedern (Hinzufügen, Bearbeiten, Löschen).
-* Online-Registrierung für Mitglieder mit Mitgliedsnummer.
-* Freischaltung von Mitgliedern durch berechtigte Personen.
+=== Mitgliederverwaltung
+* Gast kann sich registrieren
+* Verwalter kann Registrierung anlegen
+* Verwalter kann Registrierung bestätigen
+* Mitglied hat ein Profil
+* Mitglied kann Kontonummer im Profil hinterlegen
+* Mitglied kann Profil einsehen
+* Mitglied kann Profil kündigen
+* Verwalter kann Mitglied hinzufügen
+* Verwalter kann Mitglied entfernen
+* Es existiert eine Mitgliederliste
+* Geschäftsführung wird Mitgliederliste angezeigt
+* Verwalter kann Personen Zuständigkeit zuweisen
 
 === Shop
-* Exklusiver Zugang für Mitglieder.
-* Verkauf von Vereinsartikeln wie T-Shirts, Pullover, Jacken und Kletterequipment.
-* Unterstützung von Online- und Barzahlung.
+* Shop kann nur von Mitgliedern eingesehen werden
+* Mitglied werden Produktdetails angezeigt
+* Mitglied wird Katalog angezeigt 
+* Mitglied hat einen Warenkorb
+* Mitglied kann Warenkorb einsehen
+* Mitglied kann Produkt zum Warenkorb hinzufügen
+* Mitglied kann Produkt im Warenkorb über hinterlegte Kontodaten kaufen
+* Mitglied kann den Warenkorb leeren
+* Verkäufer kann Bestellungen einsehen
+* Verkäufer wird der Lagerbestand angezeigt
+* Verkäufer kann ein Produkt anlegen
+* Verkäufer kann ein Produkt löschen
+* Verkäufer kann das Produkt bearbeiten
 
 === Ehrenamtliche Arbeitserfassung
-* Erfassung und Auswertung der Arbeit von Ehrenamtlichen.
-* Verwaltung von Trainingsgruppen (Hinzufügen von Trainern und Teilnehmern).
-* Trackingsystem für Trainingsstunden (Datum, Ort, Anfangs- und Endzeit, Anwesenheit).
+* nicht für Gäste einsehbar
+* Teamersteller kann Trainingsgruppe erstellen
+* Teamersteller kann trainingsgruppe einen Trainer zuweisen
+* Trainer kann Gruppenmitglied zur Gruppe hinzufügen
+* Teilnehmer können Trainingsgruppe einsehen
+* Trainer können Trainingsgruppe einsehen
+* Trainer kann Teilnehmer inaktiv setzen
+* Ehrenamtlicher kann seine Arbeitszeit erfassen lassen
+* Trackingsystem erfasst Ort 
+* Trackingsystem erfasst Datum
+* Trackingsystem erfasst Anwesenheitsliste von Teilnehmern
+* Trackingsystem erfasst Anfangs- und Endzeit
+* Ehrenamtlicher kann Trackingsystem einsehen
+* Geschäftsführung kann Trackingsystem einsehen
+* Die Arbeitszeit wird halbjählich abgerechnet
 
 === Verleih für Ehrenamtliche
-* Verleihprozess mit Historie von ausgeliehenen Artikeln.
+* Verleih kann nur von Ehrenamtlichen, Verleiher und Geschäftsführung eingesehen werden
+* Ehrenamtlicher kann Produkt ausleihen
+* Ehrenamtlicher kann Produkt zurückgeben
+* Ehrenamtlicher muss Mitgliedsnummer angeben
+* Verleiher kann Produkt anlegen
+* Verleiher kann Produkt löschen
+* Verleiher kann Produkt bearbeiten
+* Ausleihhistorie wird gespeichert
+* Ausleihhistorie beinhaltet ausleihende Personen mit dazugehörigen Ausleihdaten
+* Ausleihdaten beinhaltet Ausleihdatum
+* Ausleihdaten beinhaltet, wenn existent, Rückgabedatum 
+* Verleiher kann Ausleih einsehen
 
 == Kann-Kriterien
 * Text-to-Speech-Funktion für das Vorlesen von Textinhalten.
+* Hilfestellungen und Hinweise zu den Eingaben
 
 == Nicht-Funktionale Anforderungen
 
