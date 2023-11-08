@@ -981,7 +981,7 @@ Dieser Abschnitt stellt eine Vereinigung von Glossar und der Beschreibung von Kl
 |ROLE               |Role represents the rights a certain Mitarbeiter/Mitglied has. + 
 _TRAINER_: The person(s) who have this role can add mebers to their training groups + 
 _TEAMERSTELLER_: The person(s) who have this role can create training groups +
-_VERWALTER_: The person(s) who have this role can manage the items offered in the shop etc. +
+_VERWALTER_: The person(s) who have this role can aprove or deny any person who wants to be a member +
 _GESCHÄFTSFÜHRUNG_: The person(s) who have this role can manage the whole firm + 
 _VERKÄUFER_: The person(s) who have this role can sell products over the counter + 
 _VERLEIHER_: The person(s) who have this role can manage all borrows +
