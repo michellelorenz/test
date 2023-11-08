@@ -246,8 +246,6 @@ image::./models/Use-Case.png[use-case diagram, 100%, 100%, pdfwidth=100%, title=
 |Beschreibung               |Jeder Besucher des Shops soll auf den Katalog zugreifen können, der alle angebotenen Produkte anzeigt.
 |Akteure                    |Mitglied
 |Auslöser                   |Benutzer klickt auf das Navigationselement "Katalog"
-|Vorbedingung(en)          a|
-- Keine.
 |Hauptschritte             a|
 1. Benutzer klickt auf das Navigationselement "Katalog".
 2. Benutzer sieht alle Produkte der ausgewählten Kategorie.
@@ -389,8 +387,6 @@ image::./models/Use-Case.png[use-case diagram, 100%, 100%, pdfwidth=100%, title=
 |Beschreibung               |Mitglieder können aktuelle Nachrichten und Informationen über den Verein einsehen.
 |Akteure                    |Mitglied, Gast
 |Auslöser                   |Mitglied oder Gast besucht die Webseite
-|Vorbedingung(en)          a|
-- Keine.
 |Hauptschritte             a|
 1. Mitglied/Gast besucht die Webseite.
 2. Mitglied/Gast sieht die aktuellen Nachrichten und Informationen.
