@@ -913,7 +913,7 @@ image::./models/Dialoglandkarte.png[Dialoglandkarte, 100%, 100%, pdfwidth=100%, 
 === Überblick: Klassendiagramm
 UML-Analyseklassendiagramm
 [[Analyseklassendiagramm]]
-image::./models/SWTAnalyse.jpg[Analyseklassendiagramm, 100%, 100%, pdfwidth=100%, title= "Analyseklassendiagramm", align=center]
+image::./models/OOAFürSWT.jpg[Analyseklassendiagramm, 100%, 100%, pdfwidth=100%, title= "Analyseklassendiagramm", align=center]
 === Klassen und Enumerationen
 Dieser Abschnitt stellt eine Vereinigung von Glossar und der Beschreibung von Klassen/Enumerationen dar. Jede Klasse und Enumeration wird in Form eines Glossars textuell beschrieben. Zusätzlich werden eventuellen Konsistenz- und Formatierungsregeln aufgeführt.
 
@@ -924,20 +924,19 @@ Dieser Abschnitt stellt eine Vereinigung von Glossar und der Beschreibung von Kl
 |Kletterverein      |Central class of the system representing the Kletterverein itself
 |User               |General representation of a real person
 |Registered User    |Genereal representation of a real person, which has a representation in the system. This representation is only created if a user registers with the system, and only used if he or she authenticates
-|Mitglied           |General representation of a registered person who got accepted by an employed person
-|Mitarbeiter        |General representation of an employed person
-|Ehrenamtliche      |General representation of an voluntary employed person
-|auszahlungEhrenamtliche|handles the pay for the Ehrenamtliche and Mitarbeiter
-|Trainingsgruppe    |A place where all Mitlgieder can join a group to train and Employees could create more groups and manage them
+|Employee           |General representation of an employed person
+|Voluntary          |General representation of an voluntary employed person
+|PayVoluntary       |handles the pay for the Ehrenamtliche and Mitarbeiter
+|TrainingGroups     |A place where all Mitlgieder can join a group to train and Employees could create more groups and manage them
 |Catalog            |Catalog is the supply the shop has to offer
-|Gegenstand         |A Gegenstand is a certain Item in the Catalog and Inventory
+|Item               |A Gegenstand is a certain Item in the Catalog and Inventory
 |Inventory          |The Inventory are all Items the Kletterverein has. The Entitled Employees can also add and delete Items from there
 |InventoryItem      |An InventoryItem is an Item which is in an order of an Mitglied
 |Image              |A Image is a digital picture that visually represent an Item
-|Item               |An Item has a certain Gegenstand and a quantity, so the Cart know how many the Mitglied would like to buy
+|CartItem           |An Item has a certain Gegenstand and a quantity, so the Cart know how many the Mitglied would like to buy
 |Cart               |A Cart is a temporary storage for Items a customer intends to buy. If a Mitglied decides to buy his selected Items, an order is created.
 |Order              |An Order is used to represent what a customer of the shop intedns to buy from the shop. An Order can have varying status to symbolize the current step at which the order is processed
-|ausleiheDoku       |is an applikation to manage a Database or just a table.
+|Loans              |is an applikation to manage a Database or just a table.
 |ROLE               |Role represents the rights a certain Mitarbeiter/Mitglied has. + 
 _Insert Roles here_
 |STATUS             |This status represents the current processing step of the order it belongs to. +
