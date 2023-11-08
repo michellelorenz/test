@@ -979,9 +979,9 @@ Das System muss dem Verwalter die Möglichkeit bieten, ein Produkt im Shop zu be
 
 |[[F0180]]<<F0180>>
 |v1.0
-|Produkt anzeigen
+|Profil einsehen
 a|
-Das System muss dem Verwalter die Möglichkeit bieten, ein Produkt im Shop zu bearbeiten.
+Das System muss Mitgliedern die Möglichkeit bieten, ihr Profil einzusehen.
 
 |[[F0181]]<<F0181>>
 |v1.0
@@ -995,11 +995,23 @@ Das System muss dem Mitglied die Möglichkeit bieten, dessen Profil zu kündigen
 a|
 Das System muss dem Verwalter die Möglichkeit bieten, den Mitgliedern eine Zuständigkeit zuzuweisen.
 
+|[[F0200]]<<F0200>>
+|v1.0
+|Warenkorb leeren
+a|
+Das System muss dem Benutzer die Möglichkeit bieten, seinen Warenkorb zu leeren.
+
 |[[F0210]]<<F0210>>
 |v1.0
 |Nachrichten bearbeiten
 a|
 Das System muss dem Verwalter d.ö.K. die Möglichkeit bieten, hochgeladene Nachrichten zu bearbeiten.
+
+|[[F0211]]<<F0211>>
+|v1.0
+|Nachrichten löschen
+a|
+Das System muss dem Verwalter d.ö.K. die Möglichkeit bieten, hochgeladene Nachrichten zu löschen.
 
 |[[F0230]]<<F0230>>
 |v1.0
