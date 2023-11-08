@@ -923,7 +923,6 @@ Das System muss in der Lage sein, Bestellungen zu archivieren, indem es ihren St
 |Kundenliste anzeigen
 a|
 Das System muss der Geschäftsführung die Möglichkeit bieten, eine Liste aller im System registrierten Kunden anzuzeigen.
-
 |[[F0160]]<<F0160>>
 |v1.0
 |Produkte ausleihen
@@ -980,18 +979,27 @@ Das System muss dem Verwalter die Möglichkeit bieten, ein Produkt im Shop zu be
 
 |[[F0180]]<<F0180>>
 |v1.0
-|Produkt bearbeiten
+|Produkt anzeigen
 a|
 Das System muss dem Verwalter die Möglichkeit bieten, ein Produkt im Shop zu bearbeiten.
 
+|[[F0181]]<<F0181>>
+|v1.0
+|Profil kündigen durch das Mitglied
+a|
+Das System muss dem Mitglied die Möglichkeit bieten, dessen Profil zu kündigen.
 
+|[[F0190]]<<F0190>>
+|v1.0
+|Profil Zuständigkeit zuweisen
+a|
+Das System muss dem Verwalter die Möglichkeit bieten, den Mitgliedern eine Zuständigkeit zuzuweisen.
 
-<<F0180>> Profil anzeigen
-<<F0181>> Profil kündigen durch das Mitglied
-<<F0190>> Zuständigkeit zuweisen
-warenkorb leeren
-210 nachrichten bearbeiten
-
+|[[F0210]]<<F0210>>
+|v1.0
+|Nachrichten bearbeiten
+a|
+Das System muss dem Verwalter d.ö.K. die Möglichkeit bieten, hochgeladene Nachrichten zu bearbeiten.
 
 |[[F0230]]<<F0230>>
 |v1.0
