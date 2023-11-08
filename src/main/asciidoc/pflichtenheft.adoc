@@ -187,7 +187,7 @@ image::./models/interaktionen.svg[interaction diagram, 100%, 100%, pdfwidth=100%
 | Geschäftsführung| Personen, die die höchsten Entscheidungsbefugnisse im Verein haben und strategische Entscheidungen treffen.
 | Teamersteller   | Ein Mitglied oder Mitarbeiter, der berechtigt ist, neue Teams oder Gruppen im System zu erstellen.
 | Verwalter       | Ein Mitglied oder Mitarbeiter, der berechtigt ist, Systemdaten und -einstellungen zu verwalten.
-| Verwalter       | Ein Mitglied oder Mitarbeiter, der berechtigt ist, die öffentliche Kommunikation zu verwalten.
+| Verwalter d.ö.K | Ein Mitglied oder Mitarbeiter, der berechtigt ist, die öffentliche Kommunikation zu verwalten.
 |===
 
 === Überblick Anwendungsfalldiagramm
@@ -749,6 +749,7 @@ Das Produkt existiert im System.
 2. Das Mitglied leert den Warenkorb und bestätigt das.
 3. Das System leert den Warenkorb.
 |Betroffene funktionale Anforderungen |<<F0200>> Warenkorb leeren
+|===
 
 [cols="1h,3"]
 [[UC032]]
@@ -842,7 +843,7 @@ Das System muss Benutzern die Möglichkeit bieten, Eine Liste von Mitgliedern an
 |[[F0070]]<<F0070>>
 |v1.0
 |Arbeitszeiterfassung für Mitarbeiter
-
+a|
 Das System muss dem Verwalter die Möglichkeit bieten, die Arbeitszeit der Mitarbeiter zu erfassen.
 
 |[[F0071]]<<F0071>>
@@ -892,7 +893,6 @@ Das System muss Trainiern die Möglichkeit bieten, Mitglieder einer Gruppe in di
 |Gruppenmitglieder hinzufügen
 a|
 Das System muss Trainiern die Möglichkeit bieten, Mitglieder einer Gruppe hinzuzufügen.
-
 
 |[[F0110]]<<F0110>>
 |v1.0
@@ -995,32 +995,6 @@ Das System muss dem Verwalter die Möglichkeit bieten, die Registrierung eines n
 |Abrechnung für Ehrentamliche und Mitarbeiter erstellen
 a|
 Das System muss in der Lage sein, Abrechnungen zu erstellen.
-
-|[[F0172]]<<F0172>>
-|v1.0
-|Mitgliedsnummer zuweisen
-a|
-Das System muss in der Lage sein, einem bestätigten Mitglied automatisch eine eindeutige Mitgliedsnummer zuzuweisen.
-|[[F0172]]<<F0172>>
-|v1.0
-|Mitgliedsnummer zuweisen
-a|
-Das System muss in der Lage sein, einem bestätigten Mitglied automatisch eine eindeutige Mitgliedsnummer zuzuweisen.
-|[[F0172]]<<F0172>>
-|v1.0
-|Mitgliedsnummer zuweisen
-a|
-Das System muss in der Lage sein, einem bestätigten Mitglied automatisch eine eindeutige Mitgliedsnummer zuzuweisen.
-|[[F0172]]<<F0172>>
-|v1.0
-|Mitgliedsnummer zuweisen
-a|
-Das System muss in der Lage sein, einem bestätigten Mitglied automatisch eine eindeutige Mitgliedsnummer zuzuweisen.
-|[[F0172]]<<F0172>>
-|v1.0
-|Mitgliedsnummer zuweisen
-a|
-Das System muss in der Lage sein, einem bestätigten Mitglied automatisch eine eindeutige Mitgliedsnummer zuzuweisen.
 
 0>>
 |===
