@@ -8,7 +8,7 @@
 = Entwicklerdokumentation
 
 == Einführung und Ziele
-=== Aufgabenstellung
+=== 1.1 Aufgabenstellung
 Der Dresdner Kletterverein möchte sich der digitalen Wende stellen und seine analogen Verfahren digitalisieren. Dadurch erhofft er sich zeitliche Ersparnisse sowie eine bessere Anknüpfung an die jungen Leute. Der Verein hat sich folgende Schwerpunkte überlegt, die er gerne als Erstes angehen möchte. 
 Der Verein wünscht sich eine Webseite, die alle Gäste nutzen können und verschiedene Informationen zeigt. Ganz wichtig ist dabei, dass Gäste sowie Mitglieder über neuste Nachrichten aus dem Vereinsleben informiert werden oder sich informieren können. Dazu gehören vor allem über Brand- und Brutschutz. Weiterhin möchte sich der Verein neuen möglichen Mitglieder durch ein ansprechendes Design modern und fortschrittlich vorstellen.  Fokus soll dabei auf der Entstehungsgeschichte des Vereines sowie den aktuellen Entwicklungen liegen.
 
@@ -23,7 +23,32 @@ groß ist, die mit diesem System arbeiten müssen. Im Rhythmus von 1/2 Jahr werd
 Besonders an dem Kletterverein ist der Verleih für seine ehrenamtlichen Mitarbeiter. Diese können verschiedene Dinge für eine bestimmte Zeit ausleihen. Pro Element gibt es eine Historie wer es wann ausgeliehen hatte, sowie wann es zurückgegeben wurde. Für das Ausleihen ist nur die Mitgliedsnummer bei der Abholung notwendig.
 
 Damit sich die Nutzer gut in der online Anwendung zurechtfinden, soll es Hilfestellungen und Hinweise zu den Eingaben geben. Zudem müssen bestimmte Sicherheitsvorschriften, die vom Staat vorgegeben wurden, erfüllen werden. Dazu gehören die Passwortstärke und die Speicherung von Passwörtern in der Form eines Hashes. Eine mögliche Ergänzung wäre eine text-to-speech Funkion.
-* Qualitätsziele
+
+=== 1.2 Qualitätsziele
+
+Um die Qualität der Anwendung zu messen, müssen Qualitätsanforderungen definiert werden, die erfüllt werden müssen.
+
+Erhaltbarkeit::
+Dieses Merkmal steht für den Grad an Effektivität und Effizienz, mit dem ein Produkt oder System geändert werden kann, um es zu verbessern, zu korrigieren oder an Änderungen der Umgebung und der Anforderungen anzupassen.
+
+Nutzbarkeit::
+Grad, in dem ein Produkt oder System von bestimmten Benutzern verwendet werden kann, um bestimmte Ziele mit Effektivität, Effizienz und Zufriedenheit in einem bestimmten Nutzungskontext zu erreichen.
+
+Sicherheit::
+Grad, in dem ein Produkt oder System Informationen und Daten so schützt, dass Personen oder andere Produkte oder Systeme den ihrer Art und Berechtigung entsprechenden Grad des Datenzugriffs erhalten.
+
+Die folgende Tabelle zeigt, welche Qualitätsanforderungen in welchem Umfang erfüllt werden müssen.
+In der ersten Spalte sind die Qualitätsanforderungen aufgeführt, während in den folgenden Spalten die Priorität durch ein "x" gekennzeichnet ist.
+
+1 = Nicht wichtig ..
+5 = Sehr wichtig
+[options="header", cols="3h, ^1, ^1, ^1, ^1, ^1"]
+|===
+|Qualitätsanforderung | 1 | 2 | 3 | 4 | 5
+|Erhaltbarkeit | | x| |
+|Nutzbarkeit | | | x | |
+|Sicherheit | | | x |
+|===
 
 == Randbedingungen
 * Hardware-Vorgaben
