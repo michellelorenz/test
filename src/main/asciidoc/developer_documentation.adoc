@@ -51,9 +51,30 @@ In der ersten Spalte sind die Qualitätsanforderungen aufgeführt, während in d
 |===
 
 == Randbedingungen
-* Hardware-Vorgaben
-* Software-Vorgaben
-* Vorgaben zum Betrieb des Software
+=== Hardware-Vorgaben
+Eine Liste der für die Ausführung und Nutzung der Anwendung erforderlichen Geräte/Hardware.
+
+* Server
+* Computer
+* Tastatur
+* Maus
+* Bildschirm
+
+=== Software-Vorgaben
+Eine Liste der für die Ausführung und Nutzung der Anwendung erforderlichen Software.
+
+Die folgende (oder eine neuere) Java-Version ist erforderlich, um die Anwendung auszuführen:
+
+* Java 19
+
+=== Vorgaben zum Betrieb des Software
+Die folgenden (oder neuere) Browser-Versionen sind für die Nutzung der Anwendung erforderlich:
+
+* Internet Explorer / Edge 10.0
+* Firefox 4.0
+* Google Chrome 4.0
+* Opera 9.6
+
 
 == Kontextabgrenzung
 * Kontextdiagramm
