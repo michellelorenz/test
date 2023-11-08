@@ -79,6 +79,9 @@ Die folgenden (oder neuere) Browser-Versionen sind für die Nutzung der Anwendun
 == Kontextabgrenzung
 * Kontextdiagramm
 
+[[kontext_diagram]]
+image::./models/Kontext.png[kontext diagram, 100%, 100%, pdfwidth=100%, title="Kontext Diagram", align=center]
+
 == Lösungsstrategie
 === Erfüllung der Qualitätsziele
 [options="header"]
