@@ -132,4 +132,4 @@ _Die folgende Tabelle zeigt die Rückverfolgbarkeit zwischen Entwurfs- und Analy
 
 
 [[Sequenz-Diagramm_Mitglied]]
-image::./models/Sequenzdiagramm Mitglied2.png[top-level diagram, 100%, 100%, pdfwidth=100%, title="Top-Level-Diagramm", align=center]
+image::./models/Sequenzdiagramm Mitglied2.jpg[top-level diagram, 100%, 100%, pdfwidth=100%, title="Top-Level-Diagramm", align=center]
