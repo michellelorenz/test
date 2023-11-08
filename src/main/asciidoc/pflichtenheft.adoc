@@ -691,8 +691,105 @@ Das Produkt existiert im System.
 |Betroffene funktionale Anforderungen |<<F0171>> Registrierungsbestätigung durch Verwalter
 |===
 
+[cols="1h,3"]
+[[UC028]]
+|===
+|ID                         |**<<UCO28>>**
+|Name                       |Profil einsehen
+|Akteur                     |Mitglieder
+|Vorbedingungen             |Das Mitglied ist registriert und eingeloggt.
+|Hauptszenario              |
+1. Das Mitglied loggt sich ein.
+2. Das Mitglied navigiert zum Profil.
+3. Das System zeigt die Profildaten an
+|Betroffene funktionale Anforderungen |<<F0180>> Profil anzeigen
+|===
+
+[cols="1h,3"]
+[[UC029]]
+|===
+|ID                         |**<<UC029>>**
+|Name                       |Profil kündigen
+|Akteur                     |Mitglieder
+|Vorbedingungen             |Das Mitglied hat ein Profil und ist eingeloggt.
+|Nachbedingungen            |Das Mitglied ist bestätigt und hat eine Mitgliedsnummer erhalten.
+|Hauptszenario              |
+1. Das Mitglied navigiert zu Profil kündigen
+2. Das Mitglied bestätigt die Kündigung.
+3. Das System sendet dem Verwalter die Kündigung
+4. Der Verwalter bestätigt die Kündigung des Mitglieds, indem er das Profil löscht.
+5. Das System löscht die Daten des Profils.
+|Betroffene funktionale Anforderungen |<<F0181>> Profil kündigen durch das Mitglied |<<F0182>> Profil löschen durch Verwalter
+|===
+
+[cols="1h,3"]
+[[UC030]]
+|===
+|ID                         |**<<UC030>>**
+|Name                       |Personen Zuständigkeit zuweisen
+|Akteur                     |Verwalter
+|Vorbedingungen             |Das Mitglied hat ein Profil.
+|Nachbedingungen            |Das Mitglied hat eine neue Zuständigkeit.
+|Hauptszenario              |
+1. Der Verwalter weißt dem Mitglied eine neu Zuständigkeit zu.
+2. Das System überschreibt die Zuständigkeit des Mitglieds.
+|Betroffene funktionale Anforderungen |<<F0190>> Zuständigkeit zuweisen
+|===
+
+[cols="1h,3"]
+[[UC031]]
+|===
+|ID                         |**<<UC031>>**
+|Name                       |Warenkorb leeren
+|Akteur                     |Mitglieder
+|Vorbedingungen             |Das Mitglied hat ein Profil und ist eingeloggt.
+|Nachbedingungen            |Das Mitglied hat einen leeren Warenkorb.
+|Hauptszenario              |
+1. Das Mitglied navigiert zum Shop und öffnet den Warenkorb.
+2. Das Mitglied leert den Warenkorb und bestätigt das.
+3. Das System leert den Warenkorb.
+|Betroffene funktionale Anforderungen |<<F0200>> Warenkorb leeren
+
+[cols="1h,3"]
+[[UC032]]
+|===
+|ID                         |**<<UC032>>**
+|Name                       |Nachrichten bearbeiten
+|Akteur                     |Verwalter der öffentlichen Kommunikation
+|Vorbedingungen             |Es wurde bereits eine Nachricht hochgeladen.
+|Nachbedingungen            |Die Nachricht wurde bearbeitet.
+|Hauptszenario              |
+1. Der Verwalter navigiert zum Nachricht bearbeiten.
+2. Der Verwalter bearbeitet die Nachricht und speichert die Änderung.
+3. Das System speichert die Änderung.
+|Betroffene funktionale Anforderungen |<<F0210>> Nachrichten bearbeiten
+|===
+
+[cols="1h,3"]
+[[UC033]]
+|===
+|ID                         |**<<UC033>>**
+|Name                       |Nachrichten löschen
+|Akteur                     |Verwalter
+|Vorbedingungen             |Das Mitglied hat ein Profil und ist eingeloggt.
+|Nachbedingungen            |Das Mitglied ist bestätigt und hat eine Mitgliedsnummer erhalten.
+|Hauptszenario              |
+1. Das Mitglied navigiert zu Profil kündigen
+2. Das Mitglied bestätigt die Kündigung.
+3. Das System sendet dem Verwalter die Kündigung
+4. Der Verwalter bestätigt die Kündigung des Mitglieds, indem er das Profil löscht.
+5. Das System löscht die Daten des Profils.
+|Betroffene funktionale Anforderungen |<<F0181>> Profil kündigen durch das Mitglied |<<F0182>> Profil löschen durch Verwalter
+|===
 
 == Funktionale Anforderungen
+
+<<F0180>> Profil anzeigen
+<<F0181>> Profil kündigen durch das Mitglied 
+<<F0182>> Profil löschen durch Verwalter
+<<F0190>> Zuständigkeit zuweisen
+<<F0200>> Warenkorb leeren
+<<F0210>> Nachrichten bearbeiten
 
 [options="header", cols="2h, 1, 3, 12"]
 |===
