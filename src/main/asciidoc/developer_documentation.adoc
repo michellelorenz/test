@@ -131,3 +131,5 @@ _Die folgende Tabelle zeigt die Rückverfolgbarkeit zwischen Entwurfs- und Analy
 * Darstellung der Komponenteninteraktion anhand eines Sequenzdiagramms, welches die relevantesten Interaktionen darstellt.
 
 
+[[Sequenz-Diagramm_Mitglied]]
+image::./models/Sequenzdiagramm Mitglied2.png[top-level diagram, 100%, 100%, pdfwidth=100%, title="Top-Level-Diagramm", align=center]
