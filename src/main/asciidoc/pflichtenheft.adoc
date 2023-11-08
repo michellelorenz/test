@@ -909,7 +909,7 @@ image::./models/Dialoglandkarte.png[Dialoglandkarte, 100%, 100%, pdfwidth=100%, 
 === Überblick: Klassendiagramm
 UML-Analyseklassendiagramm
 [[Analyseklassendiagramm]]
-image::./models/OOAFürSWT.jpg[Analyseklassendiagramm, 100%, 100%, pdfwidth=100%, title= "Analyseklassendiagramm", align=center]
+image::./models/OOA Fertig.jpg[Analyseklassendiagramm, 100%, 100%, pdfwidth=100%, title= "Analyseklassendiagramm", align=center]
 === Klassen und Enumerationen
 Dieser Abschnitt stellt eine Vereinigung von Glossar und der Beschreibung von Klassen/Enumerationen dar. Jede Klasse und Enumeration wird in Form eines Glossars textuell beschrieben. Zusätzlich werden eventuellen Konsistenz- und Formatierungsregeln aufgeführt.
 
@@ -934,7 +934,13 @@ Dieser Abschnitt stellt eine Vereinigung von Glossar und der Beschreibung von Kl
 |Order              |An Order is used to represent what a customer of the shop intedns to buy from the shop. An Order can have varying status to symbolize the current step at which the order is processed
 |Loans              |is an applikation to manage a Database or just a table.
 |ROLE               |Role represents the rights a certain Mitarbeiter/Mitglied has. + 
-_Insert Roles here_
+_TRAINER_: The person(s) who have this role can add mebers to their training groups + 
+_TEAMERSTELLER_: The person(s) who have this role can create training groups +
+_VERWALTER_: The person(s) who have this role can manage the items offered in the shop etc. +
+_GESCHÄFTSFÜHRUNG_: The person(s) who have this role can manage the whole firm + 
+_VERKÄUFER_: The person(s) who have this role can sell products over the counter + 
+_VERLEIHER_: The person(s) who have this role can manage all borrows +
+_NACHRICHTENVERWALTER_: The person(s) who have this role can manage all news the Webside should display
 |STATUS             |This status represents the current processing step of the order it belongs to. +
 _OPEN_: The Order has been created by the system, but not yet processed. +
 _PAID_: The customer has paid his order, the disc quantity still has to be reduced in the inventory to finalize the order. +
