@@ -667,7 +667,7 @@ Das Produkt existiert im System.
 |Ausnahmeszenario           |
 1. Die eingegebenen Informationen sind unvollständig oder ungültig.
 2. Das System informiert den Verwalter über den Fehler.
-|Betroffene funktionale Anforderungen |<<F0230>> Registrierungsbestätigung durch Verwalter
+|Betroffene funktionale Anforderungen |<<F0230>>
 |===
 
 [cols="1h,3"]
@@ -688,7 +688,7 @@ Das Produkt existiert im System.
 |Ausnahmeszenario           |
 1. Das System kann keine Mitgliedsnummer zuweisen.
 2. Das System informiert den Verwalter über den Fehler.
-|Betroffene funktionale Anforderungen |<<F0231>> Registrierungsbestätigung durch Verwalter
+|Betroffene funktionale Anforderungen |<<F0231>> 
 |===
 
 [cols="1h,3"]
@@ -702,7 +702,7 @@ Das Produkt existiert im System.
 1. Das Mitglied loggt sich ein.
 2. Das Mitglied navigiert zum Profil.
 3. Das System zeigt die Profildaten an
-|Betroffene funktionale Anforderungen |<<F0180>> Profil anzeigen
+|Betroffene funktionale Anforderungen |<<F0180>> 
 |===
 
 [cols="1h,3"]
@@ -763,7 +763,7 @@ Das Produkt existiert im System.
 1. Der Verwalter navigiert zum Nachricht bearbeiten.
 2. Der Verwalter bearbeitet die Nachricht und speichert die Änderung.
 3. Das System speichert die Änderung.
-|Betroffene funktionale Anforderungen |<<F0210>> Nachrichten bearbeiten
+|Betroffene funktionale Anforderungen |<<F0210>> 
 |===
 
 [cols="1h,3"]
@@ -780,7 +780,7 @@ Das Produkt existiert im System.
 3. Das System sendet dem Verwalter die Kündigung
 4. Der Verwalter bestätigt die Kündigung des Mitglieds, indem er das Profil löscht.
 5. Das System löscht die Daten des Profils.
-|Betroffene funktionale Anforderungen |<<F0211>> Nachrichten bearbeiten
+|Betroffene funktionale Anforderungen |<<F0211>> 
 |===
 
 == Funktionale Anforderungen
