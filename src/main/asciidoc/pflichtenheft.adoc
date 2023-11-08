@@ -480,7 +480,7 @@ image::./models/Use-Case.png[use-case diagram, 100%, 100%, pdfwidth=100%, title=
 4. Benutzer klickt auf "Nachricht senden".
 5. Die Nachricht wird an den ausgewählten Empfänger gesendet und im Nachrichtenverlauf des Absenders gespeichert.
 |Erweiterungen              |-
-|Funktionale Anforderungen  | <<F0120>>, <<F0121>>
+|Funktionale Anforderungen  | <<F0091>>
 |===
 
 [cols="1h,3"]
@@ -500,7 +500,7 @@ image::./models/Use-Case.png[use-case diagram, 100%, 100%, pdfwidth=100%, title=
 4. Die Geschäftsführung klickt auf "Abrechnung durchführen".
 5. Die Abrechnung wird in den Konten der ausgewählten Mitarbeiter oder Ehrenamtlichen vermerkt, und die Buchhaltungsdaten werden aktualisiert.
 |Erweiterungen              |-
-|Funktionale Anforderungen  | <<F0080>>, <<F0081>>
+|Funktionale Anforderungen  | <<F0240>>
 |===
 
 [cols="1h,3"]
@@ -667,7 +667,7 @@ Das Produkt existiert im System.
 |Ausnahmeszenario           |
 1. Die eingegebenen Informationen sind unvollständig oder ungültig.
 2. Das System informiert den Verwalter über den Fehler.
-|Betroffene funktionale Anforderungen |<<F0171>> Registrierungsbestätigung durch Verwalter
+|Betroffene funktionale Anforderungen |<<F0230>> Registrierungsbestätigung durch Verwalter
 |===
 
 [cols="1h,3"]
@@ -688,7 +688,7 @@ Das Produkt existiert im System.
 |Ausnahmeszenario           |
 1. Das System kann keine Mitgliedsnummer zuweisen.
 2. Das System informiert den Verwalter über den Fehler.
-|Betroffene funktionale Anforderungen |<<F0171>> Registrierungsbestätigung durch Verwalter
+|Betroffene funktionale Anforderungen |<<F0231>> Registrierungsbestätigung durch Verwalter
 |===
 
 [cols="1h,3"]
