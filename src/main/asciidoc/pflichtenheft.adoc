@@ -780,7 +780,7 @@ Das Produkt existiert im System.
 3. Das System sendet dem Verwalter die Kündigung
 4. Der Verwalter bestätigt die Kündigung des Mitglieds, indem er das Profil löscht.
 5. Das System löscht die Daten des Profils.
-|Betroffene funktionale Anforderungen |<<F0181>> Profil kündigen durch das Mitglied |<<F0182>> Profil löschen durch Verwalter
+|Betroffene funktionale Anforderungen |<<F0211>> Nachrichten bearbeiten
 |===
 
 == Funktionale Anforderungen
@@ -978,6 +978,21 @@ Das System muss dem Verwalter die Möglichkeit bieten, ein Produkt aus dem Shop 
 a|
 Das System muss dem Verwalter die Möglichkeit bieten, ein Produkt im Shop zu bearbeiten.
 
+|[[F0180]]<<F0180>>
+|v1.0
+|Produkt bearbeiten
+a|
+Das System muss dem Verwalter die Möglichkeit bieten, ein Produkt im Shop zu bearbeiten.
+
+
+
+<<F0180>> Profil anzeigen
+<<F0181>> Profil kündigen durch das Mitglied
+<<F0190>> Zuständigkeit zuweisen
+warenkorb leeren
+210 nachrichten bearbeiten
+
+
 |[[F0230]]<<F0230>>
 |v1.0
 |Registrierung anlegen
@@ -995,9 +1010,8 @@ Das System muss dem Verwalter die Möglichkeit bieten, die Registrierung eines n
 |Abrechnung für Ehrentamliche und Mitarbeiter erstellen
 a|
 Das System muss in der Lage sein, Abrechnungen zu erstellen.
-
-0>>
 |===
+
 
 
 == Muss-Kriterien
