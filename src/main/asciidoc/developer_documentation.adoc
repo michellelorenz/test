@@ -77,7 +77,7 @@ Die folgenden (oder neuere) Browser-Versionen sind für die Nutzung der Anwendun
 
 
 == Kontextabgrenzung
-* Kontextdiagramm
+=== Kontextdiagramm
 
 [[kontext_diagram]]
 image::./models/Kontext.png[kontext diagram, 100%, 100%, pdfwidth=100%, title="Kontext Diagram", align=center]
@@ -91,7 +91,10 @@ image::./models/Kontext.png[kontext diagram, 100%, 100%, pdfwidth=100%, title="K
 |===
 
 === Softwarearchitektur
-* Beschreibung der Architektur anhand der Top-Level-Architektur oder eines Client-Server-Diagramms
+=== Top-Level-Architektur
+
+[[top-level_diagram]]
+image::./models/TopLevel.png[top-level diagram, 100%, 100%, pdfwidth=100%, title="Top-Level-Diagramm", align=center]
 
 === Entwurfsentscheidungen
 * Verwendete Muster
