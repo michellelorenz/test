@@ -187,6 +187,7 @@ image::./models/interaktionen.svg[interaction diagram, 100%, 100%, pdfwidth=100%
 | Geschäftsführung| Personen, die die höchsten Entscheidungsbefugnisse im Verein haben und strategische Entscheidungen treffen.
 | Teamersteller   | Ein Mitglied oder Mitarbeiter, der berechtigt ist, neue Teams oder Gruppen im System zu erstellen.
 | Verwalter       | Ein Mitglied oder Mitarbeiter, der berechtigt ist, Systemdaten und -einstellungen zu verwalten.
+| Verwalter       | Ein Mitglied oder Mitarbeiter, der berechtigt ist, die öffentliche Kommunikation zu verwalten.
 |===
 
 === Überblick Anwendungsfalldiagramm
@@ -358,7 +359,7 @@ image::./models/Use-Case.png[use-case diagram, 100%, 100%, pdfwidth=100%, title=
 3. Der Benutzer gibt das Datum, die Arbeitszeit (Anfangs- und Endzeit) und gegebenenfalls Bemerkungen ein.
 4. Der Benutzer klickt auf "Speichern" oder "Absenden", um die erfasste Arbeitszeit zu bestätigen.
 |Erweiterungen              |-
-|Funktionale Anforderungen  | <<F0070>> (für Mitarbeiter), <<F0071>> (für Ehrenamtliche), <<F0072>> (allgemeine Erfassung)
+|Funktionale Anforderungen  | <<F0070>> (für Mitarbeiter), <<F0071>> (für Ehrenamtliche)
 |===
 
 
@@ -367,15 +368,14 @@ image::./models/Use-Case.png[use-case diagram, 100%, 100%, pdfwidth=100%, title=
 |===
 |ID                         |**<<UC010>>**
 |Name                       |Lagerbestand anzeigen
-|Beschreibung               |Ein Mitglied der Geschäftsführung sollte in der Lage sein, das Inventar einschließlich des aktuellen Lagerbestands einzusehen.
-|Akteure                    |Geschäftsführung
+|Beschreibung               |Ein Verkäufer sollte in der Lage sein, das Inventar einschließlich des aktuellen Lagerbestands einzusehen.
+|Akteure                    |Verkäufer
 |Auslöser                   |Benutzer wählt "Lager" in der Navigationsleiste
 |Vorbedingung(en)          a|
-- Benutzer ist authentifiziert und hat die Rolle "Geschäftsführung".
+- Benutzer ist authentifiziert und hat die Rolle "Verkäufer".
 |Hauptschritte             a|
 1. Benutzer wählt "Lager" in der Navigationsleiste.
 2. Die komplette Liste aller Artikel des Inventars und der aktuelle Lagerbestand wird angezeigt.
-|Erweiterungen              |-
 |Funktionale Anforderungen  | <<F0080>>
 |===
 
@@ -469,7 +469,7 @@ image::./models/Use-Case.png[use-case diagram, 100%, 100%, pdfwidth=100%, title=
 |ID                         |**<<UC016>>**
 |Name                       |Nachrichten erstellen
 |Beschreibung               |Benutzer sollte in der Lage sein, eine neue Nachricht in der Anwendung zu erstellen und an andere Benutzer zu senden.
-|Akteure                    |Geschäftsführung
+|Akteure                    |Verwalter der öffentlichen Kommunikation
 |Auslöser                   |Benutzer möchte eine neue Nachricht erstellen
 |Vorbedingung(en)          a|
 - Benutzer ist authentifiziert und angemeldet.
@@ -784,13 +784,6 @@ Das Produkt existiert im System.
 
 == Funktionale Anforderungen
 
-<<F0180>> Profil anzeigen
-<<F0181>> Profil kündigen durch das Mitglied 
-<<F0182>> Profil löschen durch Verwalter
-<<F0190>> Zuständigkeit zuweisen
-<<F0200>> Warenkorb leeren
-<<F0210>> Nachrichten bearbeiten
-
 [options="header", cols="2h, 1, 3, 12"]
 |===
 |ID
@@ -818,45 +811,88 @@ Das System muss jedem Besucher des Shops die Möglichkeit bieten, auf den Katalo
 
 |[[F0040]]<<F0040>>
 |v1.0
-|Produktsuche
-a|
-Das System muss Benutzern die Möglichkeit bieten, nach Produkten im Katalog zu suchen. Die Suche kann nach verschiedenen Kriterien wie Titel, Genre usw. durchgeführt werden.
-
-|[[F0050]]<<F0050>>
-|v1.0
 |Produktdetails anzeigen
 a|
 Das System muss Benutzern die Möglichkeit bieten, die Details eines Produkts anzuzeigen, einschließlich Titel, Preis, Genre, Bestand, Coverbild und abgegebene Kommentare.
 
-|[[F0060]]<<F0060>>
-|v1.0
-|Kommentar abgeben
-a|
-Das System muss Benutzern die Möglichkeit bieten, Kommentare zu einem Produkt abzugeben. Ein Kommentar besteht aus einer textuellen Meinung zur Disc und einer numerischen Bewertung.
-
-|[[F0070]]<<F0070>>
-|v1.0
-|Warenkorb
-a|
-Das System muss registrierten und authentifizierten Benutzern einen Warenkorb bereitstellen, in dem sie ausgewählte Produkte temporär speichern können.
-
-|[[F0080]]<<F0080>>
+|[[F0050]]<<F0050>>
 |v1.0
 |Produkt zum Warenkorb hinzufügen
 a|
 Das System muss registrierten und authentifizierten Benutzern die Möglichkeit bieten, ein Produkt in ihrem Warenkorb in der gewünschten Menge hinzuzufügen.
 
-|[[F0090]]<<F0090>>
+|[[F0051]]<<F0051>>
 |v1.0
 |Warenkorb anzeigen
 a|
 Das System muss authentifizierten Benutzern die Möglichkeit bieten, auf ihren Warenkorb zuzugreifen und die enthaltenen Produkte, Mengen und den Gesamtpreis anzuzeigen.
 
-|[[F0100]]<<F0100>>
+|[[F0052]]<<F0052>>
 |v1.0
 |Produkte im Warenkorb kaufen
 a|
 Das System muss authentifizierten Benutzern die Möglichkeit bieten, den Inhalt ihres Warenkorbs zu kaufen. Dies beinhaltet die Validierung der Bestellung und die Erstellung einer Bestellung, wenn der Bestand ausreichend ist.
+
+|[[F0060]]<<F0060>>
+|v1.0
+|Mitgliederliste anzeigen
+a|
+Das System muss Benutzern die Möglichkeit bieten, Eine Liste von Mitgliedern anzuzeigen.
+
+|[[F0070]]<<F0070>>
+|v1.0
+|Arbeitszeiterfassung für Mitarbeiter
+
+Das System muss dem Verwalter die Möglichkeit bieten, die Arbeitszeit der Mitarbeiter zu erfassen.
+
+|[[F0071]]<<F0071>>
+|v1.0
+|Arbeistzeiterfassung für Ehrenamtliche
+a|
+Das System muss dem Verwalter die Möglichkeit bieten, die Arbeitszeit der Ehrenamtliche zu erfassen.
+
+|[[F0080]]<<F0080>>
+|v1.0
+|Lagerbestand anzeigen
+a|
+Das System muss Benutzern die Möglichkeit bieten, den Lagerbestand anzuzeigen.
+
+|[[F0090]]<<F0090>>
+|v1.0
+|Nachrichten anzeigen
+a|
+Das System muss Benutzern die Möglichkeit bieten, Nachrichten anzuzeigen.
+
+|[[F0091]]<<F0091>>
+|v1.0
+|Nachrichten erstellen
+a|
+Das System muss Benutzern die Möglichkeit bieten, Nachrichten zu erstellen.
+
+|[[F0100]]<<F0100>>
+|v1.0
+|Trackingsystem anzeigen
+a|
+Das System muss Ehrenatmliche und Mitarbeiter die Möglichkeit bieten, ihre erfasste Arbeitszeit.
+
+|[[F0110]]<<F0110>>
+|v1.0
+|Trainingsgruppe erstellen
+a|
+Das System muss Teamerstellern die Möglichkeit bieten, Trainingsgruppen zu erstellen.
+
+|[[F0120]]<<F0120>>
+|v1.0
+|Gruppenmitglieder inaktiv setzen
+a|
+Das System muss Trainiern die Möglichkeit bieten, Mitglieder einer Gruppe in dieser inaktiv zu setzen.
+
+|[[F0121]]<<F0121>>
+|v1.0
+|Gruppenmitglieder hinzufügen
+a|
+Das System muss Trainiern die Möglichkeit bieten, Mitglieder einer Gruppe hinzuzufügen.
+
 
 |[[F0110]]<<F0110>>
 |v1.0
@@ -906,11 +942,11 @@ Das System muss Ehrenamtlichen die Möglichkeit bieten, zuvor ausgeliehene Produ
 a|
 Das System muss der Geschäftsführung die Möglichkeit bieten, alle Details zu ausgeliehenen Produkten, einschließlich der verantwortlichen Ehrenamtlichen und der Ausleih- und Rückgabedaten, einzusehen.
 
-|[[F0162]]<<F0162>>
+|[[F0163]]<<F0163>>
 |v1.0
-|Ausleihe einsehen
+|Bestellung einsehen
 a|
-Das System muss der Geschäftsführung die Möglichkeit bieten, alle Details zu ausgeliehenen Produkten, einschließlich der verantwortlichen Ehrenamtlichen und der Ausleih- und Rückgabedaten, einzusehen.
+Das System muss der Geschäftsführung die Möglichkeit bieten, alle Details zu einer Bestellung einzusehen.
 
 |[[F0164]]<<F0164>>
 |v1.0
@@ -926,16 +962,60 @@ Das System muss dem Teilnehmer die Möglichkeit bieten, die Details der Training
 
 |[[F0170]]<<F0170>>
 |v1.0
-|Registrierungsbestätigung
+|Produkt anlegen
 a|
-Das System muss dem Verwalter die Möglichkeit bieten, die Registrierung eines neuen Mitglieds zu bestätigen. Bei Bestätigung wird dem Mitglied eine Mitgliedsnummer zugewiesen.
+Das System muss dem Verwalter die Möglichkeit bieten, ein neues Produkt zum Shop hinzuzufügen.
 
 |[[F0171]]<<F0171>>
+|v1.0
+|Produkt löschen
+a|
+Das System muss dem Verwalter die Möglichkeit bieten, ein Produkt aus dem Shop zu löschen.
+
+|[[F0172]]<<F0172>>
+|v1.0
+|Produkt bearbeiten
+a|
+Das System muss dem Verwalter die Möglichkeit bieten, ein Produkt im Shop zu bearbeiten.
+
+|[[F0230]]<<F0230>>
 |v1.0
 |Registrierung anlegen
 a|
 Das System muss dem Verwalter die Möglichkeit bieten, ein neues Mitglied im System zu registrieren. Die Registrierung erfordert die Eingabe der notwendigen Informationen des Mitglieds.
 
+|[[F0231]]<<F0231>>
+|v1.0
+|Registrierungsbestätigung
+a|
+Das System muss dem Verwalter die Möglichkeit bieten, die Registrierung eines neuen Mitglieds zu bestätigen. Bei Bestätigung wird dem Mitglied eine Mitgliedsnummer zugewiesen.
+
+|[[F0240]]<<F0240>>
+|v1.0
+|Abrechnung für Ehrentamliche und Mitarbeiter erstellen
+a|
+Das System muss in der Lage sein, Abrechnungen zu erstellen.
+
+|[[F0172]]<<F0172>>
+|v1.0
+|Mitgliedsnummer zuweisen
+a|
+Das System muss in der Lage sein, einem bestätigten Mitglied automatisch eine eindeutige Mitgliedsnummer zuzuweisen.
+|[[F0172]]<<F0172>>
+|v1.0
+|Mitgliedsnummer zuweisen
+a|
+Das System muss in der Lage sein, einem bestätigten Mitglied automatisch eine eindeutige Mitgliedsnummer zuzuweisen.
+|[[F0172]]<<F0172>>
+|v1.0
+|Mitgliedsnummer zuweisen
+a|
+Das System muss in der Lage sein, einem bestätigten Mitglied automatisch eine eindeutige Mitgliedsnummer zuzuweisen.
+|[[F0172]]<<F0172>>
+|v1.0
+|Mitgliedsnummer zuweisen
+a|
+Das System muss in der Lage sein, einem bestätigten Mitglied automatisch eine eindeutige Mitgliedsnummer zuzuweisen.
 |[[F0172]]<<F0172>>
 |v1.0
 |Mitgliedsnummer zuweisen
