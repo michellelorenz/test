@@ -1,19 +1,18 @@
 = Pflichtenheft
-:project_name: Projektname
+:toc:
+:toc-title: Inhaltsverzeichnis
+:project_name: SWT23W10_Kletterverein
 == __{project_name}__
 
 [options="header"]
-[cols="1, 1, 1, 1, 4"]
+[cols="1, 1, 2, 2, 2"]
 |===
 |Version | Status      | Bearbeitungsdatum   | Autoren(en) |  Vermerk
-|0.1     | In Arbeit   | 29.10.2023          | Autor       | Initiale Version
+|0.3     | Final       | 09.11.2023          | SWT23W10    |  Abgabe
 |===
 
 :project_name: Kletterverein
 :company_name: Der Dresdner Kletterverein
-
-== Inhaltsverzeichnis
-Dieses Dokument benötigt ein Inhaltsverzeichnis. Es existieren mehrere Einbindungsmöglichkeiten.
 
 == Zusammenfassung
 Dieses Dokument stellt das Pflichtenheft des Projekts Klettervereinswebsite dar. Es soll einen Überblick über das zu erstellende Softwareprodukt geben und dient als Grundlage für die Kommunikation zwischen den Projektbeteiligten, hauptsächlich dem Kunden und dem Entwicklungsteam. Dieses Dokument soll als Grundlage für einen Vertrag zwischen Auftraggeber und Auftragnehmer dienen. Auftraggeber und Auftragnehmer und sollte daher validiert und auf Konsistenz geprüft werden. Das Pflichtenheft beschreibt, was das gewünschte System zu erfüllen hat und teilweise, wie der Auftragnehmer die Lösung zu implementieren gedenkt.
@@ -1728,12 +1727,5 @@ Der Benutzer benutzt die "Registrierung bestätigen" Seite.
 |{Result}     a|Das System löscht die betroffene Nachricht.
 |===
 
-
-
-== Glossar
-Sämtliche Begriffe, die innerhalb des Projektes verwendet werden und deren gemeinsames Verständnis aller beteiligten Stakeholder essentiell ist, sollten hier aufgeführt werden.
-Insbesondere Begriffe der zu implementierenden Domäne wurden bereits beschrieben, jedoch gibt es meist mehr Begriffe, die einer Beschreibung bedürfen. +
-Beispiel: Was bedeutet "Kunde"? Ein Nutzer des Systems? Der Kunde des Projektes (Auftraggeber)?
-
 == Offene Punkte
-Offene Punkte werden entweder direkt in der Spezifikation notiert. Wenn das Pflichtenheft zum finalen Review vorgelegt wird, sollte es keine offenen Punkte mehr geben.
+-
