@@ -1667,6 +1667,60 @@ Der Benutzer benutzt die "Registrierung bestätigen" Seite.
 
 [cols="1h, 4"]
 |===
+|ID            |<<AT0280>>
+|Anwendungsfall|<<UC028>>
+|{Pre}        a|Der Benutzer ist registriert, eingeloggt und hat die Rolle "Mitglied".
+|{Event}      a|Der Benutzer navigiert zum Profil. 
+|{Result}     a|Das System zeigt die Profildaten an.
+|===
+
+[cols="1h, 4"]
+|===
+|ID            |<<AT0291>>
+|Anwendungsfall|<<UC029>>
+|{Pre}        a|Der Benutzer ist registriert, bestätigt, eingeloggt und hat die Rolle "Mitglied" sowie eine Mitgliedsnummer.
+|{Event}      a|Der Benutzer navigiert zu "Profil kündigen" und bestätigt die Kündigung.
+|{Result}     a|Das System leitet die Kündigung an den Verwalter weiter.
+|===
+
+[cols="1h, 4"]
+|===
+|ID            |<<AT0292>>
+|Anwendungsfall|<<UC029>>
+|{Pre}        a| Der Benutzer ist authentifiziert. Der Benutzer hat die Rolle "Verwalter". Es existiert mindestens ein Mitglied, das seine Kündigung bestätigt hat. Der Benutzer navigiert zum betroffenen Profil und wählt die Option "Löschen".
+|{Event}      a|Der Benutzer bestätigt die Kündigung des Mitglieds durch das Bestätigen des Löschens des dazugehörigen Profils.
+|{Result}     a|Das System löscht die Daten des Profils.
+|===
+
+[cols="1h, 4"]
+|===
+|ID            |<<AT0300>>
+|Anwendungsfall|<<UC030>>
+|{Pre}        a| Der Benutzer ist authentifiziert und hat die Rolle "Verwalter". Es existiert mindestens ein Mitglied.
+|{Event}      a|Der Benutzer weißt dem Mitglied eine neue Zuständigkeit zu.
+|{Result}     a|Das System überschreibt die alte Zuständigkeit des Mitglieds mit der neu zugewiesenen.
+|===
+
+[cols="1h, 4"]
+|===
+|ID            |<<AT0310>>
+|Anwendungsfall|<<UC031>>
+|{Pre}        a| Der Benutzer hat die Rolle "Mitglied", hat ein Profil und ist eingeloggt. 
+|{Event}      a|Der Benutzer navigiert im Shop zum Warenkorb. Im Warenkorb wählt der Nutzer die Option "Warenkorb leeren" und bestätigt dies.
+|{Result}     a|Das System leert den Warenkorb.
+|===
+
+[cols="1h, 4"]
+|===
+|ID            |<<AT0320>>
+|Anwendungsfall|<<UC032>>
+|{Pre}        a| Der Benutzer ist authentifiziert und hat die Rolle "Verwalter der öffentlichen Kommunikation". Es wurde bereits eine Nachricht hochgeladen.
+|{Event}      a|Der Benutzer navigiert zur Option "Nachricht bearbeiten", bearbeitet die Nachricht und bestätigt die Änderung.
+|{Result}     a|Das System speichert die Änderung.
+|===
+
+[cols="1h, 4"]
+|===
 |ID            |<<AT0250>>
 |Anwendungsfall|<<UC025>>
 |{Pre}        a|
