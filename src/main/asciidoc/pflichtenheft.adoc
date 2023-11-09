@@ -1366,7 +1366,7 @@ Der Benutzer wird zur Startseite weitergeleitet.
 |Anwendungsfall|<<UC010>>
 |{Pre}        a|
 Der Benutzer ist authentifiziert.
-Der Benutzer hat die Rolle "Geschäfsführung".
+Der Benutzer hat die Rolle "Verkäufer".
 |{Event}      a|Der Benutzer klickt auf "Lager" in der Navigationsleiste.
 |{Result}     a|Der Benutzer wird auf die Lagerseite weitergeleitet und die komplette Liste aller Artikel des Inventars und der aktuelle Lagerbestand werden angezeigt.
 |===
@@ -1432,7 +1432,7 @@ Der Benutzer hat die Rolle "Trainer".
 |Anwendungsfall|<<UC016>>
 |{Pre}        a|
 Der Benutzer ist authentifiziert.
-Der Benutzer hat die Rolle "Geschäftsführung".
+Der Benutzer hat die Rolle "Verwalter der öffentlichen Kommunikation".
 |{Event}      a|Der Benutzer wählt die Option "Neue Nachricht erstellen" in der Anwendung aus.
 |{Result}     a|Die Anwendung öffnet ein Nachrichtenformular.
 |===
@@ -1443,7 +1443,7 @@ Der Benutzer hat die Rolle "Geschäftsführung".
 |Anwendungsfall|<<UC016>>
 |{Pre}        a|
 Der Benutzer ist authentifiziert.
-Der Benutzer hat die Rolle "Geschäftsführung".
+Der Benutzer hat die Rolle "Verwalter der öffentlichen Kommunikation".
 Der Benutzer nutzt das Nachrichtenformular
 |{Event}      a|Der Benutzer gibt den Empfänger, den Betreff und den Nachrichtentext ein und klickt auf "Nachricht senden".
 |{Result}     a|Die Nachricht wird an den ausgewählten Empfänger gesendet und im Nachrichtenverlauf des Absenders gespeichert.
@@ -1593,8 +1593,8 @@ Der Benutzer hat die Rolle "Teilnehmer".
 
 [cols="1h, 4"]
 |===
-|ID            |<<AT0230>>
-|Anwendungsfall|<<UC023>>
+|ID            |<<AT0261>>
+|Anwendungsfall|<<UC026>>
 |{Pre}        a|
 Der Benutzer ist authentifiziert.
 Der Benutzer hat die Rolle "Verwalter".
@@ -1604,8 +1604,8 @@ Der Benutzer hat die Rolle "Verwalter".
 
 [cols="1h, 4"]
 |===
-|ID            |<<AT0231>>
-|Anwendungsfall|<<UC023>>
+|ID            |<<AT0262>>
+|Anwendungsfall|<<UC026>>
 |{Pre}        a|
 Der Benutzer ist authentifiziert.
 Der Benutzer hat die Rolle "Verwalter".
@@ -1616,8 +1616,8 @@ Der Benutzer benutzt die "Registrierung anlegen" Seite.
 
 [cols="1h, 4"]
 |===
-|ID            |<<AT0240>>
-|Anwendungsfall|<<UC024>>
+|ID            |<<AT0271>>
+|Anwendungsfall|<<UC027>>
 |{Pre}        a|
 Der Benutzer ist authentifiziert.
 Der Benutzer hat die Rolle "Verwalter".
@@ -1628,8 +1628,8 @@ Es gibt mindestens ein Mitglied, das auf Bestätigung wartet.
 
 [cols="1h, 4"]
 |===
-|ID            |<<AT0241>>
-|Anwendungsfall|<<UC024>>
+|ID            |<<AT0272>>
+|Anwendungsfall|<<UC027>>
 |{Pre}        a|
 Der Benutzer ist authentifiziert.
 Der Benutzer hat die Rolle "Verwalter".
