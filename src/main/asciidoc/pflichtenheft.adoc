@@ -1593,6 +1593,33 @@ Der Benutzer hat die Rolle "Teilnehmer".
 
 [cols="1h, 4"]
 |===
+|ID            |<<AT0230>>
+|Anwendungsfall|<<UC023>>
+|{Pre}        a|Der Benutzer ist authentifiziert. Der Benutzer hat die Rolle "Verwalter".
+|{Event}      a|Der Benutzer wählt die Option "Produkt hinzufügen" im System, gibt die notwendigen Produktinformationen ein und bestätigt das Hinzufügen. 
+|{Result}     a|Das neue Produkt wird im System hinzugefügt.
+|===
+
+[cols="1h, 4"]
+|===
+|ID            |<<AT0240>>
+|Anwendungsfall|<<UC024>>
+|{Pre}        a|Der Benutzer ist authentifiziert. Der Benutzer hat die Rolle "Verwalter". Im System existiert mindestens ein registriertes Produkt.
+|{Event}      a|Der Benutzer wählt das zu löschende Produkt aus. Der Benutzer wählt die Option "Produkt löschen" und bestätigt seine Eingabe.
+|{Result}     a|Das gewählte Produkt wird aus dem System gelöscht.
+|===
+
+[cols="1h, 4"]
+|===
+|ID            |<<AT0250>>
+|Anwendungsfall|<<UC025>>
+|{Pre}        a|Der Benutzer ist authentifiziert. Der Benutzer hat die Rolle "Verwalter". Im System existiert mindestens ein registriertes Produkt.
+|{Event}      a|Der Benutzer wählt das zu bearbeitende Produkt aus. Der Benutzer wählt die Option "Produkt bearbeiten" und bearbeitet die gewünschte Produktinformation. Anschließend bestätigt er seine Änderung.
+|{Result}     a|Das gewählte Produkt wird mit den neuen Produktinformationen im System gespeichert.
+|===
+
+[cols="1h, 4"]
+|===
 |ID            |<<AT0261>>
 |Anwendungsfall|<<UC026>>
 |{Pre}        a|
