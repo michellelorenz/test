@@ -1721,25 +1721,11 @@ Der Benutzer benutzt die "Registrierung bestätigen" Seite.
 
 [cols="1h, 4"]
 |===
-|ID            |<<AT0250>>
-|Anwendungsfall|<<UC025>>
-|{Pre}        a|
-Der Benutzer ist authentifiziert.
-Der Benutzer hat die Rolle "Verwalter".
-|{Event}      a|Der Benutzer wählt die Option "Mitgliedsnummer zuweisen".
-|{Result}     a|Der Benutzer wird auf die Seite "Mitgliedsnummer zuweisen" weitergeleitet, auf der er einem bestätigten Mitglied eine Mitgliedsnummer zuweisen kann.
-|===
-
-[cols="1h, 4"]
-|===
-|ID            |<<AT0251>>
-|Anwendungsfall|<<UC025>>
-|{Pre}        a|
-Der Benutzer ist authentifiziert.
-Der Benutzer hat die Rolle "Verwalter".
-Der Benutzer benutzt die "Mitgliedsnummer zuweisen" Seite.
-|{Event}      a|Der Benutzer wählt ein bestätigtes Mitglied aus und klickt auf "Nummer zuweisen".
-|{Result}     a|Das ausgewählte Mitglied erhält eine eindeutige Mitgliedsnummer.
+|ID            |<<AT0330>>
+|Anwendungsfall|<<UC033>>
+|{Pre}        a| Der Benutzer ist authentifiziert und hat die Rolle "Verwalter der öffentlichen Kommunikation". Es wurde bereits eine Nachricht hochgeladen.
+|{Event}      a|Der Benutzer navigiert zur Option "Nachricht löschen" und bestätigt die Änderung.
+|{Result}     a|Das System löscht die betroffene Nachricht.
 |===
 
 
