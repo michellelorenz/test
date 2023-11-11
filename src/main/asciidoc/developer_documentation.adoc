@@ -133,3 +133,12 @@ _Die folgende Tabelle zeigt die Rückverfolgbarkeit zwischen Entwurfs- und Analy
 
 [[Sequenz-Diagramm_Mitglied]]
 image::./models/Sequenzdiagramm Mitglied2.jpg[top-level diagram, 100%, 100%, pdfwidth=100%, title="Top-Level-Diagramm", align=center]
+
+[[Sequenz-Diagramm_Order]]
+image::./models/analysis/Order.png[seq-dia-order, 100%, 100%, pdfwidth=100%, title="Sequenz-Diagramm Order", align=center]
+
+[[Sequenz-Diagramm_Inventar]]
+image::./models/analysis/Inventar.png[seq-dia-inventar, 100%, 100%, pdfwidth=100%, title="Sequenz-Diagramm Inventar", align=center]
+
+[[Sequenz-Diagramm_Catalog]]
+image::./models/analysis/Catalog.png[seq-dia-catalog, 100%, 100%, pdfwidth=100%, title="Sequenz-Diagramm Catalog", align=center]
