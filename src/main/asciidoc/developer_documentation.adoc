@@ -141,4 +141,4 @@ image::./models/analysis/Order.png[seq-dia-order, 100%, 100%, pdfwidth=100%, tit
 image::./models/analysis/Inventar.png[seq-dia-inventar, 100%, 100%, pdfwidth=100%, title="Sequenz-Diagramm Inventar", align=center]
 
 [[Sequenz-Diagramm_Catalog]]
-image::./models/analysis/Catalog.png[seq-dia-catalog, 100%, 100%, pdfwidth=100%, title="Sequenz-Diagramm Catalog", align=center]
+image::./models/analysis/Catalog.jpg[seq-dia-catalog, 100%, 100%, pdfwidth=100%, title="Sequenz-Diagramm Catalog", align=center]
