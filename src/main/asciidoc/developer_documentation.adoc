@@ -112,6 +112,16 @@ image::./models/TopLevel.png[top-level diagram, 100%, 100%, pdfwidth=100%, title
 * Package-Diagramm
 * Entwurfsklassendiagramme der einzelnen Packages
 
+[[Package-Diagramm_Catalog]]
+image::./models/analysis/Catalog-package.png[pac-dia-catalog, 100%, 100%, pdfwidth=100%, title="Package-Diagramm Catalog", align=center]
+
+[[Package-Diagramm_Inventory]]
+image::./models/analysis/Inventory-package.png[pac-dia-inventory, 100%, 100%, pdfwidth=100%, title="Package-Diagramm Inventory", align=center]
+
+[[Package-Diagramm_Order]]
+image::./models/analysis/Order-package.png[pac-dia-order, 100%, 100%, pdfwidth=100%, title="Package-Diagramm Order", align=center]
+
+
 [options="header"]
 |=== 
 |Klasse/Enumeration |Description
