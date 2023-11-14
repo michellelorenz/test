@@ -154,3 +154,8 @@ image::./models/analysis/Inventar.png[seq-dia-inventar, 100%, 100%, pdfwidth=100
 
 [[Sequenz-Diagramm_Catalog]]
 image::./models/analysis/Catalog.jpg[seq-dia-catalog, 100%, 100%, pdfwidth=100%, title="Sequenz-Diagramm Catalog", align=center]
+
+[[Sequenz-Diagramm_Verleih]]
+image::./models/analysis/Sequenzdiagramm_Verleihkatalog.png[pac-dia-rental, 100%, 100%, pdfwidth=100%, title="Package-Diagramm Verleihkatalog", align=center]
+image::./models/analysis/Sequenzdiagramm_Ausleihsystem.png[pac-dia-rental, 100%, 100%, pdfwidth=100%, title="Package-Diagramm Ausleihsystem", align=center]
+
