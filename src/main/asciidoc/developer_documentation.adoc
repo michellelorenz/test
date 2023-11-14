@@ -121,6 +121,9 @@ image::./models/analysis/Inventory-package.png[pac-dia-inventory, 100%, 100%, pd
 [[Package-Diagramm_Order]]
 image::./models/analysis/Order-package.png[pac-dia-order, 100%, 100%, pdfwidth=100%, title="Package-Diagramm Order", align=center]
 
+[[Package-Diagramm_Verleih]]
+image::./models/analysis/Packagediagramm_Verleih.png[pac-dia-order, 100%, 100%, pdfwidth=100%, title="Package-Diagramm Verleih", align=center]
+
 
 [options="header"]
 |=== 
