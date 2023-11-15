@@ -90,6 +90,25 @@ image::./models/Kontext.png[kontext diagram, 100%, 100%, pdfwidth=100%, title="K
 |... |...
 |===
 
+
+[options="header"]
+|=== 
+|Qualitätsziel |Lösungsansatz
+Erhaltbarkeit a|
+* *Modularität* Die Anwendung wird aus einzelnen Komponenten zusammengesetzt, so dass Änderungen an einer Komponente weniger Auswirkungen auf andere Komponenten haben.
+* *Wiederverwendbarkeit* Sicherstellen, dass Komponenten des Systems von anderen Komponenten oder Systemen wiederverwendet werden können.
+* *Modifizierbarkeit* Sicherstellen, dass die Anwendung modifiziert oder erweitert werden kann, ohne Fehler einzuführen oder die Produktqualität zu verschlechtern.
+|Nutzbarkeit  a|
+* *Lernbarkeit* Sicherstellen, dass das System von seinen Nutzern leicht verwendet und verstanden werden kann. Dies kann z.B. dadurch erreicht werden, dass der Inhalt von Eingaben durch Labels oder Tooltips eindeutig beschrieben wird. 
+* *Benutzerfehlerschutz / Fehlerbehandlung* Schützet die Benutzer vor Fehlern. Ungültige Eingaben dürfen nicht zu ungültigen Systemzuständen führen. 
+* *Ästhetik der Benutzeroberfläche* Bietet dem Benutzer eine ansprechende und zufriedenstellende Interaktion.
+* *Zugänglichkeit* Sicherstellen, dass Menschen mit den unterschiedlichsten Eigenschaften das System vollständig nutzen können. Dies kann z.B. durch die Verwendung geeigneter Schriftgrößen und Farbkontraste erreicht werden. 
+|Sicherheit a|
+* *Vertraulichkeit* Sicherstellen, dass nur die Personen auf die Daten zugreifen können, die dazu berechtigt sind. Dies kann mit _Spring Security_ und _Thymeleaf_ (`sec:authorize` - Tag) realisiert werden.
+* *Integrität* Verhindert die unbefugte Änderung von Daten. Dies kann mit _Spring Security_ (`@PreAuthorize` - annotation) realisiert werden.
+* *Rechenschaftspflicht* Rückverfolgbarkeit von Aktionen oder Ereignissen zu einer eindeutigen Entität oder Person. Für diese Anwendung sollte jede `Ordner` mit einem `Nutzer` verknüpft sein.
+|===
+
 === Softwarearchitektur
 === Top-Level-Architektur
 
