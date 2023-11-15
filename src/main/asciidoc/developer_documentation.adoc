@@ -113,6 +113,10 @@ image::./models/TopLevel.png[top-level diagram, 100%, 100%, pdfwidth=100%, title
 * Verwendete Muster
 * Persistenz
 * Benutzeroberfläche
+
+[[User-Interface]]
+image::./models/analysis/Benutzeroberfläche.drawio.png[user-interface, 100%, 100%, pdfwidth=100%, title="Benutzeroberfläche", align=center]
+
 * Verwendung externer Frameworks
 
 [options="header", cols="1,2,3"]
