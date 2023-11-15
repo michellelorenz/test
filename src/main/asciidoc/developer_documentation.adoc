@@ -84,17 +84,11 @@ image::./models/Kontext.png[kontext diagram, 100%, 100%, pdfwidth=100%, title="K
 
 == Lösungsstrategie
 === Erfüllung der Qualitätsziele
-[options="header"]
-|=== 
-|Qualitätsziel |Lösungsansatz
-|... |...
-|===
-
 
 [options="header"]
 |=== 
 |Qualitätsziel |Lösungsansatz
-Erhaltbarkeit a|
+|Erhaltbarkeit a|
 * *Modularität* Die Anwendung wird aus einzelnen Komponenten zusammengesetzt, so dass Änderungen an einer Komponente weniger Auswirkungen auf andere Komponenten haben.
 * *Wiederverwendbarkeit* Sicherstellen, dass Komponenten des Systems von anderen Komponenten oder Systemen wiederverwendet werden können.
 * *Modifizierbarkeit* Sicherstellen, dass die Anwendung modifiziert oder erweitert werden kann, ohne Fehler einzuführen oder die Produktqualität zu verschlechtern.
