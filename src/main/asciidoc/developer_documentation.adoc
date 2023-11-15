@@ -110,19 +110,19 @@ image::./models/Kontext.png[kontext diagram, 100%, 100%, pdfwidth=100%, title="K
 image::./models/TopLevel.png[top-level diagram, 100%, 100%, pdfwidth=100%, title="Top-Level-Diagramm", align=center]
 
 === Entwurfsentscheidungen
-== Verwendete Muster
+==== Verwendete Muster
 * Spring MVC
 
-== Persistenz
+==== Persistenz
 Die Anwendung verwendet *Hibernate annotation based mapping*, um Java-Klassen auf Datenbanktabellen abzubilden. Als Datenbank wird *H2* verwendet.
 Die Persistenz ist standardmäßig ausgeschaltet.
 
-== Benutzeroberfläche
+==== Benutzeroberfläche
 
 [[User-Interface]]
 image::./models/analysis/Benutzeroberfläche.drawio.png[kontext diagram, 100%, 100%, pdfwidth=100%, title="Benutzeroberfläche", align=center]
 
-== Verwendung externer Frameworks
+=== Verwendung externer Frameworks
 
 [options="header", cols="1,2,3"]
 |===
