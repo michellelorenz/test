@@ -189,13 +189,35 @@ image::./models/Mitglieder_Package.png[pac-dia-mitglieder, 100%, 100%, pdfwidth=
 [[Package-Diagramm_Catalog]]
 image::./models/analysis/Catalog-package.png[pac-dia-catalog, 100%, 100%, pdfwidth=100%, title="Package-Diagramm Catalog", align=center]
 
+
+[options="header"]
+|=== 
+|Class/Enumeration |Description
+|Item|Eigene Klasse, die die Produkte, die im Shop zu Verfügung stehen, beinhaltet
+|CatalogInitializer|Eine Implementierung des DataInitializer, um beim Start der Anwendung Dummy-Ausrüstung und Bekleidung zu erstellen
+|ItemType|Eine Enumeration, um ein Item als Ausrüstung oder Bekleidung zu definieren
+|ItemCatalog|Eigene Klasse, die die Salespoint.Catalog Erweiterung implementiert, um den Shopkatalog darzustellen
+|CatalogController|Ein Spring MVC Controller, um Anfragen zur Anzeige von Items zu bearbeiten
+|===
+
 ==== Inventory
 [[Package-Diagramm_Inventory]]
 image::./models/analysis/Inventory-package.png[pac-dia-inventory, 100%, 100%, pdfwidth=100%, title="Package-Diagramm Inventory", align=center]
 
+|=== 
+|Class/Enumeration |Description
+|InventoryController|Ein Spring MVC Controller, um Anfragen zur Anzeige des Lagerbestands des Shops zu bearbeiten.
+|InventoryInitializer|Eine Implementierung des DataInitializer, um beim Start der Anwendung Dummy-Daten zu erstellen.
+|===
+
 ==== Order
 [[Package-Diagramm_Order]]
 image::./models/analysis/Order-package.png[pac-dia-order, 100%, 100%, pdfwidth=100%, title="Package-Diagramm Order", align=center]
+
+|=== 
+|Class/Enumeration |Description
+|OrderController|Ein Spring MVC Controller, um den Warenkorb zu verwalten
+|===
 
 ==== Verleih
 [[Package-Diagramm_Verleih]]
