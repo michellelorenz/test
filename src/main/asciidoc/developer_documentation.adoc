@@ -204,6 +204,7 @@ image::./models/analysis/Catalog-package.png[pac-dia-catalog, 100%, 100%, pdfwid
 [[Package-Diagramm_Inventory]]
 image::./models/analysis/Inventory-package.png[pac-dia-inventory, 100%, 100%, pdfwidth=100%, title="Package-Diagramm Inventory", align=center]
 
+[options="header"]
 |=== 
 |Class/Enumeration |Description
 |InventoryController|Ein Spring MVC Controller, um Anfragen zur Anzeige des Lagerbestands des Shops zu bearbeiten.
@@ -214,6 +215,7 @@ image::./models/analysis/Inventory-package.png[pac-dia-inventory, 100%, 100%, pd
 [[Package-Diagramm_Order]]
 image::./models/analysis/Order-package.png[pac-dia-order, 100%, 100%, pdfwidth=100%, title="Package-Diagramm Order", align=center]
 
+[options="header"]
 |=== 
 |Class/Enumeration |Description
 |OrderController|Ein Spring MVC Controller, um den Warenkorb zu verwalten
