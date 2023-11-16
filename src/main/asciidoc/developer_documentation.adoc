@@ -164,7 +164,7 @@ image::./models/analysis/Order-package.png[pac-dia-order, 100%, 100%, pdfwidth=1
 
 ==== Verleih
 [[Package-Diagramm_Verleih]]
-image::./models/analysis/Packagediagramm_Verleih.png[pac-dia-rental, 100%, 100%, pdfwidth=100%, title="Package-Diagramm Verleih", align=center]
+image::./models/analysis/Packagediagramm_Verleih02.png[pac-dia-rental, 100%, 100%, pdfwidth=100%, title="Package-Diagramm Verleih", align=center]
 
 === Rückverfolgbarkeit zwischen Analyse- und Entwurfsmodell
 _Die folgende Tabelle zeigt die Rückverfolgbarkeit zwischen Entwurfs- und Analysemodell._
