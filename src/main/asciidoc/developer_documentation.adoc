@@ -159,12 +159,6 @@ image::./models/analysis/Benutzeroberfläche.drawio.png[kontext diagram, 100%, 1
 
 |===
 
-[options="header", cols="1,2,3"]
-|===
-|Externes Package |Verwendet von |Warum
-|... |... |...
-|===
-
 == Bausteinsicht
 
 === Package-Diagramm
