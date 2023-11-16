@@ -124,6 +124,41 @@ image::./models/analysis/Benutzeroberfläche.drawio.png[kontext diagram, 100%, 1
 
 === Verwendung externer Frameworks
 
+[options="header"]
+|===
+|External package |Used by |Why
+|org.springframework.boot a|
+* 
+| Simple configuration of Spring application
+|org.springframework.web a|
+* 
+* 
+* 
+* 
+* 
+| Application should be provided as a static website
+|org.springframework.security a|
+* 
+* 
+* 
+* 
+| Security features for the videoshop application and authorization of website access
+|org.springframework.data a|
+* 
+* 
+* 
+* 
+| JPA connection utility to the database layer
+|org.salespointframework a|
+* 
+* 
+* 
+* 
+* 
+| Reuse of SalesPoints POS functionality
+
+|===
+
 [options="header", cols="1,2,3"]
 |===
 |Externes Package |Verwendet von |Warum
