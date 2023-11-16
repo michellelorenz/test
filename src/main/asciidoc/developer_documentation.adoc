@@ -126,36 +126,36 @@ image::./models/analysis/Benutzeroberfläche.drawio.png[kontext diagram, 100%, 1
 
 [options="header"]
 |===
-|External package |Used by |Why
+|Externes Package |Verwendet von |Warum
 |org.springframework.boot a|
 * 
-| Simple configuration of Spring application
+| Einfache Konfiguration von Spring Anwendungen
 |org.springframework.web a|
 * 
 * 
 * 
 * 
 * 
-| Application should be provided as a static website
+| Funktionalität, die von statischen Websites bereitgestellt werden sollte
 |org.springframework.security a|
 * 
 * 
 * 
 * 
-| Security features for the videoshop application and authorization of website access
+| Sicherheits-Features für die Klettervereinsanwendung und die Authorisierung von Website-Zugriffen
 |org.springframework.data a|
 * 
 * 
 * 
 * 
-| JPA connection utility to the database layer
+| JPA Verbindungs-Utility für die Datenbankenschicht
 |org.salespointframework a|
 * 
 * 
 * 
 * 
 * 
-| Reuse of SalesPoints POS functionality
+| Wiederverwendung der Sailspoint POS Funktionalität
 
 |===
 
