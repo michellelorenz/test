@@ -166,6 +166,16 @@ image::./models/analysis/Order-package.png[pac-dia-order, 100%, 100%, pdfwidth=1
 [[Package-Diagramm_Verleih]]
 image::./models/analysis/Packagediagramm02_Verleih.png[pac-dia-rental, 100%, 100%, pdfwidth=100%, title="Package-Diagramm Verleih", align=center]
 
+[options="header"]
+|=== 
+|Class/Enumeration |Description
+|Item|Eigene Klasse, die die Produkte, die zum Verleih zu Verfügung stehen beinhaltet
+|RentalCatalog|Eigene Klasse, die die Sailspoint.Catalog Erweiterung implementiert, um den Verleihkatalog zu darzustellen
+|RentalCatalogController|Ein Spring MVC Controller der Anfragen zum Verleihkatalog bearbeitet
+|RentalCatalogInitializer|Eine Implementation des DataInitializer um Dummy Verleih-Items beim Start der Anwendung zu generieren
+|RentalOrderController|Ein Spring MVC Controller der Anfragen zum Ausleihsystem bearbeitet
+|===
+
 === Rückverfolgbarkeit zwischen Analyse- und Entwurfsmodell
 _Die folgende Tabelle zeigt die Rückverfolgbarkeit zwischen Entwurfs- und Analysemodell._
 
