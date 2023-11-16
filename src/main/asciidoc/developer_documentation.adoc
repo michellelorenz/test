@@ -131,26 +131,40 @@ image::./models/analysis/Benutzeroberfläche.drawio.png[kontext diagram, 100%, 1
 |===
 
 == Bausteinsicht
-* Package-Diagramm
-* Entwurfsklassendiagramme der einzelnen Packages
 
-[[Package-Diagramm_Catalog]]
-image::./models/analysis/Catalog-package.png[pac-dia-catalog, 100%, 100%, pdfwidth=100%, title="Package-Diagramm Catalog", align=center]
+=== Package-Diagramm
 
-[[Package-Diagramm_Inventory]]
-image::./models/analysis/Inventory-package.png[pac-dia-inventory, 100%, 100%, pdfwidth=100%, title="Package-Diagramm Inventory", align=center]
-
-[[Package-Diagramm_Order]]
-image::./models/analysis/Order-package.png[pac-dia-order, 100%, 100%, pdfwidth=100%, title="Package-Diagramm Order", align=center]
-
-[[Package-Diagramm_Verleih]]
-image::./models/analysis/Packagediagramm_Verleih.png[pac-dia-rental, 100%, 100%, pdfwidth=100%, title="Package-Diagramm Verleih", align=center]
+==== Mitglieder
+[[Package-Diagramm_Mitglied]]
+image::./models/Mitglieder_Package.png[pac-dia-mitglieder, 100%, 100%, pdfwidth=100%, title="Package-Diagramm Mitglieder", align=center]
 
 [options="header"]
 |=== 
-|Klasse/Enumeration |Description
-|... |...
+|Class/Enumeration |Description
+|Mitglied|Eigene Klasse die den Salespoint-UserAccount um ein Bankkonto und eine Adresse erweitert
+|Bankkonto|Eigene Klasse die notwendige Kontoinformationen zur Verarbeitung von Transaktionen beinhaltet
+|MitgliedController|Ein Spring MVC Controller der Anfragen zur Registrierung und Mitglieder-Anzeige managed
+|MitgliedDataInitializer|Eine Implementation des DataInitializer um Dummy Mitglieder beim Start der Anwendung zu generieren
+|MitgliedManagement|Serviceklasse zum Managen von mitgliedern
+|MitgliedRepository|Ein Repository Interface um Mitglieder-Instanzen zu managen
+|RegistrationForm|Ein Interface um die Usereingabe im Registrierungsformula zu validieren
 |===
+
+==== Catalog
+[[Package-Diagramm_Catalog]]
+image::./models/analysis/Catalog-package.png[pac-dia-catalog, 100%, 100%, pdfwidth=100%, title="Package-Diagramm Catalog", align=center]
+
+==== Inventory
+[[Package-Diagramm_Inventory]]
+image::./models/analysis/Inventory-package.png[pac-dia-inventory, 100%, 100%, pdfwidth=100%, title="Package-Diagramm Inventory", align=center]
+
+==== Order
+[[Package-Diagramm_Order]]
+image::./models/analysis/Order-package.png[pac-dia-order, 100%, 100%, pdfwidth=100%, title="Package-Diagramm Order", align=center]
+
+==== Verleih
+[[Package-Diagramm_Verleih]]
+image::./models/analysis/Packagediagramm_Verleih.png[pac-dia-rental, 100%, 100%, pdfwidth=100%, title="Package-Diagramm Verleih", align=center]
 
 === Rückverfolgbarkeit zwischen Analyse- und Entwurfsmodell
 _Die folgende Tabelle zeigt die Rückverfolgbarkeit zwischen Entwurfs- und Analysemodell._
