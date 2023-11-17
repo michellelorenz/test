@@ -179,7 +179,8 @@ image::./models/Mitglieder_Package.png[pac-dia-mitglieder, 100%, 100%, pdfwidth=
 |RegistrationForm|Ein Interface um die Usereingabe im Registrierungsformula zu validieren
 |===
 
-==== Catalog
+=== Shop
+==== 1. Catalog
 [[Package-Diagramm_Catalog]]
 image::./models/analysis/Catalog-package.png[pac-dia-catalog, 100%, 100%, pdfwidth=100%, title="Package-Diagramm Catalog", align=center]
 
@@ -194,7 +195,7 @@ image::./models/analysis/Catalog-package.png[pac-dia-catalog, 100%, 100%, pdfwid
 |CatalogController|Ein Spring MVC Controller, um Anfragen zur Anzeige von Items zu bearbeiten
 |===
 
-==== Inventory
+==== 2. Inventory
 [[Package-Diagramm_Inventory]]
 image::./models/analysis/Inventory-package.png[pac-dia-inventory, 100%, 100%, pdfwidth=100%, title="Package-Diagramm Inventory", align=center]
 
@@ -205,7 +206,7 @@ image::./models/analysis/Inventory-package.png[pac-dia-inventory, 100%, 100%, pd
 |InventoryInitializer|Eine Implementierung des DataInitializer, um beim Start der Anwendung Dummy-Daten zu erstellen.
 |===
 
-==== Order
+==== 3. Order
 [[Package-Diagramm_Order]]
 image::./models/analysis/Order-package.png[pac-dia-order, 100%, 100%, pdfwidth=100%, title="Package-Diagramm Order", align=center]
 
